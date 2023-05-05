@@ -11,8 +11,72 @@ datasource db {
   relationMode = "prisma"
 }
 
-model Example {
-    id        String   @id @default(cuid())
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
+model Topic {
+  id          Int         @id @default(autoincrement())
+  name        String
+  description String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime? @updatedAt
+}
+
+model Tag {
+  id          Int         @id @default(autoincrement())
+  name        String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime? @updatedAt
+
+  @@unique([name])
+}
+
+model QuestionSet {
+  id          Int         @id @default(autoincrement())
+  name        String?
+  topicId     Int
+  private     Boolean?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime? @updatedAt
+}
+
+model QuestionOnQuestionSet {
+  id           Int         @id @default(autoincrement())
+  questionId   Int  
+}
+
+model TagOnQuestion {
+  id           Int         @id @default(autoincrement())
+  questionId   Int
+  tagId        Int
+
+  @@unique([questionId, tagId])
+  @@index([questionId, tagId])
+}
+
+model Question {
+  id           Int          @id @default(autoincrement())
+  content      String
+  difficulty   Difficulty?
+  topicId      Int?
+  options      Json
+  answer       Int
+  details      String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime? @updatedAt
+
+  @@index([topicId])
+}
+
+model Record {
+  id          Int       @id @default(autoincrement())
+  userId      String
+  score       Float
+  recordData  Json
+  timestamp   DateTime  @default(now())
+
+  @@index([userId])
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
 }

@@ -10,9 +10,10 @@ import {
   SignedIn,
   UserButton,
 } from "@clerk/nextjs";
+import { Fragment } from "react";
 
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  const { data } = api.question.getAll.useQuery();
 
   const user = useUser();
   return (
@@ -26,6 +27,15 @@ const Home: NextPage = () => {
         <SignedIn>
           <UserButton />
           {user?.user?.fullName}
+          <div>
+            {data?.map((question) => (
+              <Fragment key={question.id}>
+                <div>{`${question.id}. ${question.content}`}</div>
+                {Array.isArray(question.options) &&
+                  question.options.map((option) => <div>{option}</div>)}
+              </Fragment>
+            ))}
+          </div>
         </SignedIn>
         <SignedOut>
           <SignInButton />

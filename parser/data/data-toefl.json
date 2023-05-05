@@ -1,0 +1,416 @@
+[
+  {
+    "content": "Which word means 'to criticize harshly'?",
+    "options": ["castigate", "ameliorate", "coddle", "emulate"],
+    "answer": 1,
+    "details": "Castigate means to criticize harshly, while ameliorate means to improve, coddle means to treat with indulgence, and emulate means to imitate."
+  },
+  {
+    "content": "Which word means 'to spread throughout'?",
+    "options": ["assimilate", "pervade", "deplete", "relinquish"],
+    "answer": 2,
+    "details": "Pervade means to spread throughout, while assimilate means to absorb and integrate, deplete means to use up, and relinquish means to give up."
+  },
+  {
+    "content": "Which word means 'very careful and precise'?",
+    "options": ["meticulous", "nebulous", "despondent", "stagnant"],
+    "answer": 1,
+    "details": "Meticulous means very careful and precise, while nebulous means unclear, despondent means in low spirits, and stagnant means not growing or developing."
+  },
+  {
+    "content": "Which word means 'showing a lack of respect for people or things considered important'?",
+    "options": ["adulation", "irreverent", "deferential", "laudatory"],
+    "answer": 2,
+    "details": "Irreverent means showing a lack of respect for important things, while adulation means excessive praise, deferential means respectful, and laudatory means expressing praise."
+  },
+  {
+    "content": "Which word means 'to diminish gradually'?",
+    "options": ["wane", "augment", "flourish", "abate"],
+    "answer": 1,
+    "details": "Wane means to diminish gradually, while augment means to increase, flourish means to grow or develop, and abate means to lessen in intensity."
+  },
+  {
+    "content": "Which word means 'to be undecided between two opinions or courses of action'?",
+    "options": ["equivocate", "waver", "vacillate", "oscillate"],
+    "answer": 3,
+    "details": "Vacillate means to be undecided between two opinions or courses of action, while equivocate means to avoid making a clear decision, waver means to be uncertain, and oscillate means to move back and forth."
+  },
+  {
+    "content": "Which word means 'to spread or promote an idea, especially an unpopular one'?",
+    "options": ["disseminate", "propagate", "quell", "vilify"],
+    "answer": 2,
+    "details": "Propagate means to spread or promote an idea, especially an unpopular one, while disseminate means to spread information, quell means to suppress, and vilify means to speak ill of."
+  },
+  {
+    "content": "Which word means 'to prevent from happening'?",
+    "options": ["preclude", "precipitate", "obliterate", "exacerbate"],
+    "answer": 1,
+    "details": "Preclude means to prevent from happening, while precipitate means to cause to happen suddenly, obliterate means to destroy, and exacerbate means to make worse."
+  },
+  {
+    "content": "Which word means 'to deny or contradict a statement'?",
+    "options": ["gainsay", "placate", "assuage", "corroborate"],
+    "answer": 1,
+    "details": "Gainsay means to deny or contradict a statement, while placate means to make someone less angry, assuage means to make an unpleasant feeling less intense, and corroborate means to confirm."
+  },
+  {
+    "content": "Which word means 'brief and to the point'?",
+    "options": ["succinct", "verbose", "garrulous", "loquacious"],
+    "answer": 1,
+    "details": "Succinct means brief and to the point, while verbose, garrulous, and loquacious all mean using too many words and talking excessively."
+  },
+  {
+    "content": "Which word means 'to produce a vivid impression'?",
+    "options": ["etch", "engender", "elicit", "evoke"],
+    "answer": 4,
+    "details": "Evoke means to produce a vivid impression, while etch means to cut a surface, engender means to cause or give rise to, and elicit means to draw out a response."
+  },
+  {
+    "content": "Which word means 'a temporary stop or break'?",
+    "options": ["hiatus", "respite", "cessation", "continuation"],
+    "answer": 1,
+    "details": "Hiatus means a temporary stop or break, while respite means a short period of rest, cessation means the process of ending, and continuation means the act of persisting."
+  },
+  {
+    "content": "Which word means 'to give life, energy, or strength to'?",
+    "options": ["invigorate", "enervate", "debilitate", "sap"],
+    "answer": 1,
+    "details": "Invigorate means to give life, energy, or strength to, while enervate, debilitate, and sap all mean to weaken or reduce vitality."
+  },
+  {
+    "content": "Which word means 'to make something less severe or harmful'?",
+    "options": ["mitigate", "exasperate", "inflame", "intensify"],
+    "answer": 1,
+    "details": "Mitigate means to make something less severe or harmful, while exasperate means to irritate, inflame means to provoke, and intensify means to make more intense."
+  },
+  {
+    "content": "Which word means 'to give a false or misleading appearance'?",
+    "options": ["dissemble", "simulate", "conceal", "feign"],
+    "answer": 1,
+    "details": "Dissemble means to give a false or misleading appearance, while simulate means to imitate, conceal means to hide, and feign means to pretend."
+  },
+  {
+    "content": "Which word means 'to improve or enhance the quality or value of'?",
+    "options": ["enrich", "deplete", "impoverish", "diminish"],
+    "answer": 1,
+    "details": "Enrich means to improve or enhance the quality or value of, while deplete means to use up, impoverish means to make poor, and diminish means to reduce."
+  },
+  {
+    "content": "Which word means 'a keen and prompt ability to understand or perceive'?",
+    "options": ["acuity", "opacity", "turbidity", "vagueness"],
+    "answer": 1,
+    "details": "Acuity means a keen and prompt ability to understand or perceive, while opacity means the quality of being difficult to understand, turbidity means the quality of being murky, and vagueness means the quality of being unclear."
+  },
+  {
+    "content": "Which word means 'to weaken or damage the quality or effectiveness of'?",
+    "options": ["undermine", "bolster", "buttress", "reinforce"],
+    "answer": 1,
+    "details": "Undermine means to weaken or damage the quality or effectiveness of, while bolster, buttress, and reinforce all mean to support or strengthen."
+  },
+  {
+    "content": "Which word means 'eager or quick to argue or fight'?",
+    "options": ["pugnacious", "amiable", "affable", "genial"],
+    "answer": 1,
+    "details": "Pugnacious means eager or quick to argue or fight, while amiable, affable, and genial all mean friendly and easy to get along with."
+  },
+  {
+    "content": "Which word means 'to remove harmful or objectionable material'?",
+    "options": ["expunge", "obliterate", "extirpate", "excise"],
+    "answer": 4,
+    "details": "Excise means to remove harmful or objectionable material, while expunge means to erase, obliterate means to destroy completely, and extirpate means to root out."
+  },
+  {
+    "content": "Which word means 'to cause great suffering or distress'?",
+    "options": ["harangue", "placate", "torment", "mollify"],
+    "answer": 3,
+    "details": "Torment means to cause great suffering or distress, while harangue means to deliver a long and passionate speech, placate means to make someone less angry, and mollify means to soothe."
+  },
+  {
+    "content": "Which word means 'excessively talkative, especially on trivial matters'?",
+    "options": ["garrulous", "laconic", "taciturn", "reticent"],
+    "answer": 1,
+    "details": "Garrulous means excessively talkative, especially on trivial matters, while laconic, taciturn, and reticent all mean using few words and being reserved in speech."
+  },
+  {
+    "content": "Which word means 'a person who opposes or criticizes the established order'?",
+    "options": ["iconoclast", "sycophant", "acolyte", "adherent"],
+    "answer": 1,
+    "details": "Iconoclast means a person who opposes or criticizes the established order, while sycophant means a flatterer, acolyte means a follower, and adherent means a supporter."
+  },
+  {
+    "content": "Which word means 'to make less intense or severe'?",
+    "options": ["attenuate", "magnify", "amplify", "accentuate"],
+    "answer": 1,
+    "details": "Attenuate means to make less intense or severe, while magnify, amplify, and accentuate all mean to make something greater or more noticeable."
+  },
+  {
+    "content": "Which word means 'an event or situation that causes a sudden loss of confidence'?",
+    "options": ["debacle", "apotheosis", "panacea", "epiphany"],
+    "answer": 1,
+    "details": "Debacle means an event or situation that causes a sudden loss of confidence, while apotheosis means the highest point of development, panacea means a solution for all problems, and epiphany means a sudden realization."
+  },
+  {
+    "content": "Which word means 'to treat with excessive indulgence'?",
+    "options": ["pamper", "chastise", "castigate", "admonish"],
+    "answer": 1,
+    "details": "Pamper means to treat with excessive indulgence, while chastise, castigate, and admonish all mean to reprimand or criticize."
+  },
+  {
+    "content": "Which word means 'to make something appear less important or less serious'?",
+    "options": ["belittle", "exacerbate", "aggrandize", "inflate"],
+    "answer": 1,
+    "details": "Belittle means to make something appear less important or less serious, while exacerbate means to make worse, aggrandize means to make greater, and inflate means to increase."
+  },
+  {
+    "content": "Which word means'to take away the force or effectiveness of'?",
+    "options": ["nullify", "fortify", "intensify", "validate"],
+    "answer": 1,
+    "details": "Nullify means to take away the force or effectiveness of, while fortify means to strengthen, intensify means to make more intense, and validate means to confirm."
+  },
+  {
+    "content": "Which word means 'to give new life, energy, or strength to'?",
+    "options": ["revitalize", "stifle", "suppress", "quash"],
+    "answer": 1,
+    "details": "Revitalize means to give new life, energy, or strength to, while stifle, suppress, and quash all mean to restrain or hold back."
+  },
+  {
+    "content": "Which word means 'to make a situation or problem worse'?",
+    "options": ["exacerbate", "ameliorate", "rectify", "resolve"],
+    "answer": 1,
+    "details": "Exacerbate means to make a situation or problem worse, while ameliorate, rectify, and resolve all mean to improve or correct a problem."
+  },
+  {
+    "content": "Which word means 'to increase the severity, bitterness, or violence of'?",
+    "options": ["intensify", "moderate", "temper", "mitigate"],
+    "answer": 1,
+    "details": "Intensify means to increase the severity, bitterness, or violence of, while moderate, temper, and mitigate all mean to make less severe or extreme."
+  },
+  {
+    "content": "Which word means 'to bring under control, especially by military force'?",
+    "options": ["subdue", "liberate", "emancipate", "release"],
+    "answer": 1,
+    "details": "Subdue means to bring under control, especially by military force, while liberate, emancipate, and release all mean to set free or release from control."
+  },
+  {
+    "content": "Which word means 'easily broken or destroyed'?",
+    "options": ["fragile", "resilient", "robust", "sturdy"],
+    "answer": 1,
+    "details": "Fragile means easily broken or destroyed, while resilient, robust, and sturdy all mean strong or able to withstand stress."
+  },
+  {
+    "content": "Which word means 'to make worse or more severe'?",
+    "options": ["aggravate", "alleviate", "ameliorate", "assuage"],
+    "answer": 1,
+    "details": "Aggravate means to make worse or more severe, while alleviate, ameliorate, and assuage all mean to make less severe or to relieve."
+  },
+  {
+    "content": "Which word means 'a strong, uncontrollable desire'?",
+    "options": ["craving", "antipathy", "aversion", "animosity"],
+    "answer": 1,
+    "details": "Craving means a strong, uncontrollable desire, while antipathy, aversion, and animosity all mean a dislike or opposition to something."
+  },
+  {
+    "content": "Which word means 'to make a situation or conflict less severe'?",
+    "options": ["appease", "provoke", "instigate", "incite"],
+    "answer": 1,
+    "details": "Appease means to make a situation or conflict less severe, while provoke, instigate, and incite all mean to cause or stir up a situation orconflict."
+  },
+  {
+    "content": "Which word means 'to separate into parts, typically to examine'?",
+    "options": ["dissect", "synthesize", "integrate", "coalesce"],
+    "answer": 1,
+    "details": "Dissect means to separate into parts, typically to examine, while synthesize, integrate, and coalesce all mean to combine or bring together."
+  },
+  {
+    "content": "Which word means 'unwilling or unable to believe something'?",
+    "options": ["incredulous", "gullible", "credulous", "naive"],
+    "answer": 1,
+    "details": "Incredulous means unwilling or unable to believe something, while gullible, credulous, and naive all mean easily deceived or lacking experience."
+  },
+  {
+    "content": "Which word means 'to bring up or introduce a subject for discussion or consideration'?",
+    "options": ["broach", "conceal", "suppress", "withhold"],
+    "answer": 1,
+    "details": "Broach means to bring up or introduce a subject for discussion or consideration, while conceal, suppress, and withhold all mean to keep something hidden or not revealed."
+  },
+  {
+    "content": "Which word means 'a person who seeks favor by flattering people of wealth or influence'?",
+    "options": ["toady", "maverick", "nonconformist", "iconoclast"],
+    "answer": 1,
+    "details": "Toady means a person who seeks favor by flattering people of wealth or influence, while maverick, nonconformist, and iconoclast all refer to individuals who do not conform to established norms or rules."
+  },
+  {
+    "content": "Which word means 'to make amends or reparations for a wrong'?",
+    "options": ["expiate", "perpetrate", "commit", "instigate"],
+    "answer": 1,
+    "details": "Expiate means to make amends or reparations for a wrong, while perpetrate, commit, and instigate all refer to carrying out or causing a negative action."
+  },
+  {
+    "content": "Which word means 'to reduce in amount, degree, or intensity'?",
+    "options": ["abate", "augment", "escalate", "amplify"],
+    "answer": 1,
+    "details": "Abate means to reduce in amount, degree, or intensity, while augment, escalate, and amplify all mean to increase or make greater."
+  },
+  {
+    "content": "Which word means 'to set free, especially from legal, social, or political restrictions'?",
+    "options": ["emancipate", "subjugate", "oppress", "dominate"],
+    "answer": 1,
+    "details": "Emancipate means to set free, especially from legal, social, or political restrictions, while subjugate, oppress, and dominate all refer to controlling or ruling over others."
+  },
+  {
+    "content": "Which word means 'to make worse or more serious'?",
+    "options": ["exacerbate", "palliate", "mitigate", "alleviate"],
+    "answer": 1,
+    "details": "Exacerbate means to make worse or more serious, while palliate, mitigate, and alleviate all mean to make a problem or difficulty less severe."
+  },
+  {
+    "content": "Which word means 'to inspire with intense and eager enjoyment, interest, or approval'?",
+    "options": ["enthrall", "bore", "disinterest", "dissuade"],
+    "answer": 1,
+    "details": "Enthrall means to inspire with intense and eager enjoyment, interest, or approval, while bore, disinterest, and dissuade all refer to discouraging or not engaging someone's interest."
+  },
+  {
+    "content": "Which word means 'to say or write something in reaction to a question or statement'?",
+    "options": ["rejoinder", "retort", "riposte", "repudiation"],
+    "answer": 2,
+    "details": "Retort means to say or write something in reaction to a question or statement, while rejoinder and riposte are synonyms for retort. Repudiation means to reject or deny the validity of something."
+  },
+  {
+    "content": "Which word means 'to make changes in something, typically in order to improve it'?",
+    "options": ["refine", "deteriorate", "degrade", "depreciate"],
+    "answer": 1,
+    "details": "Refine means to make changes in something, typically in order to improve it, while deteriorate, degrade, and depreciate all refer to making something worse or decreasing in value."
+  },
+  {
+    "content": "Which word means 'to express disapproval of or criticize someone's actions'?",
+    "options": ["reprimand", "endorse", "approve", "commend"],
+    "answer": 1,
+    "details": "Reprimand means to express disapproval of or criticize someone's actions, while endorse, approve, and commend all refer to expressing support or praising someone's actions."
+  },
+  {
+    "content": "Which word means 'to take the place of or serve as a substitute for'?",
+    "options": ["supplant", "complement", "supplement", "bolster"],
+    "answer": 1,
+    "details": "Supplant means to take the place of or serve as a substitute for, while complement, supplement, and bolster all refer to adding to or supporting something without replacing it."
+  },
+  {
+    "content": "Which word means 'to make something less severe or serious'?",
+    "options": ["mitigate", "aggravate", "exacerbate", "worsen"],
+    "answer": 1,
+    "details": "Mitigate means to make something less severe or serious, while aggravate, exacerbate, and worsen all mean to make a situation or problem worse."
+  },
+  {
+    "content": "Which word means 'a person who supports or advocates for a cause, idea, or group'?",
+    "options": ["proponent", "detractor", "opponent", "adversary"],
+    "answer": 1,
+    "details": "Proponent means a person who supports or advocates for a cause, idea, or group, while detractor, opponent, and adversary all refer to someone who opposes or criticizes."
+  },
+  {
+    "content": "Which word means 'to examine or consider something in detail'?",
+    "options": ["scrutinize", "overlook", "neglect", "ignore"],
+    "answer": 1,
+    "details": "Scrutinize means to examine or consider something in detail, while overlook, neglect, and ignore all refer to disregarding or not paying attention to something."
+  },
+  {
+    "content": "Which word means 'a person who is skilled in planning action or policy, especially in war or politics'?",
+    "options": ["strategist", "tactician", "diplomat", "mediator"],
+    "answer": 1,
+    "details": "Strategist means a person who is skilled in planning action or policy, especially in war or politics. Tactician, diplomat, and mediator all have different roles in managing conflict or negotiation."
+  },
+  {
+    "content": "Which word means 'to change or alter, usually for the better'?",
+    "options": ["modify", "stagnate", "atrophy", "deteriorate"],
+    "answer": 1,
+    "details": "Modify means to change or alter, usually for the better, while stagnate, atrophy, and deteriorate all refer to a decline or worsening."
+  },
+  {
+    "content": "Which word means 'to urge or persuade someone to do something'?",
+    "options": ["exhort", "dissuade", "discourage", "deter"],
+    "answer": 1,
+    "details": "Exhort means to urge or persuade someone to do something, while dissuade, discourage, and deter all refer to trying to prevent or discourage someone from doing something."
+  },
+  {
+    "content": "Which word means 'to accept or allow something reluctantly, but without protest'?",
+    "options": ["acquiesce", "resist", "oppose", "contest"],
+    "answer": 1,
+    "details": "Acquiesce means to accept or allow something reluctantly, but without protest, while resist, oppose, and contest all refer to actively fighting against or objecting to something."
+  },
+  {
+    "content": "Which word means 'to make something ineffective or harmless'?",
+    "options": ["neutralize", "intensify", "aggravate", "exacerbate"],
+    "answer": 1,
+    "details": "Neutralize means to make something ineffective or harmless, while intensify, aggravate, and exacerbate all mean to make a situation or problem worse."
+  },
+  {
+    "content": "Which word means 'having or showing a lack of thought or intelligence'?",
+    "options": ["inane", "erudite", "learned", "astute"],
+    "answer": 1,
+    "details": "Inane means having or showing a lack of thought or intelligence, while erudite, learned, and astute all refer to being knowledgeable or showing good judgment."
+  },
+  {
+    "content": "Which word means 'to recover or regain something lost or taken'?",
+    "options": ["reclaim", "relinquish", "forfeit", "surrender"],
+    "answer": 1,
+    "details": "Reclaim means to recover or regain something lost or taken, while relinquish, forfeit, and surrender all refer to giving up or losing something."
+  },
+  {
+    "content": "Which word means 'to make something less harsh, severe, or violent'?",
+    "options": ["temper", "escalate", "aggravate", "intensify"],
+    "answer": 1,
+    "details": "Temper means to make something less harsh, severe, or violent, while escalate, aggravate, and intensify all mean to make a situation or problem worse."
+  },
+  {
+    "content": "Which word means 'to cause someone to have a wrong idea or impression about something'?",
+    "options": ["mislead", "enlighten", "inform", "educate"],
+    "answer": 1,
+    "details": "Mislead means to cause someone to have a wrong idea or impression about something, while enlighten, inform, and educate all refer to providing accurate information or knowledge."
+  },
+  {
+    "content": "Which word means 'to be a sign or indication of something'?",
+    "options": ["portend", "contradict", "disprove", "refute"],
+    "answer": 1,
+    "details": "Portend means to be a sign or indication of something, while contradict, disprove, and refute all refer to showing that something is false or incorrect."
+  },
+  {
+    "content": "Which word means 'to make something less important or valuable'?",
+    "options": ["depreciate", "enhance", "appreciate", "elevate"],
+    "answer": 1,
+    "details": "Depreciate means to make something less important or valuable, while enhance, appreciate, and elevate all mean to increase the value or importance of something."
+  },
+  {
+    "content": "Which word means 'a person who is new to a subject, skill, or belief'?",
+    "options": ["novice", "expert", "connoisseur", "authority"],
+    "answer": 1,
+    "details": "Novice means a person who is new to a subject, skill, or belief, while expert, connoisseur, and authority all refer to someone with extensive knowledge or experience in a particular field."
+  },
+  {
+    "content": "Which word means 'to prevent something from happening or someone from doing something'?",
+    "options": ["thwart", "facilitate", "enable", "assist"],
+    "answer": 1,
+    "details": "Thwart means to prevent something from happening or someone from doing something, while facilitate, enable, and assist all refer to helping or making it easier for something to happen."
+  },
+  {
+    "content": "Which word means 'to declare or state something as the truth'?",
+    "options": ["assert", "deny", "refute", "disclaim"],
+    "answer": 1,
+    "details": "Assert means to declare or state something as the truth, while deny, refute, and disclaim all refer to rejecting or disproving a statement or belief."
+  },
+  {
+    "content": "Which word means 'to make someone feel less important or valuable'?",
+    "options": ["belittle", "exalt", "glorify", "praise"],
+    "answer": 1,
+    "details": "Belittle means to make someone feel less important or valuable, while exalt, glorify, and praise all mean to show admiration or give positive recognition."
+  },
+  {
+    "content": "Which word means 'to encourage or support someone to do something'?",
+    "options": ["spur", "deter", "hinder", "impede"],
+    "answer": 1,
+    "details": "Spur means to encourage or support someone to do something, while deter, hinder, and impede all refer to preventing or making it difficult for someone to do something."
+  },
+  {
+    "content": "Which word means 'a feeling of deep admiration for someone based on their abilities, qualities, or achievements'?",
+    "options": ["esteem", "disdain", "contempt", "scorn"],
+    "answer": 1,
+    "details": "Esteem means a feeling of deep admiration for someone based on their abilities, qualities, or achievements, while disdain, contempt, and scorn all refer to feelings of dislike or disrespect."
+  }
+]
