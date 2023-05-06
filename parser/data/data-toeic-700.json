@@ -1,0 +1,342 @@
+[
+  {
+    "content": "選擇最適合填入空格的選項: Tom _____ the meeting room when his boss called.",
+    "options": ["was left", "has left", "had left", "leaving"],
+    "answer": 3,
+    "details": "在這種情況下，過去完成時(had left)是正確的，因為Tom在老闆打電話之前就已經離開了會議室。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The company _____ a new office building next year.",
+    "options": ["will be built", "is building", "will build", "built"],
+    "answer": 3,
+    "details": "在這裡，未來時態(will build)是正確的，因為這是將在明年發生的事情。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: If I _____ enough time, I would take a vacation.",
+    "options": ["have", "having", "had", "will have"],
+    "answer": 3,
+    "details": "在這種情況下，過去式(had)是正確的，因為這是一個與現實相反的條件句。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: She is really _____ about her presentation tomorrow.",
+    "options": ["nervous", "nervously", "nerve", "nerving"],
+    "answer": 1,
+    "details": "在這裡，形容詞(nervous)是正確的，因為它描述了她的感受。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: He _____ working on the project since last month.",
+    "options": ["is", "has been", "had been", "will be"],
+    "answer": 2,
+    "details": "在這種情況下，現在完成進行時(has been)是正確的，因為他從上個月開始一直在進行這個項目。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The new office building is _____ than the old one.",
+    "options": ["more large", "larger", "largest", "most large"],
+    "answer": 2,
+    "details": "在這裡，比較級(larger)是正確的，因為它比較了新舊辦公樓的大小。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: She said she _____ come to the party tonight.",
+    "options": ["won't", "wouldn't", "doesn't", "didn't"],
+    "answer": 1,
+    "details": "在這裡，否定未來時態(won't)是正確的，因為她表示她今晚不會去參加派對。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The employees were _____ when they heard about the company's success.",
+    "options": ["excite", "excited", "exciting", "excitedly"],
+    "answer": 2,
+    "details": "在這裡，形容詞(excited)是正確的，因為它描述了員工的情感。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: This is the _____ pizza I've ever had.",
+    "options": ["good", "better", "best", "well"],
+    "answer": 3,
+    "details": "在這裡，最高級(best)是正確的，因為它表示這是所吃過的最好的披薩。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: She asked if I _____ her email.",
+    "options": ["receive", "received", "had received", "has received"],
+    "answer": 3,
+    "details": "在這種情況下，過去完成時(had received)是正確的，因為這是一個間接問句，要求確認是否已收到電子郵件。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: He _____ TV when his friend called.",
+    "options": ["watched", "was watching", "watches", "has watched"],
+    "answer": 2,
+    "details": "在這裡，過去進行時(was watching)是正確的，因為他在朋友打電話時正在看電視。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The manager asked him to _____ the report by Friday.",
+    "options": ["finish", "finishing", "finished", "had finished"],
+    "answer": 1,
+    "details": "在這裡，原形動詞(finish)是正確的，因為在這種情況下需要使用動詞原型。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The project _____ before the deadline.",
+    "options": [
+      "must be completed",
+      "must complete",
+      "must have completed",
+      "must completed"
+    ],
+    "answer": 1,
+    "details": "在這種情況下，必須使用被動語態(must be completed)，因為需要強調項目必須在截止日期之前完成。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: She _____ to the meeting on time.",
+    "options": ["arrives", "will arrive", "arrived", "has arrived"],
+    "answer": 3,
+    "details": "在這裡，過去式(arrived)是正確的，因為需要描述她已經按時到達會議的事實。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The company is planning to _____ its products to new markets.",
+    "options": ["expand", "expanding", "expanded", "expansion"],
+    "answer": 1,
+    "details": "在這裡，原形動詞(expand)是正確的，因為這是公司對未來的計劃。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: It's important to _____ on time to avoid being late.",
+    "options": ["leave", "leaves", "leaving", "left"],
+    "answer": 1,
+    "details": "在這裡，原形動詞(leave)是正確的，因為這是一個建議或建議的表達。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: She _____ to the gym three times a week.",
+    "options": ["go", "goes", "gone", "went"],
+    "answer": 2,
+    "details": "在這裡，現在簡單時態(goes)是正確的，因為這是一個習慣性動作。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: You _____ pay for the tickets in advance.",
+    "options": ["needn't", "don't have to", "mustn't", "shouldn't"],
+    "answer": 2,
+    "details": "在這裡，選擇'不必'(don't have to)表示票不需要提前付款。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The package _____ by the courier yesterday.",
+    "options": ["delivers", "delivered", "was delivered", "has delivered"],
+    "answer": 3,
+    "details": "在這種情況下，過去被動語態(was delivered)是正確的，因為需要強調包裹已被快遞員送達。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: They _____ in the new office building by the end of the month.",
+    "options": ["move", "moves", "will move", "has moved"],
+    "answer": 3,
+    "details": "在這裡，未來時態(will move)是正確的，因為這是將在月底之前發生的事情。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The manager _____ a meeting with the employees tomorrow.",
+    "options": ["will be held", "will hold", "holds", "held"],
+    "answer": 2,
+    "details": "在這裡，未來時態(will hold)是正確的，因為這是將在明天舉行的會議。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: She _____ a new job last week.",
+    "options": ["started", "start", "has started", "starts"],
+    "answer": 1,
+    "details": "在這裡，過去式(started)是正確的，因為她是在上週開始了新工作。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: If the weather _____ bad, we will cancel the picnic.",
+    "options": ["is", "was", "will be", "has been"],
+    "answer": 1,
+    "details": "在這種情況下，現在簡單時態(is)是正確的，因為這是一個與現實相反的條件句。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The package will be sent as soon as the payment _____.",
+    "options": ["receives", "received", "is received", "has received"],
+    "answer": 3,
+    "details": "在這種情況下，被動語態(is received)是正確的，因為需要強調在付款收到後才會發送包裹。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: She _____ the report by the end of the day.",
+    "options": ["will finish", "finishes", "finished", "has finished"],
+    "answer": 1,
+    "details": "在這裡，未來時態(will finish)是正確的，因為這是將在一天結束之前完成的事情。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: They _____ the contract if the terms are acceptable.",
+    "options": ["sign", "signed", "will sign", "are signing"],
+    "answer": 3,
+    "details": "在這裡，未來時態(will sign)是正確的，因為這是在條款可以接受的情況下將簽署合同的情況。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: If they _____ earlier, they wouldn't have missed the train.",
+    "options": ["leave", "left", "had left", "would leave"],
+    "answer": 3,
+    "details": "在這種情況下，過去完成時(had left)是正確的，因為這是一個與過去事實相反的假設。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The workers _____ on strike since last week.",
+    "options": ["are", "were", "have been", "had been"],
+    "answer": 3,
+    "details": "在這裡，現在完成進行時(have been)是正確的，因為從上週開始，工人們一直在罷工。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: She _____ in the marketing department for five years.",
+    "options": ["worked", "works", "has worked", "had worked"],
+    "answer": 3,
+    "details": "在這裡，現在完成時(has worked)是正確的，因為她在市場部工作了五年，可能仍在繼續工作。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: He _____ the report when his computer crashed.",
+    "options": ["wrote", "was writing", "has written", "had written"],
+    "answer": 2,
+    "details": "在這裡，過去進行時(was writing)是正確的，因為他在電腦崩潰時正在撰寫報告。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The company _____ its sales targets for the next quarter.",
+    "options": ["sets", "set", "has set", "will set"],
+    "answer": 4,
+    "details": "在這裡，未來時態(will set)是正確的，因為這是對下一季度銷售目標的設定。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: If I _____ the CEO, I would invest in new technology.",
+    "options": ["am", "was", "were", "be"],
+    "answer": 3,
+    "details": "在這裡，過去式(were)是正確的，因為這是一個與現實相反的假設。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: They _____ to the conference if they receive an invitation.",
+    "options": ["will go", "go", "went", "have gone"],
+    "answer": 1,
+    "details": "在這裡，未來時態(will go)是正確的，因為這是在收到邀請後將參加會議的情況。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The product _____ before it is launched.",
+    "options": ["will be tested", "is tested", "tests", "tested"],
+    "answer": 1,
+    "details": "在這種情況下，將使用未來被動語態(will be tested)，因為需要強調產品將在推出之前進行測試。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: He _____ the project since last month.",
+    "options": [
+      "works on",
+      "worked on",
+      "has been working on",
+      "had been working on"
+    ],
+    "answer": 3,
+    "details": "在這裡，現在完成進行時(has been working on)是正確的，因為他從上個月開始一直在進行這個項目。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The meeting _____ at 9 am tomorrow.",
+    "options": ["starts", "started", "will start", "has started"],
+    "answer": 3,
+    "details": "在這裡，未來時態(will start)是正確的，因為會議將在明天上午9點開始。"
+  },
+  {
+    "content": "選擇最適合填入空格的選項: The deadline _____ extended by the manager.",
+    "options": ["was", "will be", "is", "had been"],
+    "answer": 2,
+    "details": "在這種情況下，未來被動語態(will be)是正確的，因為截止日期將由經理延長。"
+  },
+  {
+    "content": "選擇最適合的單字: The company needs to _____ its marketing strategy.",
+    "options": ["revisit", "repeat", "retain", "refund"],
+    "answer": 1,
+    "details": "在這裡，revisit(重新檢討)是正確的，因為公司需要重新檢討其行銷策略。"
+  },
+  {
+    "content": "選擇最適合的單字: The meeting has been _____ to next week.",
+    "options": ["postponed", "advanced", "simplified", "terminated"],
+    "answer": 1,
+    "details": "在這裡，postponed(延期)是正確的，因為會議已經延期到下週。"
+  },
+  {
+    "content": "選擇最適合的單字: The software update includes several _____ to improve performance.",
+    "options": ["enhancements", "arguments", "replacements", "payments"],
+    "answer": 1,
+    "details": "在這裡，enhancements(改進)是正確的，因為軟體更新包括了多項改進以提高性能。"
+  },
+  {
+    "content": "選擇最適合的單字: The company's _____ in the industry has been growing.",
+    "options": ["reputation", "subtraction", "division", "suggestion"],
+    "answer": 1,
+    "details": "在這裡，reputation(聲譽)是正確的，因為公司在行業中的聲譽一直在增長。"
+  },
+  {
+    "content": "選擇最適合的單字: The new employee must _____ a training program before starting work.",
+    "options": ["complete", "compete", "contrast", "contribute"],
+    "answer": 1,
+    "details": "在這裡，complete(完成)是正確的，因為新員工在開始工作之前必須完成培訓課程。"
+  },
+  {
+    "content": "選擇最適合的單字: The department will _____ additional resources to complete the project.",
+    "options": ["allocate", "debate", "postpone", "replace"],
+    "answer": 1,
+    "details": "在這裡，allocate(分配)是正確的，因為部門將分配額外資源來完成該項目。"
+  },
+  {
+    "content": "選擇最適合的單字: Please _____ the report for any errors before submitting it.",
+    "options": ["revise", "expand", "accompany", "prohibit"],
+    "answer": 1,
+    "details": "在這裡，revise(修訂)是正確的，因為在提交報告之前，請對報告進行檢查以查找任何錯誤。"
+  },
+  {
+    "content": "選擇最適合的單字: The project was a _____, and the company lost a lot of money.",
+    "options": ["success", "failure", "surprise", "requirement"],
+    "answer": 2,
+    "details": "在這裡，failure(失敗)是正確的，因為該項目是一個失敗，公司損失了大量資金。"
+  },
+  {
+    "content": "選擇最適合的單字: The manager was _____ with the team's performance.",
+    "options": ["disappointed", "replaced", "combined", "celebrated"],
+    "answer": 1,
+    "details": "在這裡，disappointed(失望)是正確的，因為經理對團隊的表現感到失望。"
+  },
+  {
+    "content": "選擇最適合的單字: The product's design was _____ after receiving customer feedback.",
+    "options": ["modified", "copied", "ignored", "included"],
+    "answer": 1,
+    "details": "在這裡，modified(修改)是正確的，因為在收到客戶反饋後，產品設計已經過修改。"
+  },
+  {
+    "content": "選擇最適合的單字: We have to _____ a new strategy to increase sales.",
+    "options": ["implement", "deny", "borrow", "postpone"],
+    "answer": 1,
+    "details": "在這裡，implement(實施)是正確的，因為我們必須實施一個新策略來提高銷售額。"
+  },
+  {
+    "content": "選擇最適合的單字: The company offers an attractive _____ package for new employees.",
+    "options": ["compensation", "competition", "complaint", "complication"],
+    "answer": 1,
+    "details": "在這裡，compensation(薪酬)是正確的，因為公司為新員工提供了有吸引力的薪酬待遇。"
+  },
+  {
+    "content": "選擇最適合的單字: The project was _____ due to a lack of funding.",
+    "options": ["launched", "cancelled", "expanded", "approved"],
+    "answer": 2,
+    "details": "在這裡，cancelled(取消)是正確的，因為該項目由於資金不足而被取消。"
+  },
+  {
+    "content": "選擇最適合的單字: The _____ of the new software version will take place next week.",
+    "options": ["launch", "completion", "reduction", "introduction"],
+    "answer": 1,
+    "details": "在這裡，launch(推出)是正確的，因為新軟體版本的推出將在下週進行。"
+  },
+  {
+    "content": "選擇最適合的單字: The company has seen a significant _____ in profits this year.",
+    "options": ["increase", "decrease", "pause", "combination"],
+    "answer": 1,
+    "details": "在這裡，increase(增加)是正確的，因為今年公司的利潤有顯著增加。"
+  },
+  {
+    "content": "選擇最適合的單字: She was _____ the position of marketing manager.",
+    "options": ["offered", "requested", "asked", "needed"],
+    "answer": 1,
+    "details": "在這裡，offered(被提供)是正確的，因為她被提供市場經理的職位。"
+  },
+  {
+    "content": "選擇最適合的單字: The team _____ closely with each other to complete the project on time.",
+    "options": ["cooperated", "competed", "argued", "ignored"],
+    "answer": 1,
+    "details": "在這裡，cooperated(合作)是正確的，因為團隊為了按時完成項目而密切合作。"
+  },
+  {
+    "content": "選擇最適合的單字: The company is looking for ways to _____ costs and increase efficiency.",
+    "options": ["cut", "raise", "combine", "adjust"],
+    "answer": 1,
+    "details": "在這裡，cut(削減)是正確的，因為公司正在尋找削減成本和提高效率的方法。"
+  }
+]
