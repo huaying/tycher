@@ -19,15 +19,6 @@ model Topic {
   updatedAt   DateTime? @updatedAt
 }
 
-model Tag {
-  id          Int         @id @default(autoincrement())
-  name        String
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime? @updatedAt
-
-  @@unique([name])
-}
-
 model QuestionSet {
   id          Int         @id @default(autoincrement())
   name        String?
@@ -42,19 +33,9 @@ model QuestionOnQuestionSet {
   questionId   Int  
 }
 
-model TagOnQuestion {
-  id           Int         @id @default(autoincrement())
-  questionId   Int
-  tagId        Int
-
-  @@unique([questionId, tagId])
-  @@index([questionId, tagId])
-}
-
 model Question {
   id           Int          @id @default(autoincrement())
   content      String
-  difficulty   Difficulty?
   topicId      Int?
   options      Json
   answer       Int
@@ -65,18 +46,20 @@ model Question {
   @@index([topicId])
 }
 
-model Record {
+model Test {
   id          Int       @id @default(autoincrement())
   userId      String
-  score       Float
-  recordData  Json
   timestamp   DateTime  @default(now())
 
   @@index([userId])
 }
 
-enum Difficulty {
-  EASY
-  MEDIUM
-  HARD
+model AnswerRecord {
+  id          Int       @id @default(autoincrement())
+  testId      Int
+  questionId  Int
+  answer      Int
+  timestamp   DateTime  @default(now())
+
+  @@index([testId])
 }
