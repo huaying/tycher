@@ -1,6 +1,6 @@
-import { type NextPage } from "next";
+import { GetServerSideProps, type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
+
 import { api } from "~/utils/api";
 import {
   SignedOut,
@@ -12,22 +12,27 @@ import {
 import { Fragment } from "react";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 
-export async function getServerSideProps() {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper();
 
-  await ssr.topic.getAll.prefetch();
+  const slug = context.params?.slug;
+
+  if (typeof slug !== "string") throw new Error("no slug");
+
+  await ssr.question.getByTopic.prefetch({ name: slug });
 
   return {
     props: {
       trpcState: ssr.dehydrate(),
+      slug,
     },
   };
-}
+};
 
-const Home: NextPage = () => {
-  const { data } = api.topic.getAll.useQuery();
-
+const Home: NextPage<{ slug: string }> = ({ slug }) => {
+  const { data } = api.question.getByTopic.useQuery({ name: slug });
   const user = useUser();
+
   return (
     <>
       <Head>
@@ -40,10 +45,13 @@ const Home: NextPage = () => {
           <UserButton />
           {user?.user?.fullName}
           <div>
-            {data?.map((topic) => (
-              <Fragment key={topic.id}>
+            {data?.map((question, idx) => (
+              <Fragment key={question.id}>
+                <div>{`${idx} ${question.content}`}</div>
                 <div>
-                  <Link href={`/topic/${topic.name}`}>{`${topic.name}`}</Link>
+                  {(question.options as string[]).map((option) => (
+                    <div>{option}</div>
+                  ))}
                 </div>
               </Fragment>
             ))}
