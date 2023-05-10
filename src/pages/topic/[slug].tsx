@@ -1,4 +1,4 @@
-import { GetServerSideProps, type NextPage } from "next";
+import { type GetServerSideProps, type NextPage } from "next";
 import Head from "next/head";
 
 import { api } from "~/utils/api";
@@ -49,8 +49,8 @@ const Home: NextPage<{ slug: string }> = ({ slug }) => {
               <Fragment key={question.id}>
                 <div>{`${idx} ${question.content}`}</div>
                 <div>
-                  {(question.options as string[]).map((option) => (
-                    <div>{option}</div>
+                  {(question.options as string[]).map((option, idx) => (
+                    <div key={idx}>{option}</div>
                   ))}
                 </div>
               </Fragment>
