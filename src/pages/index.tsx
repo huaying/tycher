@@ -12,7 +12,7 @@ import {
 import { Fragment } from "react";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 
-export async function getServerSideProps() {
+export const getServerSideProps = async () => {
   const ssr = generateSSRHelper();
 
   await ssr.topic.getAll.prefetch();
@@ -22,7 +22,7 @@ export async function getServerSideProps() {
       trpcState: ssr.dehydrate(),
     },
   };
-}
+};
 
 const Home: NextPage = () => {
   const { data } = api.topic.getAll.useQuery();
