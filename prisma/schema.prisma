@@ -33,6 +33,9 @@ model QuestionSet {
 model QuestionOnQuestionSet {
   id           Int         @id @default(autoincrement())
   questionId   Int  
+  questionSetId  Int
+
+  @@unique([questionId, questionSetId])
 }
 
 model Question {
@@ -51,18 +54,16 @@ model Question {
 model Exam {
   id          Int       @id @default(autoincrement())
   userId      String
+  questionSetId Int
+  answers       Json?
   timestamp   DateTime  @default(now())
+  updatedAt   DateTime? @updatedAt  
+  status     ExamStatus?
 
-  @@index([userId])
+  @@index([userId, questionSetId])
 }
 
-model AnswerRecord {
-  id          Int       @id @default(autoincrement())
-  testId      Int
-  questionId  Int
-  answer      Int
-  timestamp   DateTime  @default(now())
-
-  @@index([testId])
-  @@unique([testId, questionId])
+enum ExamStatus {
+    Quitted
+    Submitted
 }

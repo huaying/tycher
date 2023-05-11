@@ -1,4 +1,4 @@
-import { TRPCError } from "@trpc/server";
+import { Question } from "@prisma/client";
 import { z } from "zod";
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
@@ -7,16 +7,7 @@ export const questionRouter = createTRPCRouter({
   getByTopic: publicProcedure
     .input(z.object({ name: z.string() }))
     .query(async ({ ctx, input }) => {
-      const topic = await ctx.prisma.topic.findUnique({
-        where: { name: input.name },
-      });
-
-      if (!topic) {
-        throw new TRPCError({ code: "NOT_FOUND" });
-      }
-
-      return ctx.prisma.question.findMany({
-        where: { topicId: topic.id },
-      });
+      return ctx.prisma.$queryRaw<Question[]>`SELECT Question.
+      * FROM Question RIGHT JOIN Topic ON Question.topicId = Topic.id WHERE Topic.name = ${input.name} LIMIT 10;`;
     }),
 });

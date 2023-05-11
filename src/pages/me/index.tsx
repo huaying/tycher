@@ -9,31 +9,24 @@ import {
   SignedIn,
   UserButton,
 } from "@clerk/nextjs";
-import { Fragment } from "react";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
+import Link from "next/link";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
 
-  const slug = context.params?.slug;
-
-  if (typeof slug !== "string") throw new Error("no slug");
-
-  await ssr.topic.getTopic.prefetch({ name: slug });
+  await ssr.exam.getExams.prefetch();
 
   return {
     props: {
       trpcState: ssr.dehydrate(),
-      slug,
     },
   };
 };
 
-const Home: NextPage<{ slug: string }> = ({ slug }) => {
-  const { data: topic } = api.topic.getTopic.useQuery({ name: slug });
-  const { mutate } = api.exam.startExam.useMutation({
-    onSuccess: () => {},
-  });
+const Home: NextPage<{ examId: number }> = ({ examId }) => {
+  const { data: exams } = api.exam.getExams.useQuery();
+
   const user = useUser();
 
   return (
@@ -46,16 +39,10 @@ const Home: NextPage<{ slug: string }> = ({ slug }) => {
       <main className="flex min-h-screen flex-col items-center justify-center">
         <SignedIn>
           <UserButton />
-          {user?.user?.fullName}
-          {topic && (
-            <>
-              <div>{topic?.name}</div>
-              <div>{topic?.description}</div>
-              <button onClick={() => mutate({ topicId: topic?.id })}>
-                start
-              </button>
-            </>
-          )}
+          Hello {user?.user?.fullName}
+          {exams?.map((exam) => (
+            <Link href={`/exam/${exam.id}`}>{exam.timestamp.toString()}</Link>
+          ))}
         </SignedIn>
         <SignedOut>
           <SignInButton />

@@ -1,4 +1,4 @@
-import { type NextPage } from "next";
+import { type GetServerSideProps, type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import { api } from "~/utils/api";
@@ -12,8 +12,8 @@ import {
 import { Fragment } from "react";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 
-export const getServerSideProps = async () => {
-  const ssr = generateSSRHelper();
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const ssr = generateSSRHelper(context);
 
   await ssr.topic.getAll.prefetch();
 
