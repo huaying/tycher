@@ -10,7 +10,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import { ExamStatus } from "@prisma/client";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {

@@ -29,11 +29,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-const Home: NextPage<{ slug: string }> = ({ slug }) => {
+const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
   const { data: topic } = api.topic.getTopic.useQuery({ name: slug });
-  const { mutate } = api.exam.startExam.useMutation({
-    onSuccess: () => {},
-  });
+  const { mutate } = api.exam.startExam.useMutation();
   const user = useUser();
 
   return (
@@ -65,4 +63,4 @@ const Home: NextPage<{ slug: string }> = ({ slug }) => {
   );
 };
 
-export default Home;
+export default TopicPage;

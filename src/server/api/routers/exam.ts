@@ -1,4 +1,4 @@
-import { ExamStatus, Question } from "@prisma/client";
+import { ExamStatus, type Question } from "@prisma/client";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 

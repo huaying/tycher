@@ -1,4 +1,4 @@
-import { Question } from "@prisma/client";
+import { type Question } from "@prisma/client";
 import { z } from "zod";
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";

@@ -24,7 +24,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-const Home: NextPage<{ examId: number }> = ({ examId }) => {
+const MePage: NextPage = () => {
   const { data: exams } = api.exam.getExams.useQuery();
 
   const user = useUser();
@@ -41,7 +41,9 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
           <UserButton />
           Hello {user?.user?.fullName}
           {exams?.map((exam) => (
-            <Link href={`/exam/${exam.id}`}>{exam.timestamp.toString()}</Link>
+            <Link key={exam.id} href={`/exam/${exam.id}`}>
+              {exam.timestamp.toString()}
+            </Link>
           ))}
         </SignedIn>
         <SignedOut>
@@ -52,4 +54,4 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
   );
 };
 
-export default Home;
+export default MePage;
