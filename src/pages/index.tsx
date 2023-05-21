@@ -3,7 +3,7 @@ import Link from "next/link";
 import { api } from "~/utils/api";
 import { Fragment } from "react";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
-import Layout from "~/components/Layout";
+import Layout from "~/components/layout";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);

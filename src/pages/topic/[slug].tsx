@@ -2,7 +2,7 @@ import { type GetServerSideProps, type NextPage } from "next";
 import { useRouter } from "next/navigation";
 import { api } from "~/utils/api";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
-import Layout from "~/components/Layout";
+import Layout from "~/components/layout";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -22,11 +22,11 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 };
 
 const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
-  const { push } = useRouter();
+  const router = useRouter();
   const { data: topic } = api.topic.getTopic.useQuery({ name: slug });
   const { mutate, isLoading: isPreparingExam } = api.exam.startExam.useMutation(
     {
-      onSuccess: (exam) => push(`/exam/${exam.id}`),
+      onSuccess: (exam) => router.push(`/exam/${exam.id}`),
     }
   );
 

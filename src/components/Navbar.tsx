@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
@@ -12,7 +13,9 @@ export default function Navbar() {
           <UserButton afterSignOutUrl="/" />
         </SignedIn>
         <SignedOut>
-          <Link href="/sign-in">Sign In</Link>
+          <Link href="/sign-in">
+            <Button size="sm">Sign In</Button>
+          </Link>
         </SignedOut>
       </div>
     </header>

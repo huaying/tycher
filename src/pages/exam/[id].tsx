@@ -4,7 +4,7 @@ import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 import { Fragment, useState } from "react";
 import { ExamStatus } from "@prisma/client";
 import { useRouter } from "next/router";
-import Layout from "~/components/Layout";
+import Layout from "~/components/layout";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
