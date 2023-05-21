@@ -3,7 +3,7 @@ import { api } from "~/utils/api";
 import { useUser } from "@clerk/nextjs";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 import Link from "next/link";
-import AuthLayout from "~/components/AuthLayout";
+import Layout from "~/components/Layout";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -23,7 +23,7 @@ const MePage: NextPage = () => {
   const user = useUser();
 
   return (
-    <AuthLayout>
+    <Layout>
       Hello {user?.user?.fullName}
       {exams?.map((exam) => (
         <Link key={exam.id} href={`/exam/${exam.id}`}>
@@ -32,7 +32,7 @@ const MePage: NextPage = () => {
           <span>{exam.status ?? "Ongoing"}</span>
         </Link>
       ))}
-    </AuthLayout>
+    </Layout>
   );
 };
 

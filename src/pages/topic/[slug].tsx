@@ -2,7 +2,7 @@ import { type GetServerSideProps, type NextPage } from "next";
 import { useRouter } from "next/navigation";
 import { api } from "~/utils/api";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
-import AuthLayout from "~/components/AuthLayout";
+import Layout from "~/components/Layout";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -31,7 +31,7 @@ const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
   );
 
   return (
-    <AuthLayout>
+    <Layout>
       {topic && (
         <>
           <div>{topic?.name}</div>
@@ -45,7 +45,7 @@ const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
           )}
         </>
       )}
-    </AuthLayout>
+    </Layout>
   );
 };
 

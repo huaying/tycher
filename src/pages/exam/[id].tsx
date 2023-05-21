@@ -4,7 +4,7 @@ import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 import { Fragment, useState } from "react";
 import { ExamStatus } from "@prisma/client";
 import { useRouter } from "next/router";
-import AuthLayout from "~/components/AuthLayout";
+import Layout from "~/components/Layout";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -50,7 +50,7 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
   };
 
   return (
-    <AuthLayout>
+    <Layout>
       {exam?.status === ExamStatus.Submitted && (
         <div>
           Score{" "}
@@ -140,7 +140,7 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
           )}
         </>
       )}
-    </AuthLayout>
+    </Layout>
   );
 };
 
