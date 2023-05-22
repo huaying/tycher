@@ -3,6 +3,9 @@ import { useRouter } from "next/navigation";
 import { api } from "~/utils/api";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 import Layout from "~/components/layout";
+import { Hash } from "lucide-react";
+import { H1 } from "~/components/ui/typography";
+import { Button } from "~/components/ui/button";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -24,26 +27,34 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
   const router = useRouter();
   const { data: topic } = api.topic.getTopic.useQuery({ name: slug });
-  const { mutate, isLoading: isPreparingExam } = api.exam.startExam.useMutation(
-    {
-      onSuccess: (exam) => router.push(`/exam/${exam.id}`),
-    }
-  );
+  const {
+    mutate,
+    isLoading: isPreparingExam,
+    isSuccess: isPreparingExamSuccess,
+  } = api.exam.startExam.useMutation({
+    onSuccess: (exam) => router.push(`/exam/${exam.id}`),
+  });
 
   return (
     <Layout>
       {topic && (
-        <>
-          <div>{topic?.name}</div>
+        <div className="mt-[152px] flex flex-col items-center justify-center">
+          <div className="flex items-center gap-0.5">
+            <Hash size={24} className="text-yellow-500" />
+            <H1>{topic.name}</H1>
+          </div>
           <div>{topic?.description}</div>
-          {isPreparingExam ? (
-            <div>Preparing</div>
-          ) : (
-            <button onClick={() => mutate({ topicId: topic?.id })}>
-              start
-            </button>
-          )}
-        </>
+
+          <div className="mt-4">
+            {isPreparingExam || isPreparingExamSuccess ? (
+              <div>考試準備中...</div>
+            ) : (
+              <Button size="lg" onClick={() => mutate({ topicId: topic?.id })}>
+                開始考試
+              </Button>
+            )}
+          </div>
+        </div>
       )}
     </Layout>
   );

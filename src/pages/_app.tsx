@@ -3,6 +3,12 @@ import { type AppType } from "next/app";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
 import Head from "next/head";
+import { Zen_Old_Mincho } from "next/font/google";
+
+const zenOldMincho = Zen_Old_Mincho({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -12,7 +18,9 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <meta name="description" content="Learn new things from Quiz" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <main className={zenOldMincho.className}>
+        <Component {...pageProps} />
+      </main>
     </ClerkProvider>
   );
 };

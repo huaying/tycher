@@ -1,13 +1,17 @@
 import React, { type ReactNode } from "react";
 import Navbar from "./navbar";
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function Layout({
+  children,
+  noLogo,
+}: {
+  children: ReactNode;
+  noLogo?: boolean;
+}) {
   return (
     <>
-      <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-center">
-        {children}
-      </main>
+      <Navbar noLogo={noLogo} />
+      {children}
     </>
   );
 }
