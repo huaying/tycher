@@ -4,7 +4,7 @@ import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 import { Fragment, useState } from "react";
 import { ExamStatus } from "@prisma/client";
 import { useRouter } from "next/router";
-import Layout from "~/components/layout";
+import Layout from "~/components/layout1";
 import { Large, P } from "~/components/ui/typography";
 import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
 import { Label } from "~/components/ui/label";

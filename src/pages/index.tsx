@@ -3,7 +3,7 @@ import Link from "next/link";
 import { api } from "~/utils/api";
 import { Fragment } from "react";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
-import Layout from "~/components/layout";
+import Layout from "~/components/layout1";
 import { H1, Large } from "~/components/ui/typography";
 import { Hash } from "lucide-react";
 
