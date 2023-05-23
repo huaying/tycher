@@ -5,11 +5,12 @@ import { Fragment, useState } from "react";
 import { ExamStatus } from "@prisma/client";
 import { useRouter } from "next/router";
 import Layout from "~/components/layout";
-import { Large, P } from "~/components/ui/typography";
+import { H1, Large, P } from "~/components/ui/typography";
 import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
 import { Label } from "~/components/ui/label";
 import { cn } from "~/lib/utils";
 import { Badge } from "~/components/ui/badge";
+import { Hash } from "lucide-react";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -35,6 +36,7 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
   const { push } = useRouter();
   const exam = data?.exam;
   const questions = data?.questions;
+  const topic = data?.topic;
 
   const { mutate: updateAnswers } = api.exam.updateAnswers.useMutation();
   const { mutate: endExam } = api.exam.endExam.useMutation({
@@ -55,7 +57,11 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
 
   return (
     <Layout>
-      <div className="mx-auto mt-3 flex max-w-[550px] flex-col">
+      <div className="mx-auto mt-10 flex max-w-[550px] flex-col px-3">
+        <div className="mb-3 flex items-center gap-0.5">
+          <Hash size={24} className="text-yellow-500" />
+          <H1>{topic?.name}</H1>
+        </div>
         {exam?.status === ExamStatus.Submitted && (
           <Large className="my-3">
             Score{" "}
@@ -69,11 +75,11 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
         )}
         {questions && (
           <>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-3">
               {questions.map((question, questionIdx) => (
                 <div key={question.id}>
                   <P>{`${questionIdx + 1}. ${question.content}`}</P>
-                  <div className="flex flex-col gap-3 py-3">
+                  <div className="flex flex-col py-2">
                     <RadioGroup>
                       {(question.options as string[]).map(
                         (option, optionIdx) => (

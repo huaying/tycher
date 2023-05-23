@@ -1,21 +1,58 @@
-import { type Exam, ExamStatus, type Question } from "@prisma/client";
+import {
+  type Exam,
+  ExamStatus,
+  type Question,
+  type Topic,
+} from "@prisma/client";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 
 import { createTRPCRouter, protectedProcedure } from "~/server/api/trpc";
 
 export const examRouter = createTRPCRouter({
-  getExams: protectedProcedure.query(async ({ ctx }) => {
-    const exams = await ctx.prisma.$queryRaw<(Exam & { topicName: string })[]>`
-      SELECT Exam.*, Topic.name as topicName
-        FROM Exam 
-        JOIN QuestionSet ON Exam.questionSetId = QuestionSet.id
-        JOIN Topic ON QuestionSet.topicId = Topic.id
-        WHERE Exam.userId = ${ctx.auth.userId}
-    `;
+  getExams: protectedProcedure
+    .input(
+      z.object({
+        status: z.nativeEnum(ExamStatus).nullable(),
+        page: z.number(),
+      })
+    )
+    .query(async ({ ctx, input }) => {
+      const PAGE_SIZE = 10;
+      const queryExams = async (
+        userId: string,
+        page: number,
+        status: ExamStatus | null
+      ) => {
+        const offset = (page - 1) * PAGE_SIZE;
 
-    return exams;
-  }),
+        if (status === null) {
+          return await ctx.prisma.$queryRaw<(Exam & { topicName: string })[]>`
+            SELECT Exam.*, Topic.name as topicName
+              FROM Exam 
+              JOIN QuestionSet ON Exam.questionSetId = QuestionSet.id
+              JOIN Topic ON QuestionSet.topicId = Topic.id
+              WHERE Exam.userId = ${userId} AND Exam.status IS NULL LIMIT ${PAGE_SIZE} OFFSET ${offset}
+          `;
+        }
+
+        return await ctx.prisma.$queryRaw<(Exam & { topicName: string })[]>`
+            SELECT Exam.*, Topic.name as topicName
+              FROM Exam 
+              JOIN QuestionSet ON Exam.questionSetId = QuestionSet.id
+              JOIN Topic ON QuestionSet.topicId = Topic.id
+              WHERE Exam.userId = ${userId} AND Exam.status = ${status} LIMIT ${PAGE_SIZE} OFFSET ${offset}
+          `;
+      };
+
+      const exams = await queryExams(ctx.auth.userId, input.page, input.status);
+      const next = await queryExams(ctx.auth.userId, input.page, input.status);
+
+      return {
+        exams,
+        hasNext: next.length > 0,
+      };
+    }),
   getById: protectedProcedure
     .input(z.object({ examId: z.number() }))
     .query(async ({ ctx, input }) => {
@@ -30,6 +67,16 @@ export const examRouter = createTRPCRouter({
         });
       }
 
+      const topic = (
+        await ctx.prisma.$queryRaw<Topic[]>`
+            SELECT Topic.* 
+            FROM Topic 
+            JOIN QuestionSet 
+            ON Topic.id = QuestionSet.topicId
+            WHERE QuestionSet.id = ${exam.questionSetId} LIMIT 1
+        `
+      )?.[0];
+
       const questions = await ctx.prisma.$queryRaw<Question[]>`
           SELECT Question.* 
             FROM Question 
@@ -39,6 +86,7 @@ export const examRouter = createTRPCRouter({
         `;
 
       return {
+        topic,
         exam,
         questions,
       };
