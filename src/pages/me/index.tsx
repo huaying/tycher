@@ -3,7 +3,7 @@ import { api } from "~/utils/api";
 import { useUser } from "@clerk/nextjs";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 import Link from "next/link";
-import Layout from "~/components/layout1";
+import Layout from "~/components/layout";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);

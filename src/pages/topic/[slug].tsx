@@ -2,7 +2,7 @@ import { type GetServerSideProps, type NextPage } from "next";
 import { useRouter } from "next/navigation";
 import { api } from "~/utils/api";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
-import Layout from "~/components/layout1";
+import Layout from "~/components/layout";
 import { Hash } from "lucide-react";
 import { H1 } from "~/components/ui/typography";
 import { Button } from "~/components/ui/button";
