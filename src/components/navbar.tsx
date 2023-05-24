@@ -6,7 +6,7 @@ import { Large } from "./ui/typography";
 
 export default function Navbar({ noLogo }: { noLogo?: boolean }) {
   return (
-    <header className="m-3 flex items-center">
+    <header className="m-3 flex h-[36px] items-center">
       {!noLogo && (
         <Link href="/">
           <Large>Tycher來考試</Large>
@@ -17,7 +17,9 @@ export default function Navbar({ noLogo }: { noLogo?: boolean }) {
           <Link href="/me">
             <Large>我的考試</Large>
           </Link>
-          <UserButton afterSignOutUrl="/" />
+          <div className="h-[32px] w-[32px] rounded-full">
+            <UserButton afterSignOutUrl="/" />
+          </div>
         </SignedIn>
         <SignedOut>
           <Link href="/sign-in">

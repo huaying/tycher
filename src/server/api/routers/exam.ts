@@ -46,7 +46,11 @@ export const examRouter = createTRPCRouter({
       };
 
       const exams = await queryExams(ctx.auth.userId, input.page, input.status);
-      const next = await queryExams(ctx.auth.userId, input.page, input.status);
+      const next = await queryExams(
+        ctx.auth.userId,
+        input.page + 1,
+        input.status
+      );
 
       return {
         exams,

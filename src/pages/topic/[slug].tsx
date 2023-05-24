@@ -4,8 +4,10 @@ import { api } from "~/utils/api";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 import Layout from "~/components/layout";
 import { Hash } from "lucide-react";
-import { H1 } from "~/components/ui/typography";
+import { H1, Small } from "~/components/ui/typography";
 import { Button } from "~/components/ui/button";
+import { buildClerkProps } from "@clerk/nextjs/server";
+import { useAuth } from "@clerk/nextjs";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -18,6 +20,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   return {
     props: {
+      ...buildClerkProps(context.req),
       trpcState: ssr.dehydrate(),
       slug,
     },
@@ -26,6 +29,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
 const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
   const router = useRouter();
+  const auth = useAuth();
   const { data: topic } = api.topic.getTopic.useQuery({ name: slug });
   const {
     mutate,
@@ -46,7 +50,14 @@ const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
           <div>{topic?.description}</div>
 
           <div className="mt-4">
-            {isPreparingExam || isPreparingExamSuccess ? (
+            {!auth.isSignedIn ? (
+              <div className="flex flex-col items-center gap-4">
+                <Button size="lg" disabled>
+                  開始考試
+                </Button>
+                <Small>考試前請先登入</Small>
+              </div>
+            ) : isPreparingExam || isPreparingExamSuccess ? (
               <div>考試準備中...</div>
             ) : (
               <Button size="lg" onClick={() => mutate({ topicId: topic?.id })}>

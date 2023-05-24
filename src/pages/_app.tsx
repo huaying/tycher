@@ -7,7 +7,7 @@ import { Zen_Old_Mincho } from "next/font/google";
 
 const zenOldMincho = Zen_Old_Mincho({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700", "900"],
 });
 
 const MyApp: AppType = ({ Component, pageProps }) => {
