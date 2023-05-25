@@ -30,11 +30,11 @@ const Home: NextPage = () => {
         <H1 className="mb-8">Tycher 來考試</H1>
         <div className="flex max-w-[490px] flex-wrap justify-center gap-1 space-x-2">
           {data?.map((topic) => (
-            <Fragment key={topic.id}>
-              <Link href={`/topic/${topic.name}`}>
+            <Fragment key={topic}>
+              <Link href={`/topic/${topic}`}>
                 <div className="flex items-center gap-0.5">
                   <Hash size={16} className="text-yellow-500" />
-                  <Large>{topic.name}</Large>
+                  <Large>{topic}</Large>
                 </div>
               </Link>
             </Fragment>

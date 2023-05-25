@@ -27,34 +27,37 @@ export const examRouter = createTRPCRouter({
         const offset = (page - 1) * PAGE_SIZE;
 
         if (status === null) {
-          return await ctx.prisma.$queryRaw<(Exam & { topicName: string })[]>`
-            SELECT Exam.*, Topic.name as topicName
+          return await ctx.prisma.$queryRaw<
+            (Pick<Exam, "id" | "updatedAt"> & { topicName: string })[]
+          >`
+            SELECT Exam.id, Exam.updatedAt, Topic.name as topicName
               FROM Exam 
               JOIN QuestionSet ON Exam.questionSetId = QuestionSet.id
               JOIN Topic ON QuestionSet.topicId = Topic.id
-              WHERE Exam.userId = ${userId} AND Exam.status IS NULL LIMIT ${PAGE_SIZE} OFFSET ${offset}
-          `;
+              WHERE Exam.userId = ${userId} AND Exam.status IS NULL 
+              ORDER BY Exam.updatedAt DESC
+              LIMIT ${PAGE_SIZE + 1} OFFSET ${offset}
+            `;
         }
 
-        return await ctx.prisma.$queryRaw<(Exam & { topicName: string })[]>`
-            SELECT Exam.*, Topic.name as topicName
+        return await ctx.prisma.$queryRaw<
+          (Pick<Exam, "id" | "updatedAt"> & { topicName: string })[]
+        >`
+            SELECT Exam.id, Exam.updatedAt, Topic.name as topicName
               FROM Exam 
               JOIN QuestionSet ON Exam.questionSetId = QuestionSet.id
               JOIN Topic ON QuestionSet.topicId = Topic.id
-              WHERE Exam.userId = ${userId} AND Exam.status = ${status} LIMIT ${PAGE_SIZE} OFFSET ${offset}
+              WHERE Exam.userId = ${userId} AND Exam.status = ${status} 
+              ORDER BY Exam.updatedAt DESC
+              LIMIT ${PAGE_SIZE + 1} OFFSET ${offset}
           `;
       };
 
       const exams = await queryExams(ctx.auth.userId, input.page, input.status);
-      const next = await queryExams(
-        ctx.auth.userId,
-        input.page + 1,
-        input.status
-      );
 
       return {
-        exams,
-        hasNext: next.length > 0,
+        exams: exams.slice(0, PAGE_SIZE),
+        hasNext: exams.length > PAGE_SIZE,
       };
     }),
   getById: protectedProcedure
@@ -62,6 +65,11 @@ export const examRouter = createTRPCRouter({
     .query(async ({ ctx, input }) => {
       const exam = await ctx.prisma.exam.findFirst({
         where: { id: input.examId, userId: ctx.auth.userId },
+        select: {
+          answers: true,
+          status: true,
+          questionSetId: true,
+        },
       });
 
       if (!exam) {
@@ -71,15 +79,15 @@ export const examRouter = createTRPCRouter({
         });
       }
 
-      const topic = (
+      const topicName = (
         await ctx.prisma.$queryRaw<Topic[]>`
-            SELECT Topic.* 
+            SELECT Topic.name 
             FROM Topic 
             JOIN QuestionSet 
             ON Topic.id = QuestionSet.topicId
             WHERE QuestionSet.id = ${exam.questionSetId} LIMIT 1
         `
-      )?.[0];
+      )?.[0]?.name;
 
       const questions = await ctx.prisma.$queryRaw<Question[]>`
           SELECT Question.* 
@@ -90,9 +98,21 @@ export const examRouter = createTRPCRouter({
         `;
 
       return {
-        topic,
-        exam,
-        questions,
+        topicName,
+        exam: {
+          status: exam.status,
+          answers: exam.answers,
+        },
+        questions: questions.map((question) =>
+          exam.status === null
+            ? { content: question.content, options: question.options }
+            : {
+                content: question.content,
+                options: question.options,
+                answer: question.answer,
+                details: question.details,
+              }
+        ),
       };
     }),
   startExam: protectedProcedure
@@ -123,6 +143,9 @@ export const examRouter = createTRPCRouter({
 
         return await tx.exam.create({
           data: { userId, questionSetId: questionSet.id },
+          select: {
+            id: true,
+          },
         });
       });
     }),
@@ -135,8 +158,6 @@ export const examRouter = createTRPCRouter({
       })
     )
     .mutation(async ({ ctx, input }) => {
-      console.log(input);
-
       const exams = await ctx.prisma.exam.updateMany({
         where: {
           id: input.examId,

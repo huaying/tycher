@@ -75,7 +75,7 @@ const ExamTable = ({ status, btnStr = "繼續", scored }: ExamTableProps) => {
               </div>
             </TableCell>
             <TableCell className="p-2">
-              {format(exam.timestamp, "yyyy-MM-dd HH:mm:ss")}
+              {format(exam.updatedAt, "yyyy-MM-dd HH:mm:ss")}
             </TableCell>
             {scored && <TableCell className="p-2">??</TableCell>}
             <TableCell className="p-2 text-right">

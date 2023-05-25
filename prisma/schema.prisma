@@ -16,7 +16,7 @@ model Topic {
   name        String
   description String?     @db.Text
   createdAt   DateTime  @default(now())
-  updatedAt   DateTime? @updatedAt
+  updatedAt   DateTime  @updatedAt
 
   @@unique([name])
 }
@@ -27,7 +27,7 @@ model QuestionSet {
   topicId     Int
   private     Boolean?
   createdAt   DateTime  @default(now())
-  updatedAt   DateTime? @updatedAt
+  updatedAt   DateTime  @updatedAt
 }
 
 model QuestionOnQuestionSet {
@@ -46,7 +46,7 @@ model Question {
   answer       Int
   details      String       @db.Text
   createdAt   DateTime  @default(now())
-  updatedAt   DateTime? @updatedAt
+  updatedAt   DateTime  @updatedAt
 
   @@index([topicId])
 }
@@ -57,7 +57,7 @@ model Exam {
   questionSetId Int
   answers       Json?
   timestamp   DateTime  @default(now())
-  updatedAt   DateTime? @updatedAt  
+  updatedAt   DateTime  @updatedAt  
   status     ExamStatus?
 
   @@index([userId, questionSetId])

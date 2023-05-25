@@ -36,7 +36,6 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
   const { push } = useRouter();
   const exam = data?.exam;
   const questions = data?.questions;
-  const topic = data?.topic;
 
   const { mutate: updateAnswers } = api.exam.updateAnswers.useMutation();
   const { mutate: endExam } = api.exam.endExam.useMutation({
@@ -60,7 +59,7 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
       <div className="mx-auto mt-10 flex max-w-[550px] flex-col px-3">
         <div className="mb-3 flex items-center gap-0.5">
           <Hash size={24} className="text-yellow-500" />
-          <H1>{topic?.name}</H1>
+          <H1>{data?.topicName}</H1>
         </div>
         {exam?.status === ExamStatus.Submitted && (
           <Large className="my-3">
@@ -77,7 +76,7 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
           <>
             <div className="flex flex-col gap-3">
               {questions.map((question, questionIdx) => (
-                <div key={question.id}>
+                <div key={questionIdx}>
                   <P>{`${questionIdx + 1}. ${question.content}`}</P>
                   <div className="flex flex-col py-2">
                     <RadioGroup>
