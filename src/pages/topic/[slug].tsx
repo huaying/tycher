@@ -8,7 +8,7 @@ import { H1, Small } from "~/components/ui/typography";
 import { Button } from "~/components/ui/button";
 import { buildClerkProps } from "@clerk/nextjs/server";
 import { useAuth } from "@clerk/nextjs";
-import Footer from "~/components/footer";
+import SignInLink from "~/components/sign-in/sign-in-link";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -56,7 +56,14 @@ const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
                 <Button size="lg" disabled>
                   開始考試
                 </Button>
-                <Small>考試前請先登入</Small>
+                <Small>
+                  考試前請先
+                  <SignInLink>
+                    <span className="font-bold text-blue-600 underline">
+                      登入
+                    </span>
+                  </SignInLink>
+                </Small>
               </div>
             ) : isPreparingExam || isPreparingExamSuccess ? (
               <div>考試準備中...</div>

@@ -1,9 +1,8 @@
 import { type GetServerSideProps, type NextPage } from "next";
 import { api } from "~/utils/api";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { ExamStatus } from "@prisma/client";
-import { useRouter } from "next/router";
 import Layout from "~/components/layout";
 import { H1, Large, P } from "~/components/ui/typography";
 import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
@@ -11,9 +10,8 @@ import { Label } from "~/components/ui/label";
 import { cn } from "~/lib/utils";
 import { Badge } from "~/components/ui/badge";
 import { Hash } from "lucide-react";
-import { Button } from "~/components/ui/button";
 import { Separator } from "~/components/ui/separator";
-import Footer from "~/components/footer";
+import ActionsWithConfirm from "~/components/exam/actions-with-confirm";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -35,14 +33,16 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 };
 
 const Home: NextPage<{ examId: number }> = ({ examId }) => {
-  const { data } = api.exam.getById.useQuery({ examId });
-  const { push } = useRouter();
+  const { data, refetch } = api.exam.getById.useQuery({ examId });
   const exam = data?.exam;
   const questions = data?.questions;
 
   const { mutate: updateAnswers } = api.exam.updateAnswers.useMutation();
   const { mutate: endExam } = api.exam.endExam.useMutation({
-    onSuccess: () => push("/me"),
+    onSuccess: () => {
+      window.scrollTo(0, 0);
+      void refetch();
+    },
   });
 
   const [answers, setAnwsers] = useState<(number | null)[]>(
@@ -64,6 +64,10 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
           <Hash size={28} className="text-yellow-500" />
           <H1>{data?.topicName}</H1>
         </div>
+        {!!exam?.status && (
+          <div className="mb-4 text-sm">[考試已結束, 答案無法更改]</div>
+        )}
+
         {exam?.status === ExamStatus.Submitted && (
           <Large className="my-3">
             Score{" "}
@@ -131,29 +135,22 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
             </div>
             {exam?.status === null && (
               <div className="flex justify-end gap-3">
-                <Button
-                  variant="secondary"
-                  onClick={() => {
+                <ActionsWithConfirm
+                  onQuit={() => {
                     endExam({
                       examId,
                       answers,
                       status: ExamStatus.Quitted,
                     });
                   }}
-                >
-                  Quit
-                </Button>
-                <Button
-                  onClick={() =>
+                  onSubmit={() => {
                     endExam({
                       examId,
                       answers,
                       status: ExamStatus.Submitted,
-                    })
-                  }
-                >
-                  Submit
-                </Button>
+                    });
+                  }}
+                />
               </div>
             )}
           </>

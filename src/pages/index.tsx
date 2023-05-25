@@ -7,6 +7,7 @@ import Layout from "~/components/layout";
 import { H1, Large } from "~/components/ui/typography";
 import { Hash } from "lucide-react";
 import { buildClerkProps } from "@clerk/nextjs/server";
+import Image from "next/image";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -27,7 +28,8 @@ const Home: NextPage = () => {
   return (
     <Layout noLogo>
       <div className="mt-[152px] flex flex-col items-center justify-center">
-        <H1 className="mb-8">Tycher 來考試</H1>
+        <Image src="/tycher.svg" width={64} height={64} alt="Logo" />
+        <H1 className="mb-8 mt-4">Tycher 來考試</H1>
         <div className="flex max-w-[490px] flex-wrap justify-center gap-1 space-x-2">
           {data?.map((topic) => (
             <Fragment key={topic}>
