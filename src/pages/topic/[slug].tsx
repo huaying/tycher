@@ -8,6 +8,7 @@ import { H1, Small } from "~/components/ui/typography";
 import { Button } from "~/components/ui/button";
 import { buildClerkProps } from "@clerk/nextjs/server";
 import { useAuth } from "@clerk/nextjs";
+import Footer from "~/components/footer";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);

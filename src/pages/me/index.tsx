@@ -19,6 +19,7 @@ import {
 import { Button } from "~/components/ui/button";
 import { useRouter } from "next/router";
 import { Hash } from "lucide-react";
+import Footer from "~/components/footer";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);

@@ -11,6 +11,9 @@ import { Label } from "~/components/ui/label";
 import { cn } from "~/lib/utils";
 import { Badge } from "~/components/ui/badge";
 import { Hash } from "lucide-react";
+import { Button } from "~/components/ui/button";
+import { Separator } from "~/components/ui/separator";
+import Footer from "~/components/footer";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -57,8 +60,8 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
   return (
     <Layout>
       <div className="mx-auto mt-10 flex max-w-[550px] flex-col px-3">
-        <div className="mb-3 flex items-center gap-0.5">
-          <Hash size={24} className="text-yellow-500" />
+        <div className="mb-8 flex items-center gap-0.5">
+          <Hash size={28} className="text-yellow-500" />
           <H1>{data?.topicName}</H1>
         </div>
         {exam?.status === ExamStatus.Submitted && (
@@ -74,7 +77,7 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
         )}
         {questions && (
           <>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col">
               {questions.map((question, questionIdx) => (
                 <div key={questionIdx}>
                   <P>{`${questionIdx + 1}. ${question.content}`}</P>
@@ -100,11 +103,11 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
                               className={cn(
                                 exam?.status !== null &&
                                   question.answer === optionIdx + 1 &&
-                                  "text-green-600",
+                                  "font-bold text-green-600",
                                 exam?.status !== null &&
                                   answers[questionIdx] === optionIdx &&
                                   question.answer !== optionIdx + 1 &&
-                                  "text-red-600"
+                                  "font-bold text-red-600"
                               )}
                             >
                               {option}
@@ -117,41 +120,41 @@ const Home: NextPage<{ examId: number }> = ({ examId }) => {
                   {exam?.status !== null && (
                     <div className="py-2">
                       <Badge variant="outline">解答</Badge>
-                      <div className="mt-2">{question.details}</div>
+                      <div className="mt-2 text-sm">{question.details}</div>
                     </div>
+                  )}
+                  {questionIdx < questions.length - 1 && (
+                    <Separator className="my-4" />
                   )}
                 </div>
               ))}
             </div>
             {exam?.status === null && (
-              <>
-                <div>
-                  <button
-                    onClick={() => {
-                      endExam({
-                        examId,
-                        answers,
-                        status: ExamStatus.Quitted,
-                      });
-                    }}
-                  >
-                    Quit
-                  </button>
-                </div>
-                <div>
-                  <button
-                    onClick={() =>
-                      endExam({
-                        examId,
-                        answers,
-                        status: ExamStatus.Submitted,
-                      })
-                    }
-                  >
-                    Submit
-                  </button>
-                </div>
-              </>
+              <div className="flex justify-end gap-3">
+                <Button
+                  variant="secondary"
+                  onClick={() => {
+                    endExam({
+                      examId,
+                      answers,
+                      status: ExamStatus.Quitted,
+                    });
+                  }}
+                >
+                  Quit
+                </Button>
+                <Button
+                  onClick={() =>
+                    endExam({
+                      examId,
+                      answers,
+                      status: ExamStatus.Submitted,
+                    })
+                  }
+                >
+                  Submit
+                </Button>
+              </div>
             )}
           </>
         )}
