@@ -19,6 +19,7 @@ import {
 import { Button } from "~/components/ui/button";
 import { useRouter } from "next/router";
 import { Hash } from "lucide-react";
+import { buildClerkProps } from "@clerk/nextjs/server";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
@@ -27,6 +28,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   return {
     props: {
+      ...buildClerkProps(context.req),
       trpcState: ssr.dehydrate(),
     },
   };
