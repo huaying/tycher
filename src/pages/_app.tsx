@@ -3,6 +3,7 @@ import { type AppType } from "next/app";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 import { Zen_Old_Mincho } from "next/font/google";
 
 const zenOldMincho = Zen_Old_Mincho({
@@ -12,16 +13,19 @@ const zenOldMincho = Zen_Old_Mincho({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <ClerkProvider {...pageProps}>
-      <Head>
-        <title>Tycher</title>
-        <meta name="description" content="Learn new things from Quiz" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={zenOldMincho.className}>
-        <Component {...pageProps} />
-      </main>
-    </ClerkProvider>
+    <>
+      <ClerkProvider {...pageProps}>
+        <Head>
+          <title>Tycher</title>
+          <meta name="description" content="Learn new things from Quiz" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <main className={zenOldMincho.className}>
+          <Component {...pageProps} />
+        </main>
+      </ClerkProvider>
+      <Analytics />
+    </>
   );
 };
 
