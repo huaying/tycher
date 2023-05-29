@@ -3,6 +3,7 @@ import {
   ExamStatus,
   type Question,
   type Topic,
+  QuestionOnQuestionSet,
 } from "@prisma/client";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
@@ -28,9 +29,9 @@ export const examRouter = createTRPCRouter({
 
         if (status === null) {
           return await ctx.prisma.$queryRaw<
-            (Pick<Exam, "id" | "updatedAt"> & { topicName: string })[]
+            (Pick<Exam, "id" | "score" | "updatedAt"> & { topicName: string })[]
           >`
-            SELECT Exam.id, Exam.updatedAt, Topic.name as topicName
+            SELECT Exam.id, Exam.score, Exam.updatedAt, Topic.name as topicName
               FROM Exam 
               JOIN QuestionSet ON Exam.questionSetId = QuestionSet.id
               JOIN Topic ON QuestionSet.topicId = Topic.id
@@ -41,9 +42,9 @@ export const examRouter = createTRPCRouter({
         }
 
         return await ctx.prisma.$queryRaw<
-          (Pick<Exam, "id" | "updatedAt"> & { topicName: string })[]
+          (Pick<Exam, "id" | "score" | "updatedAt"> & { topicName: string })[]
         >`
-            SELECT Exam.id, Exam.updatedAt, Topic.name as topicName
+            SELECT Exam.id, Exam.score, Exam.updatedAt, Topic.name as topicName
               FROM Exam 
               JOIN QuestionSet ON Exam.questionSetId = QuestionSet.id
               JOIN Topic ON QuestionSet.topicId = Topic.id
@@ -158,7 +159,43 @@ export const examRouter = createTRPCRouter({
       })
     )
     .mutation(async ({ ctx, input }) => {
-      const exams = await ctx.prisma.exam.updateMany({
+      const exam:
+        | (Exam & {
+            questionSet: {
+              questions: (QuestionOnQuestionSet & {
+                question: Question;
+              })[];
+            };
+          })
+        | null = await ctx.prisma.exam.findFirst({
+        where: { id: input.examId },
+        include: {
+          questionSet: {
+            select: {
+              questions: {
+                orderBy: {
+                  id: "asc",
+                },
+                include: {
+                  question: true,
+                },
+              },
+            },
+          },
+        },
+      });
+
+      if (exam === null) {
+        throw new TRPCError({ code: "NOT_FOUND" });
+      }
+
+      const questions = exam.questionSet.questions.map((data) => data.question);
+      const score = questions.filter(
+        (question, idx) =>
+          question.answer === ((exam.answers as number[])[idx] ?? -1) + 1
+      ).length;
+
+      const updated = await ctx.prisma.exam.updateMany({
         where: {
           id: input.examId,
           userId: ctx.auth.userId,
@@ -169,10 +206,11 @@ export const examRouter = createTRPCRouter({
         data: {
           answers: input.answers,
           status: input.status,
+          score,
         },
       });
 
-      if (exams.count === 1) {
+      if (updated.count === 1) {
         return {
           examId: input.examId,
         };

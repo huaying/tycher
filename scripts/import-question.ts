@@ -49,13 +49,11 @@ async function parseFile(filePath: string, topic: string) {
   }
 }
 
-async function parse() {
+function parse() {
   try {
-    // const files = fs.readdirSync(path.join(__dirname, "data"));
-
-    files.forEach(async ([filename, topic]) => {
+    files.forEach(([filename, topic]) => {
       const filePath = path.join(__dirname, "data", filename);
-      parseFile(filePath, topic);
+      void parseFile(filePath, topic);
     });
   } catch (err) {
     console.error(err);

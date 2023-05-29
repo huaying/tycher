@@ -79,7 +79,7 @@ const ExamTable = ({ status, btnStr = "繼續", scored }: ExamTableProps) => {
             <TableCell className="p-2">
               {format(exam.updatedAt, "yyyy-MM-dd HH:mm:ss")}
             </TableCell>
-            {scored && <TableCell className="p-2">??</TableCell>}
+            {scored && <TableCell className="p-2">{exam.score}/10</TableCell>}
             <TableCell className="p-2 text-right">
               <Button
                 size="sm"
@@ -141,7 +141,7 @@ const MePage: NextPage = () => {
             <ExamTable status={status} />
           </TabsContent>
           <TabsContent value="Submitted">
-            <ExamTable status={status} btnStr="查看" />
+            <ExamTable status={status} btnStr="查看" scored />
           </TabsContent>
           <TabsContent value="Quitted">
             <ExamTable status={status} btnStr="查看" />

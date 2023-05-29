@@ -26,6 +26,8 @@ model QuestionSet {
   name        String?
   topicId     Int
   private     Boolean?
+  questions   QuestionOnQuestionSet[]
+  exams       Exam[]
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 }
@@ -33,9 +35,12 @@ model QuestionSet {
 model QuestionOnQuestionSet {
   id           Int         @id @default(autoincrement())
   questionId   Int  
+  question      Question  @relation(fields: [questionId], references: [id])
   questionSetId  Int
-
+  questionSet   QuestionSet @relation(fields: [questionSetId], references: [id])
+  
   @@unique([questionId, questionSetId])
+  @@index([questionSetId])
 }
 
 model Question {
@@ -44,6 +49,7 @@ model Question {
   topicId      Int?
   options      Json
   answer       Int
+  questionSets QuestionOnQuestionSet[]
   details      String       @db.Text
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
@@ -55,12 +61,14 @@ model Exam {
   id          Int       @id @default(autoincrement())
   userId      String
   questionSetId Int
+  questionSet   QuestionSet @relation(fields: [questionSetId], references: [id])
   answers       Json?
   timestamp   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt  
+  updatedAt   DateTime  @updatedAt
+  score       Int?
   status     ExamStatus?
 
-  @@index([userId, questionSetId])
+  @@index([questionSetId, userId])
 }
 
 enum ExamStatus {

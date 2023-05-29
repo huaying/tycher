@@ -8,7 +8,8 @@
     "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start",
-    "parse": "ts-node ./parser/questionParser"
+    "import-questions": "ts-node ./scripts/import-questions",
+    "score": "ts-node ./scripts/cal-score"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.17.1",
