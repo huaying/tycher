@@ -9,16 +9,12 @@ export default function Page() {
     ? router.query.redirect[0]
     : router.query.redirect;
 
-  if (redirect && typeof window !== "undefined") {
-    window.sessionStorage.setItem("sign-in-redirect", redirect);
-  }
-
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center">
       <H1 className="mb-8">Tycher 來考試</H1>
       <SignIn
         signUpUrl="/sign-up"
-        redirectUrl="/sign-in/redirect"
+        redirectUrl={redirect}
         appearance={{
           elements: {
             footer: "hidden -mt-8",

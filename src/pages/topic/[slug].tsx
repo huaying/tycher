@@ -17,7 +17,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   if (typeof slug !== "string") throw new Error("no slug");
 
-  await ssr.topic.getTopic.prefetch({ name: slug });
+  await ssr.topic.getTopic.prefetch({ slug });
 
   return {
     props: {
@@ -31,7 +31,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
   const router = useRouter();
   const auth = useAuth();
-  const { data: topic } = api.topic.getTopic.useQuery({ name: slug });
+  const { data: topic } = api.topic.getTopic.useQuery({ slug });
   const {
     mutate,
     isLoading: isPreparingExam,

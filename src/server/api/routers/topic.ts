@@ -3,14 +3,13 @@ import { z } from "zod";
 
 export const topicRouter = createTRPCRouter({
   getAll: publicProcedure.query(async ({ ctx }) => {
-    const topics = await ctx.prisma.topic.findMany({ select: { name: true } });
-    return topics.map((topic) => topic.name);
+    return ctx.prisma.topic.findMany({ select: { name: true, slug: true } });
   }),
   getTopic: publicProcedure
-    .input(z.object({ name: z.string() }))
+    .input(z.object({ slug: z.string() }))
     .query(({ ctx, input }) => {
       return ctx.prisma.topic.findUnique({
-        where: { name: input.name },
+        where: { slug: input.slug },
         select: { name: true, description: true, id: true },
       });
     }),

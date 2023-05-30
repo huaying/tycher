@@ -23,7 +23,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 };
 
 const Home: NextPage = () => {
-  const { data } = api.topic.getAll.useQuery();
+  const { data: topics } = api.topic.getAll.useQuery();
 
   return (
     <Layout noLogo>
@@ -31,12 +31,12 @@ const Home: NextPage = () => {
         <Image src="/tycher.svg" width={64} height={64} alt="Logo" />
         <H1 className="mb-8 mt-4">Tycher 來考試</H1>
         <div className="flex max-w-[490px] flex-wrap justify-center gap-1 space-x-2">
-          {data?.map((topic) => (
-            <Fragment key={topic}>
-              <Link href={`/topic/${topic}`}>
+          {topics?.map((topic) => (
+            <Fragment key={topic.slug}>
+              <Link href={`/topic/${topic.slug}`}>
                 <div className="flex items-center gap-0.5">
                   <Hash size={16} className="text-yellow-500" />
-                  <Large>{topic}</Large>
+                  <Large>{topic.name}</Large>
                 </div>
               </Link>
             </Fragment>

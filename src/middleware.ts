@@ -17,6 +17,5 @@ export const config = {
      */
     "/(.*?trpc.*?|(?!static|.*\\..*|_next|favicon.ico).*)",
     "/",
-    "/sign-in/redirect",
   ],
 };
