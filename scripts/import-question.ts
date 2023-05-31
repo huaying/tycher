@@ -7,6 +7,7 @@ interface Question {
   options: string[];
   answer: number;
   details: string;
+  uuid: string;
 }
 
 const prisma = new PrismaClient();
@@ -27,27 +28,48 @@ const files = [
   ["data-ui-ux.json", "UIUX", "uiux"],
 ] as const;
 
-async function parseFile(filePath: string, topic: string, slug: string) {
+async function parseFile(filePath: string, topicName: string, slug: string) {
   const rawData = fs.readFileSync(filePath, "utf8");
   const data = JSON.parse(rawData) as Question[];
   try {
-    const topicObj = await prisma.topic.upsert({
-      where: { name: topic },
-      update: {
-        name: topic,
-        slug,
-      },
-      create: {
-        name: topic,
-        slug,
-      },
+    const topic = await prisma.topic.findFirst({
+      where: { slug },
     });
-    // await prisma.question.createMany({
-    //   data: data.map((question) => ({
-    //     ...question,
-    //     topicId: topicObj.id,
-    //   })),
-    // });
+
+    if (topic) {
+      await prisma.topic.update({
+        where: { slug },
+        data: {
+          name: topicName,
+          slug,
+        },
+      });
+      await prisma.$transaction(
+        data.map((question) =>
+          prisma.question.update({
+            where: {
+              uuid: question.uuid,
+            },
+            data: {
+              ...question,
+            },
+          })
+        )
+      );
+    } else {
+      const topic = await prisma.topic.create({
+        data: {
+          name: topicName,
+          slug,
+        },
+      });
+      await prisma.question.createMany({
+        data: data.map((question) => ({
+          ...question,
+          topicId: topic.id,
+        })),
+      });
+    }
   } catch (err) {
     console.log(err);
   }

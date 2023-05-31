@@ -1,319 +1,566 @@
 [
   {
-    "content": "何者為網頁瀏覽器？",
     "options": [
-      "Google Chrome",
+      "GitHub",
+      "Google Drive",
+      "Dropbox",
+      "Microsoft OneDrive"
+    ],
+    "content": "何者是常見的程式碼儲存庫？",
+    "answer": 1,
+    "details": "GitHub 是一個常見的程式碼儲存庫，用於儲存和分享程式碼、協作開發等。",
+    "uuid": "0b4d7f62-1a5a-49e9-9ba5-cece0b76dabd"
+  },
+  {
+    "options": [
+      "Python",
+      "Windows Task Manager",
+      "HTML",
+      "CSS"
+    ],
+    "content": "以下何者是一種作業系統的應用程式？",
+    "answer": 2,
+    "details": "Windows Task Manager 是 Windows 作業系統的一個應用程式，用於管理進程、服務和系統效能。",
+    "uuid": "1746b4f9-ba49-48e7-b91a-2233120eb8eb"
+  },
+  {
+    "options": [
+      "FTP",
       "Microsoft Word",
       "Adobe Photoshop",
-      "Windows 10"
+      "Excel"
     ],
+    "content": "下列何者是一種網路協定？",
     "answer": 1,
-    "details": "Google Chrome 是一款網頁瀏覽器，用於瀏覽網頁。"
+    "details": "FTP（檔案傳輸協定）是一種網路協定，用於在網路上傳輸檔案。",
+    "uuid": "1d870670-8d50-438a-b293-72abafaea4c6"
   },
   {
-    "content": "下列哪個連接埠用於網路連接？",
-    "options": ["USB", "HDMI", "VGA", "RJ45"],
+    "options": [
+      "蠕蟲病毒",
+      "PDF",
+      "CSS",
+      "XML"
+    ],
+    "content": "下列何者是一種電腦病毒？",
+    "answer": 1,
+    "details": "蠕蟲病毒是一種電腦病毒，能自我複製並在網路上傳播，影響電腦性能和資料安全。",
+    "uuid": "22a708cc-32c9-4acf-88e3-8025cb6aee96"
+  },
+  {
+    "options": [
+      "RAM",
+      "CPU",
+      "GPU",
+      "硬碟"
+    ],
+    "content": "下列哪種裝置通常用於儲存作業系統？",
     "answer": 4,
-    "details": "RJ45 連接埠用於有線網路連接，通常與乙太網路（Ethernet）標準一起使用。"
+    "details": "硬碟通常用於儲存作業系統、應用程式和使用者資料等。",
+    "uuid": "30d7993b-b691-4acd-8386-978feddcebd6"
   },
   {
-    "content": "以下哪個應用程式用於文字處理？",
     "options": [
       "Microsoft Word",
       "Adobe Photoshop",
       "Google Chrome",
       "Windows Media Player"
     ],
+    "content": "以下哪個應用程式用於文字處理？",
     "answer": 1,
-    "details": "Microsoft Word 是一個文字處理應用程式，用於編輯和排版文件。"
+    "details": "Microsoft Word 是一個文字處理應用程式，用於編輯和排版文件。",
+    "uuid": "33d0a063-c6a8-416c-94e9-09dccdf334cf"
   },
   {
-    "content": "何者為電子郵件的通訊協定？",
-    "options": ["HTTP", "IMAP", "TCP", "UDP"],
-    "answer": 2,
-    "details": "IMAP（Internet Message Access Protocol）是一個電子郵件通訊協定，用於接收和管理郵件。"
-  },
-  {
-    "content": "電腦中的 ROM 主要用途是？",
-    "options": ["暫存資料", "長期儲存資料", "儲存 BIOS 資訊", "處理數據"],
-    "answer": 3,
-    "details": "ROM（唯讀記憶體）主要用於儲存 BIOS（基本輸入輸出系統）資訊，通常不可修改。"
-  },
-  {
-    "content": "下列何者是網路拓撲結構？",
-    "options": ["星型拓撲", "階層式拓撲", "蜘蛛網拓撲", "串聯拓撲"],
-    "answer": 1,
-    "details": "星型拓撲是一種常見的網路拓撲結構，中央節點連接到各個外圍節點。"
-  },
-  {
-    "content": "下列哪個網路傳輸媒介的速度最快？",
-    "options": ["雙絞線", "同軸電纜", "光纖", "無線網路"],
-    "answer": 3,
-    "details": "光纖具有傳輸速度快、抗干擾性強的特點，遠高於其他傳輸媒介。"
-  },
-  {
-    "content": "何者是開放原始碼軟體？",
     "options": [
-      "Microsoft Office",
-      "Windows 10",
-      "Adobe Creative Suite",
-      "Linux"
+      "RAM",
+      "CPU",
+      "USB 隨身碟",
+      "GPU"
     ],
-    "answer": 4,
-    "details": "Linux 是一個開放原始碼的作業系統，其原始碼可以被任何人查看、修改和分發。"
-  },
-  {
-    "content": "下列何者不是程式設計語言？",
-    "options": ["Python", "Java", "HTML", "C++"],
-    "answer": 3,
-    "details": "HTML 是一種標記語言，用於建立網頁內容，而非一種程式設計語言。"
-  },
-  {
-    "content": "下列哪種裝置通常用於儲存作業系統？",
-    "options": ["RAM", "CPU", "GPU", "硬碟"],
-    "answer": 4,
-    "details": "硬碟通常用於儲存作業系統、應用程式和使用者資料等。"
-  },
-  {
-    "content": "何者屬於惡意軟體（malware）？",
-    "options": ["防火牆", "木馬", "瀏覽器", "搜尋引擎"],
-    "answer": 2,
-    "details": "木馬是一種惡意軟體，通常以正常軟體的外觀出現，但具有破壞性或竊取資訊的功能。"
-  },
-  {
-    "content": "下列何者為無線網路標準？",
-    "options": ["Wi-Fi", "USB", "HDMI", "VGA"],
-    "answer": 1,
-    "details": "Wi-Fi 是一種無線網路標準，通常用於家庭、辦公室和公共場所的網路連接。"
-  },
-  {
-    "content": "哪個概念代表電腦系統能夠在短時間內處理大量資訊？",
-    "options": ["效能", "擴充性", "可靠性", "多工"],
-    "answer": 1,
-    "details": "效能是指電腦系統在短時間內處理資訊的能力，通常用來衡量系統的運行速度。"
-  },
-  {
-    "content": "下列哪個單位用於表示電腦處理器速度？",
-    "options": ["Hz", "bps", "dpi", "ppi"],
-    "answer": 1,
-    "details": "Hz（赫茲）是處理器速度的單位，表示每秒進行的運算次數。"
-  },
-  {
-    "content": "何者為電腦中的圖形處理單元？",
-    "options": ["CPU", "GPU", "RAM", "SSD"],
-    "answer": 2,
-    "details": "GPU（圖形處理單元）是電腦中專門用於處理圖形和影像的部件。"
-  },
-  {
-    "content": "何者是作業系統的功能？",
-    "options": ["儲存資料", "管理硬體資源", "編輯文字", "處理圖像"],
-    "answer": 2,
-    "details": "作業系統的主要功能是管理硬體資源，包括 CPU、記憶體、輸入輸出裝置等。"
-  },
-  {
-    "content": "下列哪個是一個雲端運算服務？",
-    "options": [
-      "Google Drive",
-      "Microsoft Word",
-      "Adobe Reader",
-      "Internet Explorer"
-    ],
-    "answer": 1,
-    "details": "Google Drive 是一個雲端運算服務，用於儲存和共享檔案。"
-  },
-  {
-    "content": "何者是電腦網路的主要功能？",
-    "options": ["儲存資料", "顯示圖像", "播放音樂", "資料交換和通訊"],
-    "answer": 4,
-    "details": "電腦網路的主要功能是實現資料交換和通訊，包括檔案共享、協同作業等。"
-  },
-  {
-    "content": "下列哪個是電腦的中央處理器？",
-    "options": ["CPU", "GPU", "RAM", "ROM"],
-    "answer": 1,
-    "details": "CPU（中央處理器）是電腦中負責執行指令和處理數據的核心部件。"
-  },
-  {
-    "content": "何者是常見的程式碼儲存庫？",
-    "options": ["GitHub", "Google Drive", "Dropbox", "Microsoft OneDrive"],
-    "answer": 1,
-    "details": "GitHub 是一個常見的程式碼儲存庫，用於儲存和分享程式碼、協作開發等。"
-  },
-  {
-    "content": "下列何者屬於電腦的輸入裝置？",
-    "options": ["滑鼠", "螢幕", "音箱", "印表機"],
-    "answer": 1,
-    "details": "滑鼠是電腦的輸入裝置，用於輸入和控制電腦操作。"
-  },
-  {
-    "content": "何者是一種物件導向程式設計語言？",
-    "options": ["Python", "HTML", "CSS", "XML"],
-    "answer": 1,
-    "details": "Python 是一種物件導向程式設計語言，支援類別、繼承和多型等物件導向特性。"
-  },
-  {
-    "content": "何者是一種資料庫管理系統？",
-    "options": ["MySQL", "JavaScript", "Notepad++", "WinRAR"],
-    "answer": 1,
-    "details": "MySQL 是一種開源的關聯式資料庫管理系統，用於儲存、檢索和管理資料。"
-  },
-  {
-    "content": "以下哪個是一個網路協定？",
-    "options": ["HTTP", "RAM", "SSD", "GPU"],
-    "answer": 1,
-    "details": "HTTP（超文本傳輸協定）是一個網路協定，用於在網際網路上傳輸超文本資料。"
-  },
-  {
-    "content": "何者是電子郵件協定的一種？",
-    "options": ["SMTP", "TCP", "UDP", "IP"],
-    "answer": 1,
-    "details": "SMTP（簡易郵件傳輸協定）是一種電子郵件協定，用於傳送電子郵件。"
-  },
-  {
-    "content": "下列何者是一種作業系統？",
-    "options": ["macOS", "Photoshop", "Excel", "Java"],
-    "answer": 1,
-    "details": "macOS 是蘋果公司推出的一款作業系統，適用於蘋果的桌面和筆記本電腦。"
-  },
-  {
-    "content": "何者是一種瀏覽器？",
-    "options": ["Google Chrome", "Microsoft Word", "Adobe Photoshop", "Skype"],
-    "answer": 1,
-    "details": "Google Chrome 是一款網頁瀏覽器，用於在互聯網上瀏覽網頁。"
-  },
-  {
-    "content": "下列哪個是一個雲端服務供應商？",
-    "options": ["Amazon Web Services", "Microsoft Excel", "Notepad", "WinZip"],
-    "answer": 1,
-    "details": "Amazon Web Services（AWS）是一個雲端服務供應商，提供各種雲端基礎設施和應用服務。"
-  },
-  {
     "content": "何者是電腦的外部儲存裝置？",
-    "options": ["RAM", "CPU", "USB 隨身碟", "GPU"],
     "answer": 3,
-    "details": "USB 隨身碟是一種外部儲存裝置，用於儲存和攜帶資料。"
+    "details": "USB 隨身碟是一種外部儲存裝置，用於儲存和攜帶資料。",
+    "uuid": "44bcedd7-7947-4060-82ea-0ecc48a9765b"
   },
   {
-    "content": "何者是一種編程語言？",
-    "options": ["C++", "Microsoft Word", "Excel", "PDF"],
-    "answer": 1,
-    "details": "C++ 是一種編程語言，用於開發各種軟體和應用程式。"
-  },
-  {
-    "content": "下列何者是一種網路拓樸結構？",
-    "options": ["星型拓樸", "JavaScript", "Python", "HTML"],
-    "answer": 1,
-    "details": "星型拓樸是一種網路拓樸結構，其中所有節點都連接到一個中央節點。"
-  },
-  {
-    "content": "在電腦術語中，'GUI' 是指什麼？",
     "options": [
-      "圖形使用者介面",
-      "全球資訊網",
-      "普通使用者輸入",
-      "全球網絡介面"
+      "macOS",
+      "Photoshop",
+      "Excel",
+      "Java"
     ],
+    "content": "下列何者是一種作業系統？",
     "answer": 1,
-    "details": "GUI（圖形使用者介面）是一種讓使用者與電腦互動的方式，通過圖形和按鈕來操作電腦。"
+    "details": "macOS 是蘋果公司推出的一款作業系統，適用於蘋果的桌面和筆記本電腦。",
+    "uuid": "450a9f3f-0838-4692-b21a-300541345d5e"
   },
   {
-    "content": "何者屬於開源軟體？",
-    "options": ["Linux", "Windows", "Microsoft Office", "Adobe Photoshop"],
-    "answer": 1,
-    "details": "Linux 是一個開源的作業系統，其原始碼可以被任何人查看、修改和重新分發。"
+    "options": [
+      "暫存資料",
+      "長期儲存資料",
+      "儲存 BIOS 資訊",
+      "處理數據"
+    ],
+    "content": "電腦中的 ROM 主要用途是？",
+    "answer": 3,
+    "details": "ROM（唯讀記憶體）主要用於儲存 BIOS（基本輸入輸出系統）資訊，通常不可修改。",
+    "uuid": "4592c398-3903-4b12-b277-09a7e7502441"
   },
   {
-    "content": "下列哪種協定用於安全地傳輸超文本資料？",
-    "options": ["HTTP", "HTTPS", "FTP", "SSH"],
-    "answer": 2,
-    "details": "HTTPS（安全超文本傳輸協定）是一種協定，用於在互聯網上安全地傳輸超文本資料。"
-  },
-  {
-    "content": "以下何者是一種作業系統的應用程式？",
-    "options": ["Python", "Windows Task Manager", "HTML", "CSS"],
-    "answer": 2,
-    "details": "Windows Task Manager 是 Windows 作業系統的一個應用程式，用於管理進程、服務和系統效能。"
-  },
-  {
+    "options": [
+      "HTML",
+      "Python",
+      "C++",
+      "Java"
+    ],
     "content": "何者是一種網頁標記語言？",
-    "options": ["HTML", "Python", "C++", "Java"],
     "answer": 1,
-    "details": "HTML（超文本標記語言）是一種網頁標記語言，用於建立網頁結構和內容。"
+    "details": "HTML（超文本標記語言）是一種網頁標記語言，用於建立網頁結構和內容。",
+    "uuid": "4813b0dd-8329-4b6c-a751-8d20a1157410"
   },
   {
-    "content": "何者是一種網路連線方式？",
-    "options": ["Wi-Fi", "RAM", "CPU", "HDMI"],
+    "options": [
+      "WinZip",
+      "Google Chrome",
+      "Microsoft Excel",
+      "Python"
+    ],
+    "content": "何者是一種檔案壓縮軟體？",
     "answer": 1,
-    "details": "Wi-Fi 是一種無線網路連線方式，允許電腦和其他裝置透過無線訊號連接網路。"
+    "details": "WinZip 是一款檔案壓縮軟體，用於壓縮和解壓縮檔案，以節省儲存空間和加快檔案傳輸。",
+    "uuid": "4c3762ba-807f-4853-9fd9-910b40cc455f"
   },
   {
-    "content": "下列何者是一種電腦病毒？",
-    "options": ["蠕蟲病毒", "PDF", "CSS", "XML"],
-    "answer": 1,
-    "details": "蠕蟲病毒是一種電腦病毒，能自我複製並在網路上傳播，影響電腦性能和資料安全。"
-  },
-  {
-    "content": "以下哪個是一個網路域名？",
     "options": [
       "www.example.com",
       "192.168.1.1",
       "Windows 10",
       "Microsoft Word"
     ],
+    "content": "以下哪個是一個網路域名？",
     "answer": 1,
-    "details": "www.example.com 是一個網路域名，用於標識和定位網路上的電腦和資源。"
+    "details": "www.example.com 是一個網路域名，用於標識和定位網路上的電腦和資源。",
+    "uuid": "4d8f2411-9166-4fc4-b821-797bef9daf2c"
   },
   {
-    "content": "以下何者是一種電子郵件服務？",
-    "options": ["Gmail", "Microsoft Word", "Adobe Acrobat Reader", "WinRAR"],
-    "answer": 1,
-    "details": "Gmail 是一個電子郵件服務，用於收發電子郵件和管理郵件資訊。"
-  },
-  {
-    "content": "何者為電腦記憶體的一種？",
-    "options": ["RAM", "CPU", "USB 隨身碟", "HDMI"],
-    "answer": 1,
-    "details": "RAM（隨機存取記憶體）是一種電腦記憶體，用於暫存正在運行的程式和資料。"
-  },
-  {
-    "content": "何者是一種檔案壓縮軟體？",
-    "options": ["WinZip", "Google Chrome", "Microsoft Excel", "Python"],
-    "answer": 1,
-    "details": "WinZip 是一款檔案壓縮軟體，用於壓縮和解壓縮檔案，以節省儲存空間和加快檔案傳輸。"
-  },
-  {
-    "content": "何者是一種資料庫管理系統？",
-    "options": ["MySQL", "CSS", "JavaScript", "Python"],
-    "answer": 1,
-    "details": "MySQL 是一種關聯式資料庫管理系統，用於儲存和管理結構化資料。"
-  },
-  {
-    "content": "下列何者是一種網路協定？",
-    "options": ["FTP", "Microsoft Word", "Adobe Photoshop", "Excel"],
-    "answer": 1,
-    "details": "FTP（檔案傳輸協定）是一種網路協定，用於在網路上傳輸檔案。"
-  },
-  {
-    "content": "以下何者是一種網頁設計技術？",
-    "options": ["CSS", "Microsoft PowerPoint", "Linux", "PDF"],
-    "answer": 1,
-    "details": "CSS（層疊樣式表）是一種網頁設計技術，用於描述網頁的外觀和格式。"
-  },
-  {
-    "content": "何者是一種網路安全技術？",
-    "options": ["防火牆", "Microsoft Excel", "Python", "HTML"],
-    "answer": 1,
-    "details": "防火牆是一種網路安全技術，用於保護網路上的電腦和資源免受未經授權的訪問和攻擊。"
-  },
-  {
-    "content": "下列何者是一種程式開發工具？",
     "options": [
       "Visual Studio",
       "Microsoft Word",
       "Adobe Acrobat Reader",
       "WinRAR"
     ],
+    "content": "下列何者是一種程式開發工具？",
     "answer": 1,
-    "details": "Visual Studio 是一款程式開發工具，用於編寫和調試程式碼。"
+    "details": "Visual Studio 是一款程式開發工具，用於編寫和調試程式碼。",
+    "uuid": "4fe97cb7-c282-48de-a4f6-381f26a54bea"
+  },
+  {
+    "options": [
+      "Wi-Fi",
+      "USB",
+      "HDMI",
+      "VGA"
+    ],
+    "content": "下列何者為無線網路標準？",
+    "answer": 1,
+    "details": "Wi-Fi 是一種無線網路標準，通常用於家庭、辦公室和公共場所的網路連接。",
+    "uuid": "51f7437a-4918-40ad-8aaf-3d10cae3d668"
+  },
+  {
+    "options": [
+      "SMTP",
+      "TCP",
+      "UDP",
+      "IP"
+    ],
+    "content": "何者是電子郵件協定的一種？",
+    "answer": 1,
+    "details": "SMTP（簡易郵件傳輸協定）是一種電子郵件協定，用於傳送電子郵件。",
+    "uuid": "5608512d-9bf7-4f82-90fe-c783b0c438c9"
+  },
+  {
+    "options": [
+      "MySQL",
+      "CSS",
+      "JavaScript",
+      "Python"
+    ],
+    "content": "何者是一種資料庫管理系統？",
+    "answer": 1,
+    "details": "MySQL 是一種關聯式資料庫管理系統，用於儲存和管理結構化資料。",
+    "uuid": "57d5a317-87c1-451c-be29-05f28a75ae5a"
+  },
+  {
+    "options": [
+      "CPU",
+      "GPU",
+      "RAM",
+      "ROM"
+    ],
+    "content": "下列哪個是電腦的中央處理器？",
+    "answer": 1,
+    "details": "CPU（中央處理器）是電腦中負責執行指令和處理數據的核心部件。",
+    "uuid": "5ab489c0-55f3-4239-a1df-9b6c8efc3803"
+  },
+  {
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "FTP",
+      "SSH"
+    ],
+    "content": "下列哪種協定用於安全地傳輸超文本資料？",
+    "answer": 2,
+    "details": "HTTPS（安全超文本傳輸協定）是一種協定，用於在互聯網上安全地傳輸超文本資料。",
+    "uuid": "5b6c0421-7bf8-4a71-94ca-416108bf6176"
+  },
+  {
+    "options": [
+      "防火牆",
+      "木馬",
+      "瀏覽器",
+      "搜尋引擎"
+    ],
+    "content": "何者屬於惡意軟體（malware）？",
+    "answer": 2,
+    "details": "木馬是一種惡意軟體，通常以正常軟體的外觀出現，但具有破壞性或竊取資訊的功能。",
+    "uuid": "5e2ca8e0-c527-4367-9b8b-c797e3d0c94e"
+  },
+  {
+    "options": [
+      "雙絞線",
+      "同軸電纜",
+      "光纖",
+      "無線網路"
+    ],
+    "content": "下列哪個網路傳輸媒介的速度最快？",
+    "answer": 3,
+    "details": "光纖具有傳輸速度快、抗干擾性強的特點，遠高於其他傳輸媒介。",
+    "uuid": "5eeff937-e1e7-40f9-96b4-8d7c0686fa03"
+  },
+  {
+    "options": [
+      "儲存資料",
+      "顯示圖像",
+      "播放音樂",
+      "資料交換和通訊"
+    ],
+    "content": "何者是電腦網路的主要功能？",
+    "answer": 4,
+    "details": "電腦網路的主要功能是實現資料交換和通訊，包括檔案共享、協同作業等。",
+    "uuid": "60ab4c6c-b6f9-4681-abde-81cbce4392d9"
+  },
+  {
+    "options": [
+      "C++",
+      "Microsoft Word",
+      "Excel",
+      "PDF"
+    ],
+    "content": "何者是一種編程語言？",
+    "answer": 1,
+    "details": "C++ 是一種編程語言，用於開發各種軟體和應用程式。",
+    "uuid": "6989f2a0-74f5-4a32-bb24-a23b8a5dae38"
+  },
+  {
+    "options": [
+      "Google Chrome",
+      "Microsoft Word",
+      "Adobe Photoshop",
+      "Windows 10"
+    ],
+    "content": "何者為網頁瀏覽器？",
+    "answer": 1,
+    "details": "Google Chrome 是一款網頁瀏覽器，用於瀏覽網頁。",
+    "uuid": "6ac10393-ef36-4822-8893-bac04835fca1"
+  },
+  {
+    "options": [
+      "星型拓撲",
+      "階層式拓撲",
+      "蜘蛛網拓撲",
+      "串聯拓撲"
+    ],
+    "content": "下列何者是網路拓撲結構？",
+    "answer": 1,
+    "details": "星型拓撲是一種常見的網路拓撲結構，中央節點連接到各個外圍節點。",
+    "uuid": "6b95a8c8-c9e2-4247-8679-b8f26a4be7ba"
+  },
+  {
+    "options": [
+      "Linux",
+      "Windows",
+      "Microsoft Office",
+      "Adobe Photoshop"
+    ],
+    "content": "何者屬於開源軟體？",
+    "answer": 1,
+    "details": "Linux 是一個開源的作業系統，其原始碼可以被任何人查看、修改和重新分發。",
+    "uuid": "6ba0e47d-c762-44b9-8a06-b90e8e346805"
+  },
+  {
+    "options": [
+      "USB",
+      "HDMI",
+      "VGA",
+      "RJ45"
+    ],
+    "content": "下列哪個連接埠用於網路連接？",
+    "answer": 4,
+    "details": "RJ45 連接埠用於有線網路連接，通常與乙太網路（Ethernet）標準一起使用。",
+    "uuid": "7436041f-8b3a-4b83-b5a6-ff1c5fd23250"
+  },
+  {
+    "options": [
+      "滑鼠",
+      "螢幕",
+      "音箱",
+      "印表機"
+    ],
+    "content": "下列何者屬於電腦的輸入裝置？",
+    "answer": 1,
+    "details": "滑鼠是電腦的輸入裝置，用於輸入和控制電腦操作。",
+    "uuid": "750ad5f8-6d3f-4e64-8f63-29988485ae91"
+  },
+  {
+    "options": [
+      "Amazon Web Services",
+      "Microsoft Excel",
+      "Notepad",
+      "WinZip"
+    ],
+    "content": "下列哪個是一個雲端服務供應商？",
+    "answer": 1,
+    "details": "Amazon Web Services（AWS）是一個雲端服務供應商，提供各種雲端基礎設施和應用服務。",
+    "uuid": "763549f7-e78b-46d9-91a6-68b0b71ec1b3"
+  },
+  {
+    "options": [
+      "HTTP",
+      "RAM",
+      "SSD",
+      "GPU"
+    ],
+    "content": "以下哪個是一個網路協定？",
+    "answer": 1,
+    "details": "HTTP（超文本傳輸協定）是一個網路協定，用於在網際網路上傳輸超文本資料。",
+    "uuid": "7ef35a93-80d8-4073-aae5-8adabea6c072"
+  },
+  {
+    "options": [
+      "Python",
+      "Java",
+      "HTML",
+      "C++"
+    ],
+    "content": "下列何者不是程式設計語言？",
+    "answer": 3,
+    "details": "HTML 是一種標記語言，用於建立網頁內容，而非一種程式設計語言。",
+    "uuid": "8599e736-d02f-440c-90b6-2e56abc56e0b"
+  },
+  {
+    "options": [
+      "Wi-Fi",
+      "RAM",
+      "CPU",
+      "HDMI"
+    ],
+    "content": "何者是一種網路連線方式？",
+    "answer": 1,
+    "details": "Wi-Fi 是一種無線網路連線方式，允許電腦和其他裝置透過無線訊號連接網路。",
+    "uuid": "8f1e50da-9c34-4da8-a99a-3dfb61b9779c"
+  },
+  {
+    "options": [
+      "效能",
+      "擴充性",
+      "可靠性",
+      "多工"
+    ],
+    "content": "哪個概念代表電腦系統能夠在短時間內處理大量資訊？",
+    "answer": 1,
+    "details": "效能是指電腦系統在短時間內處理資訊的能力，通常用來衡量系統的運行速度。",
+    "uuid": "8ffa076c-75d3-42bd-b288-8a6de5014e9b"
+  },
+  {
+    "options": [
+      "防火牆",
+      "Microsoft Excel",
+      "Python",
+      "HTML"
+    ],
+    "content": "何者是一種網路安全技術？",
+    "answer": 1,
+    "details": "防火牆是一種網路安全技術，用於保護網路上的電腦和資源免受未經授權的訪問和攻擊。",
+    "uuid": "945ae8d2-90a4-45d6-a9f2-b996c7b094fd"
+  },
+  {
+    "options": [
+      "Hz",
+      "bps",
+      "dpi",
+      "ppi"
+    ],
+    "content": "下列哪個單位用於表示電腦處理器速度？",
+    "answer": 1,
+    "details": "Hz（赫茲）是處理器速度的單位，表示每秒進行的運算次數。",
+    "uuid": "95a68b5e-d0dd-4ce8-8c23-1de13f233c28"
+  },
+  {
+    "options": [
+      "Google Chrome",
+      "Microsoft Word",
+      "Adobe Photoshop",
+      "Skype"
+    ],
+    "content": "何者是一種瀏覽器？",
+    "answer": 1,
+    "details": "Google Chrome 是一款網頁瀏覽器，用於在互聯網上瀏覽網頁。",
+    "uuid": "9aced191-40f0-484f-b304-ee384aa248db"
+  },
+  {
+    "options": [
+      "HTTP",
+      "IMAP",
+      "TCP",
+      "UDP"
+    ],
+    "content": "何者為電子郵件的通訊協定？",
+    "answer": 2,
+    "details": "IMAP（Internet Message Access Protocol）是一個電子郵件通訊協定，用於接收和管理郵件。",
+    "uuid": "aad27c1b-8f4e-485f-aefc-b771ea46f732"
+  },
+  {
+    "options": [
+      "Google Drive",
+      "Microsoft Word",
+      "Adobe Reader",
+      "Internet Explorer"
+    ],
+    "content": "下列哪個是一個雲端運算服務？",
+    "answer": 1,
+    "details": "Google Drive 是一個雲端運算服務，用於儲存和共享檔案。",
+    "uuid": "b997774f-3bec-47a1-9176-afe3ecc5d6e5"
+  },
+  {
+    "options": [
+      "儲存資料",
+      "管理硬體資源",
+      "編輯文字",
+      "處理圖像"
+    ],
+    "content": "何者是作業系統的功能？",
+    "answer": 2,
+    "details": "作業系統的主要功能是管理硬體資源，包括 CPU、記憶體、輸入輸出裝置等。",
+    "uuid": "ba19ed43-4e32-476a-9f0d-5c030af0cde9"
+  },
+  {
+    "options": [
+      "RAM",
+      "CPU",
+      "USB 隨身碟",
+      "HDMI"
+    ],
+    "content": "何者為電腦記憶體的一種？",
+    "answer": 1,
+    "details": "RAM（隨機存取記憶體）是一種電腦記憶體，用於暫存正在運行的程式和資料。",
+    "uuid": "c87a5bb2-3fa5-4449-918e-ce62d8b23690"
+  },
+  {
+    "options": [
+      "CPU",
+      "GPU",
+      "RAM",
+      "SSD"
+    ],
+    "content": "何者為電腦中的圖形處理單元？",
+    "answer": 2,
+    "details": "GPU（圖形處理單元）是電腦中專門用於處理圖形和影像的部件。",
+    "uuid": "cd353194-36b3-40a0-812f-06029a6bd7d8"
+  },
+  {
+    "options": [
+      "Python",
+      "HTML",
+      "CSS",
+      "XML"
+    ],
+    "content": "何者是一種物件導向程式設計語言？",
+    "answer": 1,
+    "details": "Python 是一種物件導向程式設計語言，支援類別、繼承和多型等物件導向特性。",
+    "uuid": "cdcb1f7a-842f-4a1d-b7df-7d30582ecb19"
+  },
+  {
+    "options": [
+      "星型拓樸",
+      "JavaScript",
+      "Python",
+      "HTML"
+    ],
+    "content": "下列何者是一種網路拓樸結構？",
+    "answer": 1,
+    "details": "星型拓樸是一種網路拓樸結構，其中所有節點都連接到一個中央節點。",
+    "uuid": "e413990c-d039-4248-8afe-b03418c280f9"
+  },
+  {
+    "options": [
+      "MySQL",
+      "JavaScript",
+      "Notepad++",
+      "WinRAR"
+    ],
+    "content": "何者是一種資料庫管理系統？",
+    "answer": 1,
+    "details": "MySQL 是一種開源的關聯式資料庫管理系統，用於儲存、檢索和管理資料。",
+    "uuid": "f0fc899b-4b10-4a71-b4c7-910dcc4dea28"
+  },
+  {
+    "options": [
+      "Gmail",
+      "Microsoft Word",
+      "Adobe Acrobat Reader",
+      "WinRAR"
+    ],
+    "content": "以下何者是一種電子郵件服務？",
+    "answer": 1,
+    "details": "Gmail 是一個電子郵件服務，用於收發電子郵件和管理郵件資訊。",
+    "uuid": "f1462606-991c-4652-9353-c1311b155702"
+  },
+  {
+    "options": [
+      "Microsoft Office",
+      "Windows 10",
+      "Adobe Creative Suite",
+      "Linux"
+    ],
+    "content": "何者是開放原始碼軟體？",
+    "answer": 4,
+    "details": "Linux 是一個開放原始碼的作業系統，其原始碼可以被任何人查看、修改和分發。",
+    "uuid": "f7333f46-2272-4a28-9b17-f7c3e8f647f8"
+  },
+  {
+    "options": [
+      "圖形使用者介面",
+      "全球資訊網",
+      "普通使用者輸入",
+      "全球網絡介面"
+    ],
+    "content": "在電腦術語中，'GUI' 是指什麼？",
+    "answer": 1,
+    "details": "GUI（圖形使用者介面）是一種讓使用者與電腦互動的方式，通過圖形和按鈕來操作電腦。",
+    "uuid": "fa49814a-4996-4578-852a-2ae6b6a9966c"
+  },
+  {
+    "options": [
+      "CSS",
+      "Microsoft PowerPoint",
+      "Linux",
+      "PDF"
+    ],
+    "content": "以下何者是一種網頁設計技術？",
+    "answer": 1,
+    "details": "CSS（層疊樣式表）是一種網頁設計技術，用於描述網頁的外觀和格式。",
+    "uuid": "fc349434-092e-4244-af23-85bda643029d"
   }
 ]

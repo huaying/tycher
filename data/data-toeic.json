@@ -1,568 +1,1094 @@
 [
   {
-    "content": "選擇最適合填入空格的選項: Tom _____ the meeting room when his boss called.",
-    "options": ["was left", "has left", "had left", "leaving"],
-    "answer": 3,
-    "details": "在這種情況下，過去完成時(had left)是正確的，因為Tom在老闆打電話之前就已經離開了會議室。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The company _____ a new office building next year.",
-    "options": ["will be built", "is building", "will build", "built"],
-    "answer": 3,
-    "details": "在這裡，未來時態(will build)是正確的，因為這是將在明年發生的事情。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: If I _____ enough time, I would take a vacation.",
-    "options": ["have", "having", "had", "will have"],
-    "answer": 3,
-    "details": "在這種情況下，過去式(had)是正確的，因為這是一個與現實相反的條件句。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: She is really _____ about her presentation tomorrow.",
-    "options": ["nervous", "nervously", "nerve", "nerving"],
-    "answer": 1,
-    "details": "在這裡，形容詞(nervous)是正確的，因為它描述了她的感受。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: He _____ working on the project since last month.",
-    "options": ["is", "has been", "had been", "will be"],
-    "answer": 2,
-    "details": "在這種情況下，現在完成進行時(has been)是正確的，因為他從上個月開始一直在進行這個項目。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The new office building is _____ than the old one.",
-    "options": ["more large", "larger", "largest", "most large"],
-    "answer": 2,
-    "details": "在這裡，比較級(larger)是正確的，因為它比較了新舊辦公樓的大小。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: She said she _____ come to the party tonight.",
-    "options": ["won't", "wouldn't", "doesn't", "didn't"],
-    "answer": 1,
-    "details": "在這裡，否定未來時態(won't)是正確的，因為她表示她今晚不會去參加派對。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The employees were _____ when they heard about the company's success.",
-    "options": ["excite", "excited", "exciting", "excitedly"],
-    "answer": 2,
-    "details": "在這裡，形容詞(excited)是正確的，因為它描述了員工的情感。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: This is the _____ pizza I've ever had.",
-    "options": ["good", "better", "best", "well"],
-    "answer": 3,
-    "details": "在這裡，最高級(best)是正確的，因為它表示這是所吃過的最好的披薩。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: She asked if I _____ her email.",
-    "options": ["receive", "received", "had received", "has received"],
-    "answer": 3,
-    "details": "在這種情況下，過去完成時(had received)是正確的，因為這是一個間接問句，要求確認是否已收到電子郵件。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: He _____ TV when his friend called.",
-    "options": ["watched", "was watching", "watches", "has watched"],
-    "answer": 2,
-    "details": "在這裡，過去進行時(was watching)是正確的，因為他在朋友打電話時正在看電視。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The manager asked him to _____ the report by Friday.",
-    "options": ["finish", "finishing", "finished", "had finished"],
-    "answer": 1,
-    "details": "在這裡，原形動詞(finish)是正確的，因為在這種情況下需要使用動詞原型。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The project _____ before the deadline.",
     "options": [
-      "must be completed",
-      "must complete",
-      "must have completed",
-      "must completed"
+      "sets",
+      "set",
+      "has set",
+      "will set"
     ],
-    "answer": 1,
-    "details": "在這種情況下，必須使用被動語態(must be completed)，因為需要強調項目必須在截止日期之前完成。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: She _____ to the meeting on time.",
-    "options": ["arrives", "will arrive", "arrived", "has arrived"],
-    "answer": 3,
-    "details": "在這裡，過去式(arrived)是正確的，因為需要描述她已經按時到達會議的事實。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The company is planning to _____ its products to new markets.",
-    "options": ["expand", "expanding", "expanded", "expansion"],
-    "answer": 1,
-    "details": "在這裡，原形動詞(expand)是正確的，因為這是公司對未來的計劃。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: It's important to _____ on time to avoid being late.",
-    "options": ["leave", "leaves", "leaving", "left"],
-    "answer": 1,
-    "details": "在這裡，原形動詞(leave)是正確的，因為這是一個建議或建議的表達。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: She _____ to the gym three times a week.",
-    "options": ["go", "goes", "gone", "went"],
-    "answer": 2,
-    "details": "在這裡，現在簡單時態(goes)是正確的，因為這是一個習慣性動作。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: You _____ pay for the tickets in advance.",
-    "options": ["needn't", "don't have to", "mustn't", "shouldn't"],
-    "answer": 2,
-    "details": "在這裡，選擇'不必'(don't have to)表示票不需要提前付款。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The package _____ by the courier yesterday.",
-    "options": ["delivers", "delivered", "was delivered", "has delivered"],
-    "answer": 3,
-    "details": "在這種情況下，過去被動語態(was delivered)是正確的，因為需要強調包裹已被快遞員送達。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: They _____ in the new office building by the end of the month.",
-    "options": ["move", "moves", "will move", "has moved"],
-    "answer": 3,
-    "details": "在這裡，未來時態(will move)是正確的，因為這是將在月底之前發生的事情。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The manager _____ a meeting with the employees tomorrow.",
-    "options": ["will be held", "will hold", "holds", "held"],
-    "answer": 2,
-    "details": "在這裡，未來時態(will hold)是正確的，因為這是將在明天舉行的會議。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: She _____ a new job last week.",
-    "options": ["started", "start", "has started", "starts"],
-    "answer": 1,
-    "details": "在這裡，過去式(started)是正確的，因為她是在上週開始了新工作。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: If the weather _____ bad, we will cancel the picnic.",
-    "options": ["is", "was", "will be", "has been"],
-    "answer": 1,
-    "details": "在這種情況下，現在簡單時態(is)是正確的，因為這是一個與現實相反的條件句。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The package will be sent as soon as the payment _____.",
-    "options": ["receives", "received", "is received", "has received"],
-    "answer": 3,
-    "details": "在這種情況下，被動語態(is received)是正確的，因為需要強調在付款收到後才會發送包裹。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: She _____ the report by the end of the day.",
-    "options": ["will finish", "finishes", "finished", "has finished"],
-    "answer": 1,
-    "details": "在這裡，未來時態(will finish)是正確的，因為這是將在一天結束之前完成的事情。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: They _____ the contract if the terms are acceptable.",
-    "options": ["sign", "signed", "will sign", "are signing"],
-    "answer": 3,
-    "details": "在這裡，未來時態(will sign)是正確的，因為這是在條款可以接受的情況下將簽署合同的情況。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: If they _____ earlier, they wouldn't have missed the train.",
-    "options": ["leave", "left", "had left", "would leave"],
-    "answer": 3,
-    "details": "在這種情況下，過去完成時(had left)是正確的，因為這是一個與過去事實相反的假設。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The workers _____ on strike since last week.",
-    "options": ["are", "were", "have been", "had been"],
-    "answer": 3,
-    "details": "在這裡，現在完成進行時(have been)是正確的，因為從上週開始，工人們一直在罷工。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: She _____ in the marketing department for five years.",
-    "options": ["worked", "works", "has worked", "had worked"],
-    "answer": 3,
-    "details": "在這裡，現在完成時(has worked)是正確的，因為她在市場部工作了五年，可能仍在繼續工作。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: He _____ the report when his computer crashed.",
-    "options": ["wrote", "was writing", "has written", "had written"],
-    "answer": 2,
-    "details": "在這裡，過去進行時(was writing)是正確的，因為他在電腦崩潰時正在撰寫報告。"
-  },
-  {
     "content": "選擇最適合填入空格的選項: The company _____ its sales targets for the next quarter.",
-    "options": ["sets", "set", "has set", "will set"],
     "answer": 4,
-    "details": "在這裡，未來時態(will set)是正確的，因為這是對下一季度銷售目標的設定。"
+    "details": "在這裡，未來時態(will set)是正確的，因為這是對下一季度銷售目標的設定。",
+    "uuid": "011f545d-19d2-4389-9b12-7887aea84b3a"
   },
   {
-    "content": "選擇最適合填入空格的選項: If I _____ the CEO, I would invest in new technology.",
-    "options": ["am", "was", "were", "be"],
-    "answer": 3,
-    "details": "在這裡，過去式(were)是正確的，因為這是一個與現實相反的假設。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: They _____ to the conference if they receive an invitation.",
-    "options": ["will go", "go", "went", "have gone"],
-    "answer": 1,
-    "details": "在這裡，未來時態(will go)是正確的，因為這是在收到邀請後將參加會議的情況。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The product _____ before it is launched.",
-    "options": ["will be tested", "is tested", "tests", "tested"],
-    "answer": 1,
-    "details": "在這種情況下，將使用未來被動語態(will be tested)，因為需要強調產品將在推出之前進行測試。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: He _____ the project since last month.",
     "options": [
-      "works on",
-      "worked on",
-      "has been working on",
-      "had been working on"
+      "good",
+      "better",
+      "best",
+      "well"
     ],
+    "content": "選擇最適合填入空格的選項: This is the _____ pizza I've ever had.",
     "answer": 3,
-    "details": "在這裡，現在完成進行時(has been working on)是正確的，因為他從上個月開始一直在進行這個項目。"
+    "details": "在這裡，最高級(best)是正確的，因為它表示這是所吃過的最好的披薩。",
+    "uuid": "041b5999-4850-41ea-8fc6-10b82a326da6"
   },
   {
-    "content": "選擇最適合填入空格的選項: The meeting _____ at 9 am tomorrow.",
-    "options": ["starts", "started", "will start", "has started"],
-    "answer": 3,
-    "details": "在這裡，未來時態(will start)是正確的，因為會議將在明天上午9點開始。"
-  },
-  {
-    "content": "選擇最適合填入空格的選項: The deadline _____ extended by the manager.",
-    "options": ["was", "will be", "is", "had been"],
+    "options": [
+      "needn't",
+      "don't have to",
+      "mustn't",
+      "shouldn't"
+    ],
+    "content": "選擇最適合填入空格的選項: You _____ pay for the tickets in advance.",
     "answer": 2,
-    "details": "在這種情況下，未來被動語態(will be)是正確的，因為截止日期將由經理延長。"
+    "details": "在這裡，選擇'不必'(don't have to)表示票不需要提前付款。",
+    "uuid": "047a520d-d5ba-4cc7-9c61-b12163b0aba7"
   },
   {
-    "content": "選擇最適合的單字: The company needs to _____ its marketing strategy.",
-    "options": ["revisit", "repeat", "retain", "refund"],
-    "answer": 1,
-    "details": "在這裡，revisit(重新檢討)是正確的，因為公司需要重新檢討其行銷策略。"
-  },
-  {
-    "content": "選擇最適合的單字: The meeting has been _____ to next week.",
-    "options": ["postponed", "advanced", "simplified", "terminated"],
-    "answer": 1,
-    "details": "在這裡，postponed(延期)是正確的，因為會議已經延期到下週。"
-  },
-  {
-    "content": "選擇最適合的單字: The software update includes several _____ to improve performance.",
-    "options": ["enhancements", "arguments", "replacements", "payments"],
-    "answer": 1,
-    "details": "在這裡，enhancements(改進)是正確的，因為軟體更新包括了多項改進以提高性能。"
-  },
-  {
-    "content": "選擇最適合的單字: The company's _____ in the industry has been growing.",
-    "options": ["reputation", "subtraction", "division", "suggestion"],
-    "answer": 1,
-    "details": "在這裡，reputation(聲譽)是正確的，因為公司在行業中的聲譽一直在增長。"
-  },
-  {
-    "content": "選擇最適合的單字: The new employee must _____ a training program before starting work.",
-    "options": ["complete", "compete", "contrast", "contribute"],
-    "answer": 1,
-    "details": "在這裡，complete(完成)是正確的，因為新員工在開始工作之前必須完成培訓課程。"
-  },
-  {
-    "content": "選擇最適合的單字: The department will _____ additional resources to complete the project.",
-    "options": ["allocate", "debate", "postpone", "replace"],
-    "answer": 1,
-    "details": "在這裡，allocate(分配)是正確的，因為部門將分配額外資源來完成該項目。"
-  },
-  {
-    "content": "選擇最適合的單字: Please _____ the report for any errors before submitting it.",
-    "options": ["revise", "expand", "accompany", "prohibit"],
-    "answer": 1,
-    "details": "在這裡，revise(修訂)是正確的，因為在提交報告之前，請對報告進行檢查以查找任何錯誤。"
-  },
-  {
-    "content": "選擇最適合的單字: The project was a _____, and the company lost a lot of money.",
-    "options": ["success", "failure", "surprise", "requirement"],
-    "answer": 2,
-    "details": "在這裡，failure(失敗)是正確的，因為該項目是一個失敗，公司損失了大量資金。"
-  },
-  {
-    "content": "選擇最適合的單字: The manager was _____ with the team's performance.",
-    "options": ["disappointed", "replaced", "combined", "celebrated"],
-    "answer": 1,
-    "details": "在這裡，disappointed(失望)是正確的，因為經理對團隊的表現感到失望。"
-  },
-  {
-    "content": "選擇最適合的單字: The product's design was _____ after receiving customer feedback.",
-    "options": ["modified", "copied", "ignored", "included"],
-    "answer": 1,
-    "details": "在這裡，modified(修改)是正確的，因為在收到客戶反饋後，產品設計已經過修改。"
-  },
-  {
-    "content": "選擇最適合的單字: We have to _____ a new strategy to increase sales.",
-    "options": ["implement", "deny", "borrow", "postpone"],
-    "answer": 1,
-    "details": "在這裡，implement(實施)是正確的，因為我們必須實施一個新策略來提高銷售額。"
-  },
-  {
-    "content": "選擇最適合的單字: The company offers an attractive _____ package for new employees.",
-    "options": ["compensation", "competition", "complaint", "complication"],
-    "answer": 1,
-    "details": "在這裡，compensation(薪酬)是正確的，因為公司為新員工提供了有吸引力的薪酬待遇。"
-  },
-  {
-    "content": "選擇最適合的單字: The project was _____ due to a lack of funding.",
-    "options": ["launched", "cancelled", "expanded", "approved"],
-    "answer": 2,
-    "details": "在這裡，cancelled(取消)是正確的，因為該項目由於資金不足而被取消。"
-  },
-  {
-    "content": "選擇最適合的單字: The _____ of the new software version will take place next week.",
-    "options": ["launch", "completion", "reduction", "introduction"],
-    "answer": 1,
-    "details": "在這裡，launch(推出)是正確的，因為新軟體版本的推出將在下週進行。"
-  },
-  {
-    "content": "選擇最適合的單字: The company has seen a significant _____ in profits this year.",
-    "options": ["increase", "decrease", "pause", "combination"],
-    "answer": 1,
-    "details": "在這裡，increase(增加)是正確的，因為今年公司的利潤有顯著增加。"
-  },
-  {
-    "content": "選擇最適合的單字: She was _____ the position of marketing manager.",
-    "options": ["offered", "requested", "asked", "needed"],
-    "answer": 1,
-    "details": "在這裡，offered(被提供)是正確的，因為她被提供市場經理的職位。"
-  },
-  {
-    "content": "選擇最適合的單字: The team _____ closely with each other to complete the project on time.",
-    "options": ["cooperated", "competed", "argued", "ignored"],
-    "answer": 1,
-    "details": "在這裡，cooperated(合作)是正確的，因為團隊為了按時完成項目而密切合作。"
-  },
-  {
-    "content": "選擇最適合的單字: The company is looking for ways to _____ costs and increase efficiency.",
-    "options": ["cut", "raise", "combine", "adjust"],
-    "answer": 1,
-    "details": "在這裡，cut(削減)是正確的，因為公司正在尋找削減成本和提高效率的方法。"
-  },
-  {
-    "content": "選擇最適合的單字: She is responsible for _____ new clients for the company.",
-    "options": ["acquiring", "denying", "ignoring", "disconnecting"],
-    "answer": 1,
-    "details": "在這裡，acquiring(獲得)是正確的，因為她負責為公司獲得新客戶。"
-  },
-  {
-    "content": "選擇最適合的單字: He was _____ to make a presentation at the conference.",
-    "options": ["assigned", "avoided", "dismissed", "refused"],
-    "answer": 1,
-    "details": "在這裡，assigned(被指派)是正確的，因為他被指派在會議上進行演示。"
-  },
-  {
+    "options": [
+      "introduce",
+      "subtract",
+      "exclude",
+      "dismiss"
+    ],
     "content": "選擇最適合的單字: The company will _____ a new product line next year.",
-    "options": ["introduce", "subtract", "exclude", "dismiss"],
     "answer": 1,
-    "details": "在這裡，introduce(推出)是正確的，因為公司明年將推出一個新的產品線。"
+    "details": "在這裡，introduce(推出)是正確的，因為公司明年將推出一個新的產品線。",
+    "uuid": "0684ad1e-562e-454c-998e-382342d115de"
   },
   {
-    "content": "選擇最適合的單字: The manager was not _____ with the team's progress.",
-    "options": ["satisfied", "involved", "completed", "established"],
-    "answer": 1,
-    "details": "在這裡，satisfied(滿意)是正確的，因為經理對團隊的進展不滿意。"
+    "options": [
+      "leave",
+      "left",
+      "had left",
+      "would leave"
+    ],
+    "content": "選擇最適合填入空格的選項: If they _____ earlier, they wouldn't have missed the train.",
+    "answer": 3,
+    "details": "在這種情況下，過去完成時(had left)是正確的，因為這是一個與過去事實相反的假設。",
+    "uuid": "06d62ab1-627e-4803-998d-7a368aa6eb4d"
   },
   {
-    "content": "選擇最適合的單字: The company decided to _____ the contract with the supplier.",
-    "options": ["terminate", "establish", "acquire", "increase"],
+    "options": [
+      "reputation",
+      "subtraction",
+      "division",
+      "suggestion"
+    ],
+    "content": "選擇最適合的單字: The company's _____ in the industry has been growing.",
     "answer": 1,
-    "details": "在這裡，terminate(終止)是正確的，因為公司決定終止與供應商的合同。"
+    "details": "在這裡，reputation(聲譽)是正確的，因為公司在行業中的聲譽一直在增長。",
+    "uuid": "0713a0b6-fdb6-4010-b161-06001dee1140"
   },
   {
-    "content": "選擇最適合的單字: Our _____ is to increase sales by 20% this year.",
-    "options": ["objective", "subject", "aspect", "matter"],
-    "answer": 1,
-    "details": "在這裡，objective(目標)是正確的，因為我們今年的目標是將銷售額提高20%。"
-  },
-  {
-    "content": "選擇最適合的單字: She has been _____ as the new CEO of the company.",
-    "options": ["appointed", "avoided", "postponed", "disagreed"],
-    "answer": 1,
-    "details": "在這裡，appointed(任命)是正確的，因為她已被任命為公司的新首席執行官。"
-  },
-  {
+    "options": [
+      "punctual",
+      "late",
+      "absent",
+      "confused"
+    ],
     "content": "選擇最適合的單字: He is always _____ and never misses a deadline.",
-    "options": ["punctual", "late", "absent", "confused"],
     "answer": 1,
-    "details": "在這裡，punctual(守時)是正確的，因為他總是守時，從不錯過截止日期。"
+    "details": "在這裡，punctual(守時)是正確的，因為他總是守時，從不錯過截止日期。",
+    "uuid": "08689043-1a9d-4238-a1b9-9bb69805de91"
   },
   {
-    "content": "選擇最適合的單字: The new policy will _____ affect our department.",
-    "options": ["directly", "indirectly", "partly", "completely"],
+    "options": [
+      "is",
+      "was",
+      "will be",
+      "has been"
+    ],
+    "content": "選擇最適合填入空格的選項: If the weather _____ bad, we will cancel the picnic.",
     "answer": 1,
-    "details": "在這裡，directly(直接)是正確的，因為新政策將直接影響我們的部門。"
+    "details": "在這種情況下，現在簡單時態(is)是正確的，因為這是一個與現實相反的條件句。",
+    "uuid": "0e02420f-3b31-453f-a703-cdf1ebc4343a"
   },
   {
-    "content": "選擇最適合的單字: Due to the economic crisis, the company had to _____ several employees.",
-    "options": ["lay off", "promote", "award", "interview"],
+    "options": [
+      "objective",
+      "subject",
+      "aspect",
+      "matter"
+    ],
+    "content": "選擇最適合的單字: Our _____ is to increase sales by 20% this year.",
     "answer": 1,
-    "details": "在這裡，lay off(裁員)是正確的，因為由於經濟危機，公司不得不裁員數名員工。"
+    "details": "在這裡，objective(目標)是正確的，因為我們今年的目標是將銷售額提高20%。",
+    "uuid": "1231df66-daf4-40a5-9f39-cacfdfabdb29"
   },
   {
-    "content": "選擇最適合的單字: The customer's complaint was _____ by the customer service department.",
-    "options": ["resolved", "ignored", "agreed", "denied"],
+    "options": [
+      "revisit",
+      "repeat",
+      "retain",
+      "refund"
+    ],
+    "content": "選擇最適合的單字: The company needs to _____ its marketing strategy.",
     "answer": 1,
-    "details": "在這裡，resolved(解決)是正確的，因為客戶的投訴已被客戶服務部門解決。"
+    "details": "在這裡，revisit(重新檢討)是正確的，因為公司需要重新檢討其行銷策略。",
+    "uuid": "13f19e26-b526-43a5-82d8-9fff305fd476"
   },
   {
-    "content": "選擇最適合的單字: The company has decided to _____ its advertising budget.",
-    "options": ["reduce", "expand", "maintain", "suggest"],
-    "answer": 1,
-    "details": "在這裡，reduce(減少)是正確的，因為公司決定減少其廣告預算。"
-  },
-  {
+    "options": [
+      "submit",
+      "withdraw",
+      "reject",
+      "argue"
+    ],
     "content": "選擇最適合的單字: The employees were asked to _____ their ideas for improving productivity.",
-    "options": ["submit", "withdraw", "reject", "argue"],
     "answer": 1,
-    "details": "在這裡，submit(提交)是正確的，因為要求員工提交他們提高生產力的想法。"
+    "details": "在這裡，submit(提交)是正確的，因為要求員工提交他們提高生產力的想法。",
+    "uuid": "172a3e82-8446-4093-96c1-a669c1462c96"
   },
   {
-    "content": "選擇最適合的單字: She _____ her email to make sure she didn't miss any important messages.",
-    "options": ["checked", "deleted", "ignored", "postponed"],
+    "options": [
+      "has been working",
+      "have been working",
+      "worked",
+      "works"
+    ],
+    "content": "選擇最適合的動詞形式: The team _____ on the project for three months.",
     "answer": 1,
-    "details": "在這裡，checked(檢查)是正確的，因為她檢查了電子郵件以確保不會錯過任何重要信息。"
+    "details": "在這裡，has been working(一直在工作)是正確的，因為它表示過去到現在的進行動作。",
+    "uuid": "19e14e87-23cc-4381-b00c-b1bde76149b2"
   },
   {
-    "content": "選擇最適合的單字: The company provides free _____ for all employees.",
-    "options": ["transportation", "competition", "replacement", "obligation"],
-    "answer": 1,
-    "details": "在這裡，transportation(交通)是正確的，因為公司為所有員工提供免費交通。"
+    "options": [
+      "receive",
+      "received",
+      "had received",
+      "has received"
+    ],
+    "content": "選擇最適合填入空格的選項: She asked if I _____ her email.",
+    "answer": 3,
+    "details": "在這種情況下，過去完成時(had received)是正確的，因為這是一個間接問句，要求確認是否已收到電子郵件。",
+    "uuid": "1c3e11c3-b990-4a3d-9f5c-c260038a0223"
   },
   {
+    "options": [
+      "was left",
+      "has left",
+      "had left",
+      "leaving"
+    ],
+    "content": "選擇最適合填入空格的選項: Tom _____ the meeting room when his boss called.",
+    "answer": 3,
+    "details": "在這種情況下，過去完成時(had left)是正確的，因為Tom在老闆打電話之前就已經離開了會議室。",
+    "uuid": "1e32142f-e311-4f1f-b7aa-658faa9e5f0f"
+  },
+  {
+    "options": [
+      "directly",
+      "indirectly",
+      "partly",
+      "completely"
+    ],
+    "content": "選擇最適合的單字: The new policy will _____ affect our department.",
+    "answer": 1,
+    "details": "在這裡，directly(直接)是正確的，因為新政策將直接影響我們的部門。",
+    "uuid": "1e9e9fe2-7665-442f-899d-101f09f2851c"
+  },
+  {
+    "options": [
+      "arrives",
+      "will arrive",
+      "arrived",
+      "has arrived"
+    ],
+    "content": "選擇最適合填入空格的選項: She _____ to the meeting on time.",
+    "answer": 3,
+    "details": "在這裡，過去式(arrived)是正確的，因為需要描述她已經按時到達會議的事實。",
+    "uuid": "2948f3b9-5d85-4871-8dc8-4a2e00ad3088"
+  },
+  {
+    "options": [
+      "is",
+      "has been",
+      "had been",
+      "will be"
+    ],
+    "content": "選擇最適合填入空格的選項: He _____ working on the project since last month.",
+    "answer": 2,
+    "details": "在這種情況下，現在完成進行時(has been)是正確的，因為他從上個月開始一直在進行這個項目。",
+    "uuid": "2af382aa-166a-4ed9-921c-5e0589a71a49"
+  },
+  {
+    "options": [
+      "will pay",
+      "pays",
+      "has paid",
+      "paid"
+    ],
+    "content": "選擇最適合的動詞形式: The client _____ the invoice after the work is completed.",
+    "answer": 1,
+    "details": "在這裡，will pay(將支付)是正確的，因為它表示將來的動作。",
+    "uuid": "2bf42225-a95c-4a09-8e5c-549b743c7269"
+  },
+  {
+    "options": [
+      "watched",
+      "was watching",
+      "watches",
+      "has watched"
+    ],
+    "content": "選擇最適合填入空格的選項: He _____ TV when his friend called.",
+    "answer": 2,
+    "details": "在這裡，過去進行時(was watching)是正確的，因為他在朋友打電話時正在看電視。",
+    "uuid": "308e4836-974f-4f3f-a190-a07adab83c5b"
+  },
+  {
+    "options": [
+      "increase",
+      "decrease",
+      "pause",
+      "combination"
+    ],
+    "content": "選擇最適合的單字: The company has seen a significant _____ in profits this year.",
+    "answer": 1,
+    "details": "在這裡，increase(增加)是正確的，因為今年公司的利潤有顯著增加。",
+    "uuid": "33a36375-75af-4e06-a0fb-48a205dc8830"
+  },
+  {
+    "options": [
+      "cut",
+      "raise",
+      "combine",
+      "adjust"
+    ],
+    "content": "選擇最適合的單字: The company is looking for ways to _____ costs and increase efficiency.",
+    "answer": 1,
+    "details": "在這裡，cut(削減)是正確的，因為公司正在尋找削減成本和提高效率的方法。",
+    "uuid": "35617cb5-5de8-4f15-a8b7-f68e014873ed"
+  },
+  {
+    "options": [
+      "launches",
+      "launched",
+      "will launch",
+      "is launching"
+    ],
+    "content": "選擇最適合的動詞形式: The company _____ the new software next month.",
+    "answer": 3,
+    "details": "在這裡，will launch(將推出)是正確的，因為它表示將來的動作。",
+    "uuid": "3569282e-efcf-496a-a3c1-b9aa63bead80"
+  },
+  {
+    "options": [
+      "launched",
+      "cancelled",
+      "expanded",
+      "approved"
+    ],
+    "content": "選擇最適合的單字: The project was _____ due to a lack of funding.",
+    "answer": 2,
+    "details": "在這裡，cancelled(取消)是正確的，因為該項目由於資金不足而被取消。",
+    "uuid": "39ccd312-0e26-4c9a-926a-fb30f8849532"
+  },
+  {
+    "options": [
+      "are",
+      "were",
+      "have been",
+      "had been"
+    ],
+    "content": "選擇最適合填入空格的選項: The workers _____ on strike since last week.",
+    "answer": 3,
+    "details": "在這裡，現在完成進行時(have been)是正確的，因為從上週開始，工人們一直在罷工。",
+    "uuid": "3d539367-8a84-44be-9f03-a29998fef1f4"
+  },
+  {
+    "options": [
+      "sign",
+      "signed",
+      "will sign",
+      "are signing"
+    ],
+    "content": "選擇最適合填入空格的選項: They _____ the contract if the terms are acceptable.",
+    "answer": 3,
+    "details": "在這裡，未來時態(will sign)是正確的，因為這是在條款可以接受的情況下將簽署合同的情況。",
+    "uuid": "3eeaa3b9-1bfc-4b1a-a197-16ee1fdc784e"
+  },
+  {
+    "options": [
+      "receives",
+      "received",
+      "is received",
+      "has received"
+    ],
+    "content": "選擇最適合填入空格的選項: The package will be sent as soon as the payment _____.",
+    "answer": 3,
+    "details": "在這種情況下，被動語態(is received)是正確的，因為需要強調在付款收到後才會發送包裹。",
+    "uuid": "42dc1c36-4241-4db6-a401-4e9b98d691da"
+  },
+  {
+    "options": [
+      "implement",
+      "deny",
+      "borrow",
+      "postpone"
+    ],
+    "content": "選擇最適合的單字: We have to _____ a new strategy to increase sales.",
+    "answer": 1,
+    "details": "在這裡，implement(實施)是正確的，因為我們必須實施一個新策略來提高銷售額。",
+    "uuid": "4c6723d7-6608-4874-9e65-26024e4a3ad7"
+  },
+  {
+    "options": [
+      "submitted",
+      "submits",
+      "will submit",
+      "is submitting"
+    ],
+    "content": "選擇最適合的動詞形式: She _____ the proposal last week.",
+    "answer": 1,
+    "details": "在這裡，submitted(提交)是正確的，因為它表示過去的動作。",
+    "uuid": "4dc10ccb-0489-4eac-980e-210d61d142c3"
+  },
+  {
+    "options": [
+      "worked",
+      "works",
+      "has worked",
+      "had worked"
+    ],
+    "content": "選擇最適合填入空格的選項: She _____ in the marketing department for five years.",
+    "answer": 3,
+    "details": "在這裡，現在完成時(has worked)是正確的，因為她在市場部工作了五年，可能仍在繼續工作。",
+    "uuid": "4f3308f5-2668-4787-a6a1-11a516bb3ebb"
+  },
+  {
+    "options": [
+      "starts",
+      "started",
+      "will start",
+      "has started"
+    ],
+    "content": "選擇最適合填入空格的選項: The meeting _____ at 9 am tomorrow.",
+    "answer": 3,
+    "details": "在這裡，未來時態(will start)是正確的，因為會議將在明天上午9點開始。",
+    "uuid": "53f0a13f-3370-4fce-9597-4a6a799fdeae"
+  },
+  {
+    "options": [
+      "have",
+      "having",
+      "had",
+      "will have"
+    ],
+    "content": "選擇最適合填入空格的選項: If I _____ enough time, I would take a vacation.",
+    "answer": 3,
+    "details": "在這種情況下，過去式(had)是正確的，因為這是一個與現實相反的條件句。",
+    "uuid": "589b1087-866a-4893-ad1f-061859bf7259"
+  },
+  {
+    "options": [
+      "compensation",
+      "competition",
+      "complaint",
+      "complication"
+    ],
+    "content": "選擇最適合的單字: The company offers an attractive _____ package for new employees.",
+    "answer": 1,
+    "details": "在這裡，compensation(薪酬)是正確的，因為公司為新員工提供了有吸引力的薪酬待遇。",
+    "uuid": "58f7aefb-da74-4bd9-9aad-fd0018618535"
+  },
+  {
+    "options": [
+      "ahead of",
+      "before",
+      "after",
+      "during"
+    ],
     "content": "選擇最適合的單字: The project was completed _____ the deadline.",
-    "options": ["ahead of", "before", "after", "during"],
     "answer": 1,
-    "details": "在這裡，ahead of(在...之前)是正確的，因為該項目在截止日期之前完成。"
+    "details": "在這裡，ahead of(在...之前)是正確的，因為該項目在截止日期之前完成。",
+    "uuid": "5bbc3861-5ae3-43c9-8f20-b02e1f21c3cb"
   },
   {
-    "content": "選擇最適合的單字: The manager asked the employees to _____ the meeting.",
-    "options": ["attend", "cancel", "postpone", "organize"],
+    "options": [
+      "assigned",
+      "avoided",
+      "dismissed",
+      "refused"
+    ],
+    "content": "選擇最適合的單字: He was _____ to make a presentation at the conference.",
     "answer": 1,
-    "details": "在這裡，attend(參加)是正確的，因為經理要求員工參加會議。"
+    "details": "在這裡，assigned(被指派)是正確的，因為他被指派在會議上進行演示。",
+    "uuid": "600ee7c5-c2b8-4027-b437-7fff994d21aa"
   },
   {
-    "content": "選擇最適合的單字: The company will _____ a survey to gather customer feedback.",
-    "options": ["conduct", "reject", "avoid", "postpone"],
+    "options": [
+      "allocate",
+      "debate",
+      "postpone",
+      "replace"
+    ],
+    "content": "選擇最適合的單字: The department will _____ additional resources to complete the project.",
     "answer": 1,
-    "details": "在這裡，conduct(進行)是正確的，因為公司將進行一項調查以收集客戶反饋。"
+    "details": "在這裡，allocate(分配)是正確的，因為部門將分配額外資源來完成該項目。",
+    "uuid": "6e7939bf-eda9-48a1-bc19-5de04812e716"
   },
   {
-    "content": "選擇最適合的單字: The deadline for submitting the report has been _____ to next week.",
-    "options": ["extended", "shortened", "ignored", "suspended"],
-    "answer": 1,
-    "details": "在這裡，extended(延長)是正確的，因為提交報告的截止日期已延長至下週。"
+    "options": [
+      "am",
+      "was",
+      "were",
+      "be"
+    ],
+    "content": "選擇最適合填入空格的選項: If I _____ the CEO, I would invest in new technology.",
+    "answer": 3,
+    "details": "在這裡，過去式(were)是正確的，因為這是一個與現實相反的假設。",
+    "uuid": "6f591a69-9a60-4ba4-8e78-18ff1f0ad84f"
   },
   {
-    "content": "選擇最適合的動詞形式: The package _____ by the courier tomorrow.",
     "options": [
       "will be delivered",
       "was delivered",
       "will deliver",
       "is delivering"
     ],
+    "content": "選擇最適合的動詞形式: The package _____ by the courier tomorrow.",
     "answer": 1,
-    "details": "在這裡，will be delivered(將被送達)是正確的，因為它表示將來的被動語態。"
+    "details": "在這裡，will be delivered(將被送達)是正確的，因為它表示將來的被動語態。",
+    "uuid": "7032d227-a6f4-41f3-8a9b-121461c2b557"
   },
   {
-    "content": "選擇最適合的單字: The company offers _____ benefits to its employees.",
-    "options": ["competitive", "unfair", "limited", "rare"],
+    "options": [
+      "appointed",
+      "avoided",
+      "postponed",
+      "disagreed"
+    ],
+    "content": "選擇最適合的單字: She has been _____ as the new CEO of the company.",
     "answer": 1,
-    "details": "在這裡，competitive(有競爭力的)是正確的，因為公司為員工提供具有競爭力的福利。"
+    "details": "在這裡，appointed(任命)是正確的，因為她已被任命為公司的新首席執行官。",
+    "uuid": "7074348d-8a10-4df0-a497-b6bedd79e1af"
   },
   {
-    "content": "選擇最適合的動詞形式: She _____ the proposal last week.",
-    "options": ["submitted", "submits", "will submit", "is submitting"],
+    "options": [
+      "checked",
+      "deleted",
+      "ignored",
+      "postponed"
+    ],
+    "content": "選擇最適合的單字: She _____ her email to make sure she didn't miss any important messages.",
     "answer": 1,
-    "details": "在這裡，submitted(提交)是正確的，因為它表示過去的動作。"
+    "details": "在這裡，checked(檢查)是正確的，因為她檢查了電子郵件以確保不會錯過任何重要信息。",
+    "uuid": "7177ac72-e4ce-4e6f-9a01-a55256f8148c"
   },
   {
+    "options": [
+      "offered",
+      "requested",
+      "asked",
+      "needed"
+    ],
+    "content": "選擇最適合的單字: She was _____ the position of marketing manager.",
+    "answer": 1,
+    "details": "在這裡，offered(被提供)是正確的，因為她被提供市場經理的職位。",
+    "uuid": "73f89e43-af54-4257-8a7c-4e95d3267227"
+  },
+  {
+    "options": [
+      "transportation",
+      "competition",
+      "replacement",
+      "obligation"
+    ],
+    "content": "選擇最適合的單字: The company provides free _____ for all employees.",
+    "answer": 1,
+    "details": "在這裡，transportation(交通)是正確的，因為公司為所有員工提供免費交通。",
+    "uuid": "7beccc96-238d-45ad-b9eb-a861b48ec8bb"
+  },
+  {
+    "options": [
+      "responsible",
+      "necessary",
+      "possible",
+      "available"
+    ],
     "content": "選擇最適合的單字: Our team is _____ for managing the project.",
-    "options": ["responsible", "necessary", "possible", "available"],
     "answer": 1,
-    "details": "在這裡，responsible(負責)是正確的，因為我們的團隊負責管理該項目。"
+    "details": "在這裡，responsible(負責)是正確的，因為我們的團隊負責管理該項目。",
+    "uuid": "812b8ebb-4892-440b-9a82-4be09e2c2682"
   },
   {
-    "content": "選擇最適合的動詞形式: The documents _____ before the meeting.",
+    "options": [
+      "progress",
+      "failure",
+      "risk",
+      "expense"
+    ],
+    "content": "選擇最適合的單字: The _____ of the project will be discussed in the meeting.",
+    "answer": 1,
+    "details": "在這裡，progress(進度)是正確的，因為會議將討論項目的進度。",
+    "uuid": "82c69cf4-e708-429f-ba93-d9c78ecb8975"
+  },
+  {
+    "options": [
+      "go",
+      "goes",
+      "gone",
+      "went"
+    ],
+    "content": "選擇最適合填入空格的選項: She _____ to the gym three times a week.",
+    "answer": 2,
+    "details": "在這裡，現在簡單時態(goes)是正確的，因為這是一個習慣性動作。",
+    "uuid": "8387e9ff-4943-4aaf-9953-0355c471f889"
+  },
+  {
+    "options": [
+      "nervous",
+      "nervously",
+      "nerve",
+      "nerving"
+    ],
+    "content": "選擇最適合填入空格的選項: She is really _____ about her presentation tomorrow.",
+    "answer": 1,
+    "details": "在這裡，形容詞(nervous)是正確的，因為它描述了她的感受。",
+    "uuid": "879214be-a72f-4556-bb6b-a03c63cd8202"
+  },
+  {
+    "options": [
+      "postponed",
+      "advanced",
+      "simplified",
+      "terminated"
+    ],
+    "content": "選擇最適合的單字: The meeting has been _____ to next week.",
+    "answer": 1,
+    "details": "在這裡，postponed(延期)是正確的，因為會議已經延期到下週。",
+    "uuid": "8be0a9b9-2140-4620-b02a-e64e5a7e4515"
+  },
+  {
+    "options": [
+      "must be completed",
+      "must complete",
+      "completed",
+      "completes"
+    ],
+    "content": "選擇最適合的動詞形式: The report _____ by the end of the week.",
+    "answer": 1,
+    "details": "在這裡，must be completed(必須完成)是正確的，因為它表示被動語態和將來的需求。",
+    "uuid": "8dbf1837-b041-47be-8a28-3212fe6cf9c2"
+  },
+  {
+    "options": [
+      "started",
+      "start",
+      "has started",
+      "starts"
+    ],
+    "content": "選擇最適合填入空格的選項: She _____ a new job last week.",
+    "answer": 1,
+    "details": "在這裡，過去式(started)是正確的，因為她是在上週開始了新工作。",
+    "uuid": "9093ec1a-fb06-46a0-980b-f45532b5c694"
+  },
+  {
+    "options": [
+      "competitive",
+      "unfair",
+      "limited",
+      "rare"
+    ],
+    "content": "選擇最適合的單字: The company offers _____ benefits to its employees.",
+    "answer": 1,
+    "details": "在這裡，competitive(有競爭力的)是正確的，因為公司為員工提供具有競爭力的福利。",
+    "uuid": "92e14c33-6d7d-4f58-a165-8de897c8dc3d"
+  },
+  {
+    "options": [
+      "acquiring",
+      "denying",
+      "ignoring",
+      "disconnecting"
+    ],
+    "content": "選擇最適合的單字: She is responsible for _____ new clients for the company.",
+    "answer": 1,
+    "details": "在這裡，acquiring(獲得)是正確的，因為她負責為公司獲得新客戶。",
+    "uuid": "9b7a4107-a150-47f5-bda3-c101bcea0eef"
+  },
+  {
+    "options": [
+      "will be tested",
+      "is tested",
+      "tests",
+      "tested"
+    ],
+    "content": "選擇最適合填入空格的選項: The product _____ before it is launched.",
+    "answer": 1,
+    "details": "在這種情況下，將使用未來被動語態(will be tested)，因為需要強調產品將在推出之前進行測試。",
+    "uuid": "9cf18572-f14f-4d2b-9f3d-920e86e05df3"
+  },
+  {
+    "options": [
+      "enhancements",
+      "arguments",
+      "replacements",
+      "payments"
+    ],
+    "content": "選擇最適合的單字: The software update includes several _____ to improve performance.",
+    "answer": 1,
+    "details": "在這裡，enhancements(改進)是正確的，因為軟體更新包括了多項改進以提高性能。",
+    "uuid": "9d1559c5-d045-4a92-bf4a-5e97c84da813"
+  },
+  {
+    "options": [
+      "terminate",
+      "establish",
+      "acquire",
+      "increase"
+    ],
+    "content": "選擇最適合的單字: The company decided to _____ the contract with the supplier.",
+    "answer": 1,
+    "details": "在這裡，terminate(終止)是正確的，因為公司決定終止與供應商的合同。",
+    "uuid": "9ee6a65c-bb33-498c-99b7-65cd63172307"
+  },
+  {
+    "options": [
+      "success",
+      "failure",
+      "surprise",
+      "requirement"
+    ],
+    "content": "選擇最適合的單字: The project was a _____, and the company lost a lot of money.",
+    "answer": 2,
+    "details": "在這裡，failure(失敗)是正確的，因為該項目是一個失敗，公司損失了大量資金。",
+    "uuid": "9fe23886-fbc7-40ef-8afc-148d1623fcfb"
+  },
+  {
+    "options": [
+      "leave",
+      "leaves",
+      "leaving",
+      "left"
+    ],
+    "content": "選擇最適合填入空格的選項: It's important to _____ on time to avoid being late.",
+    "answer": 1,
+    "details": "在這裡，原形動詞(leave)是正確的，因為這是一個建議或建議的表達。",
+    "uuid": "a077505b-8f80-4969-8aea-d79d6b8b031b"
+  },
+  {
+    "options": [
+      "manage",
+      "waste",
+      "exchange",
+      "sell"
+    ],
+    "content": "選擇最適合的單字: The employees need to _____ their time effectively.",
+    "answer": 1,
+    "details": "在這裡，manage(管理)是正確的，因為員工需要有效管理他們的時間。",
+    "uuid": "a0d0a038-fd0d-4b06-8edf-afb9c7a466a1"
+  },
+  {
+    "options": [
+      "will go",
+      "go",
+      "went",
+      "have gone"
+    ],
+    "content": "選擇最適合填入空格的選項: They _____ to the conference if they receive an invitation.",
+    "answer": 1,
+    "details": "在這裡，未來時態(will go)是正確的，因為這是在收到邀請後將參加會議的情況。",
+    "uuid": "a5145521-5ad5-4e37-b8af-22c2082fdd33"
+  },
+  {
+    "options": [
+      "develops",
+      "developed",
+      "will develop",
+      "is developing"
+    ],
+    "content": "選擇最適合的動詞形式: The marketing team _____ a new strategy.",
+    "answer": 2,
+    "details": "在這裡，developed(已開發)是正確的，因為它表示過去的動作。",
+    "uuid": "a7bd957b-7e74-4331-9c83-0756f2b9ef17"
+  },
+  {
+    "options": [
+      "delivers",
+      "delivered",
+      "was delivered",
+      "has delivered"
+    ],
+    "content": "選擇最適合填入空格的選項: The package _____ by the courier yesterday.",
+    "answer": 3,
+    "details": "在這種情況下，過去被動語態(was delivered)是正確的，因為需要強調包裹已被快遞員送達。",
+    "uuid": "a87bd909-0e92-4ebe-ae65-85ece556a30d"
+  },
+  {
+    "options": [
+      "finish",
+      "finishing",
+      "finished",
+      "had finished"
+    ],
+    "content": "選擇最適合填入空格的選項: The manager asked him to _____ the report by Friday.",
+    "answer": 1,
+    "details": "在這裡，原形動詞(finish)是正確的，因為在這種情況下需要使用動詞原型。",
+    "uuid": "a8a5f449-f070-4928-8578-a517228873da"
+  },
+  {
+    "options": [
+      "summary",
+      "warning",
+      "permission",
+      "request"
+    ],
+    "content": "選擇最適合的單字: The manager asked for a _____ of the sales data.",
+    "answer": 1,
+    "details": "在這裡，summary(摘要)是正確的，因為經理要求提供銷售數據的摘要。",
+    "uuid": "ab5512d4-a3b8-4efc-b8f2-2db470d31e51"
+  },
+  {
+    "options": [
+      "more large",
+      "larger",
+      "largest",
+      "most large"
+    ],
+    "content": "選擇最適合填入空格的選項: The new office building is _____ than the old one.",
+    "answer": 2,
+    "details": "在這裡，比較級(larger)是正確的，因為它比較了新舊辦公樓的大小。",
+    "uuid": "abfdaed2-c177-4f96-8d0e-6ce3899fcc2f"
+  },
+  {
+    "options": [
+      "extended",
+      "shortened",
+      "ignored",
+      "suspended"
+    ],
+    "content": "選擇最適合的單字: The deadline for submitting the report has been _____ to next week.",
+    "answer": 1,
+    "details": "在這裡，extended(延長)是正確的，因為提交報告的截止日期已延長至下週。",
+    "uuid": "b232f6d5-1346-467a-95bf-ce1bcc797401"
+  },
+  {
+    "options": [
+      "signed",
+      "sign",
+      "are signing",
+      "will sign"
+    ],
+    "content": "選擇最適合的動詞形式: They _____ the contract after the negotiation.",
+    "answer": 1,
+    "details": "在這裡，signed(簽署)是正確的，因為它表示過去的動作。",
+    "uuid": "b5f5c9b8-346d-40e5-b700-dd3af7c0dbe0"
+  },
+  {
+    "options": [
+      "satisfied",
+      "involved",
+      "completed",
+      "established"
+    ],
+    "content": "選擇最適合的單字: The manager was not _____ with the team's progress.",
+    "answer": 1,
+    "details": "在這裡，satisfied(滿意)是正確的，因為經理對團隊的進展不滿意。",
+    "uuid": "b66c3cf7-9bce-4665-bc38-a71e9ca23ceb"
+  },
+  {
+    "options": [
+      "resolved",
+      "ignored",
+      "agreed",
+      "denied"
+    ],
+    "content": "選擇最適合的單字: The customer's complaint was _____ by the customer service department.",
+    "answer": 1,
+    "details": "在這裡，resolved(解決)是正確的，因為客戶的投訴已被客戶服務部門解決。",
+    "uuid": "c28e6c43-9fb2-47ab-ad46-dc808685e598"
+  },
+  {
+    "options": [
+      "modified",
+      "copied",
+      "ignored",
+      "included"
+    ],
+    "content": "選擇最適合的單字: The product's design was _____ after receiving customer feedback.",
+    "answer": 1,
+    "details": "在這裡，modified(修改)是正確的，因為在收到客戶反饋後，產品設計已經過修改。",
+    "uuid": "c67b8e3f-3b6c-48cb-9d91-95f1f99fb934"
+  },
+  {
+    "options": [
+      "complete",
+      "compete",
+      "contrast",
+      "contribute"
+    ],
+    "content": "選擇最適合的單字: The new employee must _____ a training program before starting work.",
+    "answer": 1,
+    "details": "在這裡，complete(完成)是正確的，因為新員工在開始工作之前必須完成培訓課程。",
+    "uuid": "ca29eed9-29cf-4131-befd-8d213e3393a1"
+  },
+  {
+    "options": [
+      "revise",
+      "expand",
+      "accompany",
+      "prohibit"
+    ],
+    "content": "選擇最適合的單字: Please _____ the report for any errors before submitting it.",
+    "answer": 1,
+    "details": "在這裡，revise(修訂)是正確的，因為在提交報告之前，請對報告進行檢查以查找任何錯誤。",
+    "uuid": "d352c51d-bc0d-4e9e-8151-33fb97ca0d9c"
+  },
+  {
+    "options": [
+      "reduce",
+      "expand",
+      "maintain",
+      "suggest"
+    ],
+    "content": "選擇最適合的單字: The company has decided to _____ its advertising budget.",
+    "answer": 1,
+    "details": "在這裡，reduce(減少)是正確的，因為公司決定減少其廣告預算。",
+    "uuid": "d3ee3a41-4213-48b5-a974-f76939c336a2"
+  },
+  {
     "options": [
       "need to be reviewed",
       "needed to be reviewed",
       "will need to be reviewed",
       "are needed to be reviewed"
     ],
+    "content": "選擇最適合的動詞形式: The documents _____ before the meeting.",
     "answer": 1,
-    "details": "在這裡，need to be reviewed(需要審查)是正確的，因為它表示需要在會議之前完成的動作。"
+    "details": "在這裡，need to be reviewed(需要審查)是正確的，因為它表示需要在會議之前完成的動作。",
+    "uuid": "d45d40cb-a170-4fc3-a0f0-a6b6dc940c1a"
   },
   {
-    "content": "選擇最適合的單字: The company has a strict policy against _____ at the workplace.",
-    "options": ["harassment", "promotion", "achievement", "appointment"],
-    "answer": 1,
-    "details": "在這裡，harassment(騷擾)是正確的，因為公司對工作場所的騷擾有嚴格政策。"
-  },
-  {
-    "content": "選擇最適合的動詞形式: They _____ the contract after the negotiation.",
-    "options": ["signed", "sign", "are signing", "will sign"],
-    "answer": 1,
-    "details": "在這裡，signed(簽署)是正確的，因為它表示過去的動作。"
-  },
-  {
-    "content": "選擇最適合的單字: The manager asked for a _____ of the sales data.",
-    "options": ["summary", "warning", "permission", "request"],
-    "answer": 1,
-    "details": "在這裡，summary(摘要)是正確的，因為經理要求提供銷售數據的摘要。"
-  },
-  {
-    "content": "選擇最適合的動詞形式: The company _____ the new software next month.",
-    "options": ["launches", "launched", "will launch", "is launching"],
+    "options": [
+      "move",
+      "moves",
+      "will move",
+      "has moved"
+    ],
+    "content": "選擇最適合填入空格的選項: They _____ in the new office building by the end of the month.",
     "answer": 3,
-    "details": "在這裡，will launch(將推出)是正確的，因為它表示將來的動作。"
+    "details": "在這裡，未來時態(will move)是正確的，因為這是將在月底之前發生的事情。",
+    "uuid": "d6eda094-f013-400b-a485-107dacae5c4a"
   },
   {
-    "content": "選擇最適合的單字: The employees need to _____ their time effectively.",
-    "options": ["manage", "waste", "exchange", "sell"],
-    "answer": 1,
-    "details": "在這裡，manage(管理)是正確的，因為員工需要有效管理他們的時間。"
-  },
-  {
-    "content": "選擇最適合的動詞形式: The marketing team _____ a new strategy.",
-    "options": ["develops", "developed", "will develop", "is developing"],
+    "options": [
+      "wrote",
+      "was writing",
+      "has written",
+      "had written"
+    ],
+    "content": "選擇最適合填入空格的選項: He _____ the report when his computer crashed.",
     "answer": 2,
-    "details": "在這裡，developed(已開發)是正確的，因為它表示過去的動作。"
+    "details": "在這裡，過去進行時(was writing)是正確的，因為他在電腦崩潰時正在撰寫報告。",
+    "uuid": "d7e1114b-2764-4bc3-b3dc-bc97e08af13b"
   },
   {
-    "content": "選擇最適合的單字: The _____ of the project will be discussed in the meeting.",
-    "options": ["progress", "failure", "risk", "expense"],
-    "answer": 1,
-    "details": "在這裡，progress(進度)是正確的，因為會議將討論項目的進度。"
+    "options": [
+      "will be held",
+      "will hold",
+      "holds",
+      "held"
+    ],
+    "content": "選擇最適合填入空格的選項: The manager _____ a meeting with the employees tomorrow.",
+    "answer": 2,
+    "details": "在這裡，未來時態(will hold)是正確的，因為這是將在明天舉行的會議。",
+    "uuid": "de574662-f37a-4e69-b3d7-b0bda2182584"
   },
   {
-    "content": "選擇最適合的動詞形式: The report _____ by the end of the week.",
-    "options": ["must be completed", "must complete", "completed", "completes"],
-    "answer": 1,
-    "details": "在這裡，must be completed(必須完成)是正確的，因為它表示被動語態和將來的需求。"
-  },
-  {
-    "content": "選擇最適合的單字: The company decided to _____ its operations to other countries.",
-    "options": ["expand", "limit", "reduce", "ignore"],
-    "answer": 1,
-    "details": "在這裡，expand(擴展)是正確的，因為公司決定將業務擴展到其他國家。"
-  },
-  {
-    "content": "選擇最適合的動詞形式: The team _____ on the project for three months.",
-    "options": ["has been working", "have been working", "worked", "works"],
-    "answer": 1,
-    "details": "在這裡，has been working(一直在工作)是正確的，因為它表示過去到現在的進行動作。"
-  },
-  {
+    "options": [
+      "safe",
+      "dangerous",
+      "risky",
+      "harmful"
+    ],
     "content": "選擇最適合的單字: The company provides a _____ working environment for its employees.",
-    "options": ["safe", "dangerous", "risky", "harmful"],
     "answer": 1,
-    "details": "在這裡，safe(安全)是正確的，因為公司為員工提供安全的工作環境。"
+    "details": "在這裡，safe(安全)是正確的，因為公司為員工提供安全的工作環境。",
+    "uuid": "e1d93b83-8d54-4dd8-a9f3-e5990e0d8fae"
   },
   {
-    "content": "選擇最適合的動詞形式: The client _____ the invoice after the work is completed.",
-    "options": ["will pay", "pays", "has paid", "paid"],
+    "options": [
+      "expand",
+      "expanding",
+      "expanded",
+      "expansion"
+    ],
+    "content": "選擇最適合填入空格的選項: The company is planning to _____ its products to new markets.",
     "answer": 1,
-    "details": "在這裡，will pay(將支付)是正確的，因為它表示將來的動作。"
+    "details": "在這裡，原形動詞(expand)是正確的，因為這是公司對未來的計劃。",
+    "uuid": "e812a1b8-689d-4554-a063-6601e2ad8aa6"
+  },
+  {
+    "options": [
+      "will be built",
+      "is building",
+      "will build",
+      "built"
+    ],
+    "content": "選擇最適合填入空格的選項: The company _____ a new office building next year.",
+    "answer": 3,
+    "details": "在這裡，未來時態(will build)是正確的，因為這是將在明年發生的事情。",
+    "uuid": "e83451f6-bbf2-458b-94cc-4374f0130b32"
+  },
+  {
+    "options": [
+      "must be completed",
+      "must complete",
+      "must have completed",
+      "must completed"
+    ],
+    "content": "選擇最適合填入空格的選項: The project _____ before the deadline.",
+    "answer": 1,
+    "details": "在這種情況下，必須使用被動語態(must be completed)，因為需要強調項目必須在截止日期之前完成。",
+    "uuid": "e8ebb9d9-c3e7-49ec-9c22-22c83adb859e"
+  },
+  {
+    "options": [
+      "harassment",
+      "promotion",
+      "achievement",
+      "appointment"
+    ],
+    "content": "選擇最適合的單字: The company has a strict policy against _____ at the workplace.",
+    "answer": 1,
+    "details": "在這裡，harassment(騷擾)是正確的，因為公司對工作場所的騷擾有嚴格政策。",
+    "uuid": "e8ec7b14-6e95-4f7c-bbc0-2ac8ea000772"
+  },
+  {
+    "options": [
+      "was",
+      "will be",
+      "is",
+      "had been"
+    ],
+    "content": "選擇最適合填入空格的選項: The deadline _____ extended by the manager.",
+    "answer": 2,
+    "details": "在這種情況下，未來被動語態(will be)是正確的，因為截止日期將由經理延長。",
+    "uuid": "eadf350a-6e21-4ddd-90fa-4f4f1b1155d3"
+  },
+  {
+    "options": [
+      "conduct",
+      "reject",
+      "avoid",
+      "postpone"
+    ],
+    "content": "選擇最適合的單字: The company will _____ a survey to gather customer feedback.",
+    "answer": 1,
+    "details": "在這裡，conduct(進行)是正確的，因為公司將進行一項調查以收集客戶反饋。",
+    "uuid": "eb29094f-34a8-48f8-8446-59dd501531cd"
+  },
+  {
+    "options": [
+      "won't",
+      "wouldn't",
+      "doesn't",
+      "didn't"
+    ],
+    "content": "選擇最適合填入空格的選項: She said she _____ come to the party tonight.",
+    "answer": 1,
+    "details": "在這裡，否定未來時態(won't)是正確的，因為她表示她今晚不會去參加派對。",
+    "uuid": "ebb15c9b-5d53-418e-899f-de5571cbed93"
+  },
+  {
+    "options": [
+      "lay off",
+      "promote",
+      "award",
+      "interview"
+    ],
+    "content": "選擇最適合的單字: Due to the economic crisis, the company had to _____ several employees.",
+    "answer": 1,
+    "details": "在這裡，lay off(裁員)是正確的，因為由於經濟危機，公司不得不裁員數名員工。",
+    "uuid": "eca50997-fdfb-4d02-abd8-0b0350819554"
+  },
+  {
+    "options": [
+      "launch",
+      "completion",
+      "reduction",
+      "introduction"
+    ],
+    "content": "選擇最適合的單字: The _____ of the new software version will take place next week.",
+    "answer": 1,
+    "details": "在這裡，launch(推出)是正確的，因為新軟體版本的推出將在下週進行。",
+    "uuid": "ecb7dc0b-5af3-42d7-b2b4-93c6702420cb"
+  },
+  {
+    "options": [
+      "works on",
+      "worked on",
+      "has been working on",
+      "had been working on"
+    ],
+    "content": "選擇最適合填入空格的選項: He _____ the project since last month.",
+    "answer": 3,
+    "details": "在這裡，現在完成進行時(has been working on)是正確的，因為他從上個月開始一直在進行這個項目。",
+    "uuid": "efb38a52-0a08-4845-8754-585346e3cb0c"
+  },
+  {
+    "options": [
+      "attend",
+      "cancel",
+      "postpone",
+      "organize"
+    ],
+    "content": "選擇最適合的單字: The manager asked the employees to _____ the meeting.",
+    "answer": 1,
+    "details": "在這裡，attend(參加)是正確的，因為經理要求員工參加會議。",
+    "uuid": "f5b5d3a1-f9ff-49fe-b04c-177b9e59f4ac"
+  },
+  {
+    "options": [
+      "expand",
+      "limit",
+      "reduce",
+      "ignore"
+    ],
+    "content": "選擇最適合的單字: The company decided to _____ its operations to other countries.",
+    "answer": 1,
+    "details": "在這裡，expand(擴展)是正確的，因為公司決定將業務擴展到其他國家。",
+    "uuid": "f5b8d074-9f25-4fbb-83a7-9a0774b7da90"
+  },
+  {
+    "options": [
+      "disappointed",
+      "replaced",
+      "combined",
+      "celebrated"
+    ],
+    "content": "選擇最適合的單字: The manager was _____ with the team's performance.",
+    "answer": 1,
+    "details": "在這裡，disappointed(失望)是正確的，因為經理對團隊的表現感到失望。",
+    "uuid": "f92c4929-081f-42f2-9777-bbe788579ae9"
+  },
+  {
+    "options": [
+      "excite",
+      "excited",
+      "exciting",
+      "excitedly"
+    ],
+    "content": "選擇最適合填入空格的選項: The employees were _____ when they heard about the company's success.",
+    "answer": 2,
+    "details": "在這裡，形容詞(excited)是正確的，因為它描述了員工的情感。",
+    "uuid": "fe16cc48-faa0-4c70-81fc-50f4287e5d31"
+  },
+  {
+    "options": [
+      "will finish",
+      "finishes",
+      "finished",
+      "has finished"
+    ],
+    "content": "選擇最適合填入空格的選項: She _____ the report by the end of the day.",
+    "answer": 1,
+    "details": "在這裡，未來時態(will finish)是正確的，因為這是將在一天結束之前完成的事情。",
+    "uuid": "fe85960b-e717-4295-b44e-26640bcb36fb"
+  },
+  {
+    "options": [
+      "cooperated",
+      "competed",
+      "argued",
+      "ignored"
+    ],
+    "content": "選擇最適合的單字: The team _____ closely with each other to complete the project on time.",
+    "answer": 1,
+    "details": "在這裡，cooperated(合作)是正確的，因為團隊為了按時完成項目而密切合作。",
+    "uuid": "ff9a54ba-4c86-482a-8f01-4ca09a2ff386"
   }
 ]

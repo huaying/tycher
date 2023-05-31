@@ -50,12 +50,13 @@ model Question {
   topicId      Int?
   options      Json
   answer       Int
+  uuid         String   @unique
   questionSets QuestionOnQuestionSet[]
-  details      String       @db.Text
+  details      String   @db.Text
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
-  @@index([topicId])
+  @@index([topicId, uuid])
 }
 
 model Exam {
