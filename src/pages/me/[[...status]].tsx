@@ -6,7 +6,6 @@ import Layout from "~/components/layout";
 import { H2 } from "~/components/ui/typography";
 import { format } from "date-fns";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
-import { useState } from "react";
 import { ExamStatus } from "@prisma/client";
 import {
   Table,
@@ -20,36 +19,57 @@ import { Button } from "~/components/ui/button";
 import { useRouter } from "next/router";
 import { Hash } from "lucide-react";
 import { buildClerkProps } from "@clerk/nextjs/server";
+import { extractSingleQuery } from "~/utils/query";
+
+const statusString = ["ongoing", "submitted", "quitted"] as const;
+
+type StatusString = (typeof statusString)[number];
+
+const stringToStatus = (str: string | undefined) => {
+  const _map: { [k: string]: ExamStatus | null } = {
+    ongoing: null,
+    submitted: ExamStatus.Submitted,
+    quitted: ExamStatus.Quitted,
+  };
+
+  return _map[str ?? "ongoing"] ?? null;
+};
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const ssr = generateSSRHelper(context);
 
-  await ssr.exam.getExams.prefetch({ status: null, page: 1 });
+  const page = Number(extractSingleQuery(context.query?.page)) || 1;
+  const rawStatus = extractSingleQuery(context.params?.status);
+  const status = statusString.includes(rawStatus as StatusString)
+    ? rawStatus
+    : statusString[0];
+
+  await ssr.exam.getExams.prefetch({ status: stringToStatus(status), page });
 
   return {
     props: {
       ...buildClerkProps(context.req),
+      page,
+      status,
       trpcState: ssr.dehydrate(),
     },
   };
 };
 
-type StatusString = "Ongoing" | "Submitted" | "Quitted";
-const stringToStatus = (str: StatusString) =>
-  ({
-    Ongoing: null,
-    Submitted: ExamStatus.Submitted,
-    Quitted: ExamStatus.Quitted,
-  }[str]);
-
 interface ExamTableProps {
   status: StatusString;
+  page: number;
   btnStr?: string;
   scored?: boolean;
 }
-const ExamTable = ({ status, btnStr = "繼續", scored }: ExamTableProps) => {
+
+const ExamTable = ({
+  status,
+  btnStr = "繼續",
+  scored,
+  page,
+}: ExamTableProps) => {
   const router = useRouter();
-  const [page, setPage] = useState(1);
   const { data } = api.exam.getExams.useQuery({
     status: stringToStatus(status),
     page,
@@ -102,26 +122,29 @@ const ExamTable = ({ status, btnStr = "繼續", scored }: ExamTableProps) => {
         <Button
           variant="outline"
           size="sm"
-          onClick={() => setPage((page) => page - 1)}
           disabled={page === 1}
+          onClick={() => void router.replace(`/me/${status}?page=${page - 1}`)}
         >
-          Previous
+          前一頁
         </Button>
         <Button
           variant="outline"
           size="sm"
-          onClick={() => setPage((page) => page + 1)}
           disabled={!hasNext}
+          onClick={() => void router.replace(`/me/${status}?page=${page + 1}`)}
         >
-          Next
+          下一頁
         </Button>
       </div>
     </>
   );
 };
 
-const MePage: NextPage = () => {
-  const [status, setStatus] = useState<StatusString>("Ongoing");
+const MePage: NextPage<{ page: number; status: string }> = ({
+  page,
+  status,
+}) => {
+  const router = useRouter();
   const user = useUser();
 
   return (
@@ -130,21 +153,23 @@ const MePage: NextPage = () => {
         <H2>Hello! {user?.user?.fullName}</H2>
         <Tabs
           value={status}
-          onValueChange={(value) => setStatus(value as StatusString)}
+          onValueChange={(value) =>
+            void router.replace(`/me/${value as StatusString}`)
+          }
         >
           <TabsList className="mt-10 grid w-full grid-cols-3">
-            <TabsTrigger value="Ongoing">做答中</TabsTrigger>
-            <TabsTrigger value="Submitted">已提交</TabsTrigger>
-            <TabsTrigger value="Quitted">已放棄</TabsTrigger>
+            <TabsTrigger value="ongoing">做答中</TabsTrigger>
+            <TabsTrigger value="submitted">已提交</TabsTrigger>
+            <TabsTrigger value="quitted">已放棄</TabsTrigger>
           </TabsList>
-          <TabsContent value="Ongoing">
-            <ExamTable status={status} />
+          <TabsContent value="ongoing">
+            <ExamTable status="ongoing" page={page} />
           </TabsContent>
-          <TabsContent value="Submitted">
-            <ExamTable status={status} btnStr="查看" scored />
+          <TabsContent value="submitted">
+            <ExamTable status="submitted" btnStr="查看" scored page={page} />
           </TabsContent>
-          <TabsContent value="Quitted">
-            <ExamTable status={status} btnStr="查看" />
+          <TabsContent value="quitted">
+            <ExamTable status="quitted" btnStr="查看" page={page} />
           </TabsContent>
         </Tabs>
       </div>
