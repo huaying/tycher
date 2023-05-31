@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Navbar({ noLogo }: { noLogo?: boolean }) {
   return (
-    <header className="m-3 flex h-[36px] items-center">
+    <header className="m-8 flex h-[36px] items-center">
       {!noLogo && (
         <Link href="/">
           <div className="flex items-center gap-1">
