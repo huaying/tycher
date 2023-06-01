@@ -21,5 +21,16 @@ const config = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/privacy-policy",
+        destination: "https://bit.ly/tycher-privacy-policy",
+        basePath: false,
+        permanent: false,
+      },
+    ];
+  },
 };
 export default config;
