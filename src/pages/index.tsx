@@ -4,7 +4,7 @@ import { api } from "~/utils/api";
 import { Fragment } from "react";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 import Layout from "~/components/layout";
-import { H1, H2, Large } from "~/components/ui/typography";
+import { H1, Large } from "~/components/ui/typography";
 import { Hash } from "lucide-react";
 import { buildClerkProps } from "@clerk/nextjs/server";
 import Image from "next/image";
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       <div className="flex justify-center px-8 lg:mt-[96px]">
         <div className="flex w-full max-w-[1140px] flex-col items-center lg:items-start">
           <div className="flex max-w-lg flex-col sm:flex-col-reverse">
-            <div className="mt-3 ">
+            <div className="mt-3">
               <Image
                 src="/tycher.svg"
                 width={48}
