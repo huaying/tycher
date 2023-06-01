@@ -26,6 +26,7 @@ const files = [
   ["data-toeic.json", "多益", "toeic"],
   ["data-trivia.json", "冷知識", "trivia"],
   ["data-ui-ux.json", "UIUX", "uiux"],
+  ["data-zodiac.json", "星座", "zodiac"],
 ] as const;
 
 async function parseFile(filePath: string, topicName: string, slug: string) {
