@@ -14,7 +14,7 @@ export default function Page() {
     <div className="flex h-screen w-screen flex-col items-center justify-center">
       <Image src="/tycher.svg" width={48} height={48} alt="Logo" />
       <H1 className="mb-8 mt-2">Tycher 來考試</H1>
-      <div className="min-h-[222px]">
+      <div className="min-h-[250px]">
         <SignIn
           signUpUrl="/sign-up"
           redirectUrl={redirect}
