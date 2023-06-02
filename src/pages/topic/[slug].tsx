@@ -43,7 +43,7 @@ const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
   return (
     <Layout>
       {topic && (
-        <div className="mt-[152px] flex flex-col items-center justify-center">
+        <div className="mx-8 mt-[96px] flex flex-col items-center justify-center">
           <div className="flex items-center gap-0.5">
             <Hash size={24} className="text-yellow-500" />
             <H1>{topic.name}</H1>
