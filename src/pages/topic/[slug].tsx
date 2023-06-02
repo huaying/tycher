@@ -4,7 +4,7 @@ import { api } from "~/utils/api";
 import { generateSSRHelper } from "~/server/helpers/ssrHelper";
 import Layout from "~/components/layout";
 import { Hash } from "lucide-react";
-import { H1, Small } from "~/components/ui/typography";
+import { H1, Large, Small } from "~/components/ui/typography";
 import { Button } from "~/components/ui/button";
 import { buildClerkProps } from "@clerk/nextjs/server";
 import { useAuth } from "@clerk/nextjs";
@@ -48,9 +48,12 @@ const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
             <Hash size={24} className="text-yellow-500" />
             <H1>{topic.name}</H1>
           </div>
-          <div>{topic?.description}</div>
-
-          <div className="mt-4">
+          {topic?.description && (
+            <Large className="mt-8 max-w-md text-muted-foreground">
+              {topic?.description}
+            </Large>
+          )}
+          <div className="mt-8">
             {!auth.isSignedIn ? (
               <div className="flex flex-col items-center gap-4">
                 <Button size="lg" disabled>

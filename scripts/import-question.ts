@@ -10,26 +10,21 @@ interface Question {
   uuid: string;
 }
 
-const prisma = new PrismaClient();
-const files = [
-  ["data-accounting.json", "會計", "accounting"],
-  ["data-chinese-medicine.json", "中醫", "chinese-medicine"],
-  ["data-cs-easy.json", "計算機概論-簡單", "cs-easy"],
-  ["data-cs-hard.json", "計算機概論-難", "cs-hard"],
-  ["data-cs-medium.json", "計算機概論-中等", "cs-medium"],
-  ["data-fengshui.json", "風水", "fengshui"],
-  ["data-motocycle.json", "機車考照", "motocycle"],
-  ["data-stock-tw.json", "台股", "stock-tw"],
-  ["data-stock-us.json", "美股", "stock-us"],
-  ["data-tarot.json", "塔羅牌", "tarot"],
-  ["data-toefl.json", "托福", "toefl"],
-  ["data-toeic.json", "多益", "toeic"],
-  ["data-trivia.json", "冷知識", "trivia"],
-  ["data-ui-ux.json", "UIUX", "uiux"],
-  ["data-zodiac.json", "星座", "zodiac"],
-] as const;
+interface Topic {
+  name: string;
+  slug: string;
+  file: string;
+  description: string;
+}
 
-async function parseFile(filePath: string, topicName: string, slug: string) {
+const prisma = new PrismaClient();
+
+async function parseQuestions(
+  filePath: string,
+  topicName: string,
+  slug: string,
+  description: string
+) {
   const rawData = fs.readFileSync(filePath, "utf8");
   const data = JSON.parse(rawData) as Question[];
   try {
@@ -43,6 +38,7 @@ async function parseFile(filePath: string, topicName: string, slug: string) {
         data: {
           name: topicName,
           slug,
+          description,
         },
       });
       await prisma.$transaction(
@@ -62,6 +58,7 @@ async function parseFile(filePath: string, topicName: string, slug: string) {
         data: {
           name: topicName,
           slug,
+          description,
         },
       });
       await prisma.question.createMany({
@@ -77,10 +74,15 @@ async function parseFile(filePath: string, topicName: string, slug: string) {
 }
 
 function parse() {
+  const topicsFile = path.join(__dirname, "../data/topics/data-topics.json");
+
   try {
-    files.forEach(([filename, topic, slug]) => {
-      const filePath = path.join(__dirname, "../data", filename);
-      void parseFile(filePath, topic, slug);
+    const topicRawData = fs.readFileSync(topicsFile, "utf8");
+    const topics = JSON.parse(topicRawData) as Topic[];
+
+    topics.forEach(({ name, slug, file, description }) => {
+      const filePath = path.join(__dirname, "../data/questions", file);
+      void parseQuestions(filePath, name, slug, description);
     });
   } catch (err) {
     console.error(err);

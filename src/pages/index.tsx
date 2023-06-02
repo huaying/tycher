@@ -37,11 +37,8 @@ const Page = ({ topics }: InferGetStaticPropsType<typeof getStaticProps>) => {
                 className="flex sm:hidden lg:flex"
               />
               <H1 className="mb-4 mt-4">Tycher 來考試</H1>
-              <Large className="mb-1 text-muted-foreground">
-                {"It's your knowledge. 你的知識， 你的考試。"}
-              </Large>
               <Large className="mb-8 text-muted-foreground">
-                {"> 請點擊以下任意主題進入考試"}
+                {"It's your knowledge. 你的知識， 你的考試。"}
               </Large>
               <div className="flex  flex-wrap gap-1">
                 {topics?.map((topic) => (
