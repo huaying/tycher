@@ -23,7 +23,7 @@ import {
 import { prisma } from "~/server/db";
 
 interface AuthContext {
-  auth: SignedInAuthObject | SignedOutAuthObject;
+  auth?: SignedInAuthObject | SignedOutAuthObject;
 }
 
 /**

@@ -1,30 +1,28 @@
-import { type GetServerSideProps, type NextPage } from "next";
+import { type GetStaticProps, type InferGetStaticPropsType } from "next";
 import Link from "next/link";
-import { api } from "~/utils/api";
 import { Fragment } from "react";
-import { generateSSRHelper } from "~/server/helpers/ssrHelper";
+import { generateSSGHelper } from "~/server/helpers/ssrHelper";
 import Layout from "~/components/layout";
 import { H1, Large } from "~/components/ui/typography";
 import { Hash } from "lucide-react";
-import { buildClerkProps } from "@clerk/nextjs/server";
 import Image from "next/image";
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const ssr = generateSSRHelper(context);
+type Topic = {
+  name: string;
+  slug: string;
+};
 
-  await ssr.topic.getAll.prefetch();
+export const getStaticProps: GetStaticProps<{ topics: Topic[] }> = async () => {
+  const ssg = generateSSGHelper();
+
+  const topics = await ssg.topic.getAll.fetch();
 
   return {
-    props: {
-      ...buildClerkProps(context.req),
-      trpcState: ssr.dehydrate(),
-    },
+    props: { topics },
   };
 };
 
-const Home: NextPage = () => {
-  const { data: topics } = api.topic.getAll.useQuery();
-
+const Page = ({ topics }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <Layout noLogo>
       <div className="flex justify-center px-8 lg:mt-[96px]">
@@ -71,4 +69,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Page;

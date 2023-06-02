@@ -14,3 +14,11 @@ export const generateSSRHelper = (context: GetServerSidePropsContext) => {
     transformer: superjson, // optional - adds superjson serialization
   });
 };
+
+export const generateSSGHelper = () => {
+  return createServerSideHelpers({
+    router: appRouter,
+    ctx: { prisma, auth: undefined },
+    transformer: superjson,
+  });
+};
