@@ -16,9 +16,32 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <>
       <ClerkProvider {...pageProps}>
         <Head>
-          <title>Tycher</title>
-          <meta name="description" content="Learn new things from Quiz" />
+          <title>Tycher來考試</title>
+          <meta
+            name="description"
+            content="Tycher 讓你能夠根據不同主題生成練習題，助你一臂之力。現在就加入我們，讓學習變得更有效率吧！"
+          />
           <link rel="icon" href="/favicon.ico" />
+          <meta property="og:image" content="/tycher-og.png" />
+          <meta
+            property="og:title"
+            content="Tycher來考試, 你的知識, 你的考試"
+          />
+          <meta
+            property="og:description"
+            content="Tycher 讓你能夠根據不同主題生成練習題，助你一臂之力。現在就加入我們，讓學習變得更有效率吧！"
+          />
+          <meta property="og:url" content="https://tycher.io" />
+
+          <meta property="twitter:image" content="/tycher-og.png" />
+          <meta
+            property="twitter:title"
+            content="Tycher來考試, 你的知識, 你的考試"
+          />
+          <meta
+            property="twitter:description"
+            content="Tycher 讓你能夠根據不同主題生成練習題，助你一臂之力。現在就加入我們，讓學習變得更有效率吧！"
+          />
         </Head>
         <main className={zenOldMincho.className}>
           <Component {...pageProps} />
