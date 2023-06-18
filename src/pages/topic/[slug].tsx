@@ -1,34 +1,42 @@
-import { type GetServerSideProps, type NextPage } from "next";
+import { type GetStaticProps, type InferGetStaticPropsType } from "next";
 import { useRouter } from "next/navigation";
 import { api } from "~/utils/api";
-import { generateSSRHelper } from "~/server/helpers/ssrHelper";
+import { generateSSGHelper } from "~/server/helpers/ssrHelper";
 import Layout from "~/components/layout";
 import { Hash } from "lucide-react";
 import { H1, Large, Small } from "~/components/ui/typography";
 import { Button } from "~/components/ui/button";
-import { buildClerkProps } from "@clerk/nextjs/server";
 import { useAuth } from "@clerk/nextjs";
 import SignInLink from "~/components/sign-in/sign-in-link";
+import { Topic } from "@prisma/client";
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const ssr = generateSSRHelper(context);
-
-  const slug = context.params?.slug;
-
-  if (typeof slug !== "string") throw new Error("no slug");
-
-  await ssr.topic.getTopic.prefetch({ slug });
+export const getStaticPaths = async () => {
+  const ssg = generateSSGHelper();
+  const topics = await ssg.topic.getAll.fetch();
+  const paths = topics.map((topic) => ({
+    params: { slug: topic.slug },
+  }));
 
   return {
-    props: {
-      ...buildClerkProps(context.req),
-      trpcState: ssr.dehydrate(),
-      slug,
-    },
+    paths,
+    fallback: false,
   };
 };
 
-const TopicPage: NextPage<{ slug: string }> = ({ slug }) => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const ssg = generateSSGHelper();
+  const slug = params?.slug;
+
+  if (typeof slug !== "string") throw new Error("no slug");
+
+  await ssg.topic.getTopic.prefetch({ slug });
+
+  return {
+    props: { slug, trpcState: ssg.dehydrate() },
+  };
+};
+
+const TopicPage = ({ slug }: { slug: string }) => {
   const router = useRouter();
   const auth = useAuth();
   const { data: topic } = api.topic.getTopic.useQuery({ slug });
