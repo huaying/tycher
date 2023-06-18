@@ -1,0 +1,663 @@
+[
+  {
+    "uuid": "4d7a6bdf-1f0e-4a5a-8ddc-3c9030f3b7d7",
+    "content": "在 Kubernetes 中, Pods 的 IP 位址是？",
+    "options": [
+      "靜態且永遠不會改變",
+      "動態分配，並且可能會改變",
+      "只有在 Pod 重新啟動時才會改變",
+      "由使用者手動配置"
+    ],
+    "answer": 2,
+    "details": "在 Kubernetes 中, Pods 的 IP 位址是動態分配的。當 Pod 被創建時，它會被分配一個 IP 位址，如果 Pod 被刪除再重新創建，可能會被分配一個不同的 IP 位址。"
+  },
+  {
+    "uuid": "9f370df3-dbe0-47f9-901f-b22b65048b1d",
+    "content": "哪一個 Kubernetes 物件允許你以滾動更新的方式更新應用程式？",
+    "options": ["Pod", "ReplicaSet", "Deployment", "Service"],
+    "answer": 3,
+    "details": "Deployment 物件允許你以滾動更新的方式更新應用程式。當你更新 Deployment 的配置時，它會逐漸替換舊的 Pod 實例，並創建新的實例，以實現無停機更新。"
+  },
+  {
+    "uuid": "629bac32-6632-4149-8a68-bd2a14e4c174",
+    "content": "Kubernetes 中，哪個組件負責在節點上調度容器？",
+    "options": [
+      "kube-controller-manager",
+      "kube-scheduler",
+      "kube-apiserver",
+      "kubelet"
+    ],
+    "answer": 2,
+    "details": "在 Kubernetes 中，kube-scheduler 負責在節點上調度容器。它根據資源需求、策略約束、網路負載等因素，決定在哪個節點上運行 Pod。"
+  },
+  {
+    "uuid": "df9c6033-70b2-4a0d-8a96-099ba1a4f1d1",
+    "content": "在 Kubernetes 中，Service 通常用來做什麼？",
+    "options": [
+      "儲存資料",
+      "構建應用程式",
+      "暴露應用程式網絡接口",
+      "監控節點和容器"
+    ],
+    "answer": 3,
+    "details": "在 Kubernetes 中，Service 主要用於暴露應用程式的網絡接口。通過使用 Service，可以為一組具有相同功能的 Pod 提供一個穩定的 IP 地址和 DNS 名稱。"
+  },
+  {
+    "uuid": "b50da1f7-6f88-4ef2-944e-11ce673d12b6",
+    "content": "哪個命令用於在 Kubernetes 集群中創建資源？",
+    "options": [
+      "kubectl create",
+      "kubectl get",
+      "kubectl delete",
+      "kubectl describe"
+    ],
+    "answer": 1,
+    "details": "在 Kubernetes 集群中創建資源，通常使用 'kubectl create' 命令。這個命令可以讓你創建 Pod, Service, Deployment 等 Kubernetes 資源。"
+  },
+  {
+    "uuid": "68b4e3cc-cd4b-4e92-9440-7cafc2c3f1b3",
+    "content": "Kubernetes 的 ConfigMap 主要用途是？",
+    "options": [
+      "存儲敏感資料，例如密碼",
+      "管理應用程式的配置資料",
+      "限制 Pod 的資源使用",
+      "提供存儲卷給 Pod 使用"
+    ],
+    "answer": 2,
+    "details": "ConfigMap 在 Kubernetes 中主要用於管理非敏感的配置資料。這允許你將配置資料與 Pod 模板分離，使應用程式更容易移植和配置。"
+  },
+  {
+    "uuid": "5b1d8379-ebfd-4517-8a5a-8c78d1e6ec21",
+    "content": "在 Kubernetes 中，Helm 通常用於什麼？",
+    "options": [
+      "監控集群性能",
+      "管理包含多個 Kubernetes 資源的應用程式",
+      "保護敏感資料",
+      "動態調整 Pod 數量"
+    ],
+    "answer": 2,
+    "details": "Helm 是 Kubernetes 的一個套件管理工具，用於簡化部署和管理包含多個 Kubernetes 資源的應用程式。 Helm 使用一個稱為 'chart' 的格式來描述應用程式的組件和配置。"
+  },
+  {
+    "uuid": "1c5e0713-70db-4a4a-86e7-6e1b3d53d8e7",
+    "content": "在 Kubernetes 中，以下哪個物件用於定義一組容器的運行需求和限制？",
+    "options": ["Service", "Pod", "Deployment", "ConfigMap"],
+    "answer": 2,
+    "details": "在 Kubernetes 中，Pod 物件用於定義一組容器的運行需求和限制。Pod 是 Kubernetes 最基本的運行單元，可以包含一個或多個容器，這些容器共享相同的資源和網路環境。"
+  },
+  {
+    "uuid": "d8866c02-40d5-45b7-934b-bd90bb687343",
+    "content": "以下哪個 Kubernetes 物件可確保應用程式的高可用性，並在容器失敗時進行自動重啟？",
+    "options": ["DaemonSet", "StatefulSet", "Deployment", "Job"],
+    "answer": 3,
+    "details": "在 Kubernetes 中，Deployment 物件可確保應用程式的高可用性並進行自動重啟。Deployment 維護一組 Pod 的運行狀態，當 Pod 失敗時，Deployment 會自動替換它們以確保應用程式的持續運行。"
+  },
+  {
+    "uuid": "6179f6d2-7388-4e6f-9a67-b54f74666247",
+    "content": "以下哪個指令用於在 Kubernetes 中部署應用程式？",
+    "options": [
+      "kubectl apply",
+      "kubectl create",
+      "kubectl run",
+      "kubectl deploy"
+    ],
+    "answer": 1,
+    "details": "在 Kubernetes 中，使用 'kubectl apply' 指令來部署應用程式。這個指令可以根據 YAML 或 JSON 格式的配置檔案，創建或更新相應的 Kubernetes 物件。"
+  },
+  {
+    "uuid": "3f4b94e1-2e2a-4f5a-8b0a-9c3b9e1d2e72",
+    "content": "以下哪個物件用於在 Kubernetes 中公開應用程式的網路接口？",
+    "options": ["Ingress", "Service", "Endpoint", "LoadBalancer"],
+    "answer": 2,
+    "details": "在 Kubernetes 中，Service 物件用於公開應用程式的網路接口。Service 提供了一個穩定的 IP 地址和 DNS 名稱，以便其他應用程式或用戶可以訪問該應用程式。"
+  },
+  {
+    "uuid": "97f0e0af-193b-4130-85b1-1b825f5b44da",
+    "content": "以下哪個指令用於列出 Kubernetes 叢集中的節點？",
+    "options": [
+      "kubectl get services",
+      "kubectl describe nodes",
+      "kubectl get nodes",
+      "kubectl describe services"
+    ],
+    "answer": 3,
+    "details": "使用 'kubectl get nodes' 指令可以列出 Kubernetes 叢集中的節點。這個指令提供了有關節點狀態和資源使用情況的詳細資訊。"
+  },
+  {
+    "uuid": "dce6b136-9e8c-4c7e-b75d-ef7e5f22e784",
+    "content": "以下哪個 Kubernetes 物件用於定義 Pod 的期望狀態，並確保實際狀態符合之？",
+    "options": ["DaemonSet", "ReplicaSet", "StatefulSet", "Job"],
+    "answer": 2,
+    "details": "在 Kubernetes 中，ReplicaSet 物件用於定義 Pod 的期望狀態，並確保叢集中運行的 Pod 數量符合這個期望狀態。如果有任何不符合的情況，ReplicaSet 會自動創建或刪除 Pod 以調整數量。"
+  },
+  {
+    "uuid": "d262fe4e-3542-4ea7-9b0f-6e6d695c0467",
+    "content": "以下哪個指令用於從 Kubernetes 叢集中刪除資源？",
+    "options": [
+      "kubectl delete",
+      "kubectl remove",
+      "kubectl stop",
+      "kubectl erase"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl delete' 指令可以從 Kubernetes 叢集中刪除資源。你可以指定資源的類型和名稱，以及其他選項，來刪除相應的 Kubernetes 物件。"
+  },
+  {
+    "uuid": "870636b7-7a7f-4c85-b3b4-9e7bdf370d60",
+    "content": "以下哪個 Kubernetes 物件用於在節點上運行容器的運行時環境？",
+    "options": ["Pod", "Service", "Namespace", "Container"],
+    "answer": 1,
+    "details": "在 Kubernetes 中，Pod 物件用於在節點上運行容器的運行時環境。一個 Pod 可以包含一個或多個容器，這些容器共享相同的資源和網路環境，並在同一個節點上運行。"
+  },
+  {
+    "uuid": "877bde23-4da5-4af0-8b79-22f348c63da6",
+    "content": "以下哪個指令用於查看 Kubernetes 物件的詳細資訊？",
+    "options": [
+      "kubectl get",
+      "kubectl describe",
+      "kubectl watch",
+      "kubectl logs"
+    ],
+    "answer": 2,
+    "details": "使用 'kubectl describe' 指令可以查看 Kubernetes 物件的詳細資訊，包括其配置、狀態和事件等。這個指令通常用於故障排除和診斷。"
+  },
+  {
+    "uuid": "c8a95481-79c0-4389-a2d3-c7b06d4f93b7",
+    "content": "以下哪個 Kubernetes 物件用於在多個節點上運行容器的副本？",
+    "options": ["Pod", "Deployment", "Job", "ReplicationController"],
+    "answer": 2,
+    "details": "在 Kubernetes 中，Deployment 物件用於在多個節點上運行容器的副本。Deployment 可以確保指定數量的 Pod 副本在叢集中運行，並支援滾動更新和回滾等功能。"
+  },
+
+  {
+    "uuid": "95d8f87c-93c2-4b0e-84f3-0cc60173ed7a",
+    "content": "在 Kubernetes 中，以下哪個機制用於將流量路由到不同版本的應用程式？",
+    "options": ["Ingress", "Service", "Pod", "Deployment"],
+    "answer": 1,
+    "details": "在 Kubernetes 中，Ingress 機制用於將流量路由到不同版本的應用程式。通過配置不同的 Ingress 規則和路由規則，可以實現對應用程式的流量進行精確的控制和管理。"
+  },
+  {
+    "uuid": "a51b0e37-eb33-4546-9aee-5e450a3d9eaa",
+    "content": "在 Kubernetes 中，以下哪個物件用於儲存容器的日誌資訊？",
+    "options": [
+      "PersistentVolume",
+      "ConfigMap",
+      "Service",
+      "PersistentVolumeClaim"
+    ],
+    "answer": 4,
+    "details": "在 Kubernetes 中，使用 PersistentVolumeClaim 物件可以存取和管理儲存容器的日誌資訊。PersistentVolumeClaim 用於在 Pod 和持久化儲存卷之間建立連接和映射。"
+  },
+  {
+    "uuid": "d9c45ff9-4d65-45a3-b73f-02e861bc34c5",
+    "content": "以下哪個 Kubernetes 物件用於在特定時間內執行一次性任務？",
+    "options": ["CronJob", "Job", "DaemonSet", "StatefulSet"],
+    "answer": 2,
+    "details": "在 Kubernetes 中，使用 Job 物件可以在特定時間內執行一次性任務。Job 可以確保一個或多個 Pod 成功完成任務，並且可以設定重試機制和丟棄策略等。"
+  },
+  {
+    "uuid": "25d7ac92-c9c7-446d-9e92-4a3fe26bfe1f",
+    "content": "以下哪個指令用於檢查 Pod 的日誌資訊？",
+    "options": [
+      "kubectl get logs",
+      "kubectl describe pod",
+      "kubectl watch pod",
+      "kubectl edit pod"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl get logs' 指令可以檢查 Pod 的日誌資訊。這個指令可用於檢視特定 Pod 中容器的日誌輸出，以進行故障排除和日誌分析。"
+  },
+  {
+    "uuid": "121718be-b84f-454f-835f-329c59b34896",
+    "content": "在 Kubernetes 中，以下哪個物件用於定義容器運行所需的環境變數？",
+    "options": ["Secret", "Service", "PersistentVolume", "ConfigMap"],
+    "answer": 4,
+    "details": "在 Kubernetes 中，使用 ConfigMap 物件可以定義容器運行所需的環境變數。ConfigMap 可以將配置資料以鍵值對的形式存儲，並在 Pod 中作為環境變數使用。"
+  },
+  {
+    "uuid": "68b14662-3fb5-40ff-9ad4-9e6ebe084b24",
+    "content": "以下哪個 Kubernetes 物件用於在節點之間進行網絡路由？",
+    "options": ["Deployment", "StatefulSet", "Service", "Ingress"],
+    "answer": 4,
+    "details": "在 Kubernetes 中，使用 Ingress 物件可以在節點之間進行網絡路由。Ingress 提供了一個入口點，並根據路由規則將流量轉發到不同的服務或應用程式。"
+  },
+  {
+    "uuid": "86b43e7e-86c4-4a14-b875-7dcad1c4d076",
+    "content": "以下哪個指令用於縮放 Kubernetes 中的 Deployment 物件？",
+    "options": [
+      "kubectl scale",
+      "kubectl resize",
+      "kubectl modify",
+      "kubectl adjust"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl scale' 指令可以縮放 Kubernetes 中的 Deployment 物件。這個指令可以增加或減少 Deployment 中運行的 Pod 數量，以應對流量的變化。"
+  },
+  {
+    "uuid": "d41ff2f0-49c7-4dd6-85d6-7df1467e6741",
+    "content": "以下哪個 Kubernetes 物件用於將資源限制應用程式的資源使用？",
+    "options": [
+      "ResourceQuota",
+      "ConfigMap",
+      "Secret",
+      "PersistentVolumeClaim"
+    ],
+    "answer": 1,
+    "details": "在 Kubernetes 中，使用 ResourceQuota 物件可以將資源限制應用程式的資源使用。ResourceQuota 可以限制應用程式使用的 CPU、記憶體和儲存等資源的數量。"
+  },
+  {
+    "uuid": "5db4fdbe-8e7a-4de7-b6e1-611743252d22",
+    "content": "在 Kubernetes 中，以下哪個概念用於將工作負載平衡在不同節點上？",
+    "options": ["Pod", "Service", "Namespace", "Node"],
+    "answer": 2,
+    "details": "在 Kubernetes 中，使用 Service 概念可以將工作負載平衡在不同節點上。Service 提供了一個穩定的 IP 地址和 DNS 名稱，可以將流量均勻地分發到後端的 Pod 上。"
+  },
+  {
+    "uuid": "0348c815-56ed-4dd7-9149-542c6e4f3b13",
+    "content": "以下哪個指令用於升級 Kubernetes 叢集中的組件版本？",
+    "options": [
+      "kubectl upgrade",
+      "kubectl update",
+      "kubectl apply",
+      "kubectl set"
+    ],
+    "answer": 3,
+    "details": "在 Kubernetes 中，使用 'kubectl apply' 指令可以升級叢集中的組件版本。你可以使用新的配置檔案來替換舊的配置，以實現組件的升級。"
+  },
+
+  {
+    "uuid": "a8719c2f-493e-48fe-a5d3-bff7c96ff06d",
+    "content": "在 Kubernetes 中，以下哪個物件用於將容器的存活性與其他物件關聯起來？",
+    "options": ["Ingress", "Service", "Probe", "Pod"],
+    "answer": 3,
+    "details": "在 Kubernetes 中，Probe 物件用於將容器的存活性與其他物件關聯起來。Probe 可以定期檢查容器的狀態，並根據檢查結果決定容器是否正常運行。"
+  },
+  {
+    "uuid": "e7d0fb88-8a02-46af-9fbf-d7790a99825d",
+    "content": "在 Kubernetes 中，以下哪個指令用於檢查特定資源的配置詳細資訊和事件紀錄？",
+    "options": [
+      "kubectl describe",
+      "kubectl get",
+      "kubectl logs",
+      "kubectl status"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl describe' 指令可以檢查特定資源的配置詳細資訊和事件紀錄。該指令提供有關資源的詳細資訊，包括配置細節、狀態和相關事件等。"
+  },
+  {
+    "uuid": "b8f1f366-007f-481a-bf19-fa1d7b8f2e84",
+    "content": "以下哪個 Kubernetes 物件用於在多個節點上運行具有狀態的應用程式？",
+    "options": ["Pod", "Deployment", "StatefulSet", "ReplicaSet"],
+    "answer": 3,
+    "details": "在 Kubernetes 中，StatefulSet 物件用於在多個節點上運行具有狀態的應用程式。StatefulSet 可以確保每個 Pod 都具有唯一的身份和穩定的網路識別，並支援應用程式狀態的持久化和伸縮。"
+  },
+  {
+    "uuid": "f94da48e-07f4-4b94-9801-bf8f9ab1a9a0",
+    "content": "在 Kubernetes 中，以下哪個物件用於在多個節點上運行相同的容器？",
+    "options": ["Pod", "StatefulSet", "DaemonSet", "Job"],
+    "answer": 3,
+    "details": "在 Kubernetes 中，DaemonSet 物件用於在多個節點上運行相同的容器。DaemonSet 確保每個節點上都運行一個 Pod 的副本，以實現在整個叢集中運行相同容器的目的。"
+  },
+  {
+    "uuid": "b95c5e6e-b27d-418d-ba2b-bc0a52be6be1",
+    "content": "以下哪個指令用於觀察 Kubernetes 資源的變化？",
+    "options": [
+      "kubectl apply",
+      "kubectl get",
+      "kubectl watch",
+      "kubectl describe"
+    ],
+    "answer": 3,
+    "details": "使用 'kubectl watch' 指令可以觀察 Kubernetes 資源的變化。這個指令將持續監視資源的變更情況，並即時顯示變化的結果。"
+  },
+  {
+    "uuid": "833b7b71-f8d1-4b2b-9672-7fb92994c1c4",
+    "content": "以下哪個 Kubernetes 物件用於在節點上運行具有固定 IP 的容器？",
+    "options": ["Service", "Pod", "Deployment", "DaemonSet"],
+    "answer": 1,
+    "details": "在 Kubernetes 中，Service 物件用於在節點上運行具有固定 IP 的容器。Service 提供了一個穩定的 IP 地址和 DNS 名稱，以便其他應用程式或用戶可以訪問該應用程式。"
+  },
+  {
+    "uuid": "ca652c70-0aeb-4de4-83c1-5ea76b1ababc",
+    "content": "在 Kubernetes 中，以下哪個機制用於限制特定命名空間中的資源使用？",
+    "options": [
+      "PodSecurityPolicy",
+      "ResourceQuota",
+      "LimitRange",
+      "NetworkPolicy"
+    ],
+    "answer": 2,
+    "details": "在 Kubernetes 中，使用 ResourceQuota 機制可以限制特定命名空間中的資源使用。ResourceQuota 可以限制命名空間內容器、Pod、服務、持久化儲存等資源的使用數量。"
+  },
+  {
+    "uuid": "a235c4fe-48fd-456a-81b7-943b6b4ddba7",
+    "content": "以下哪個指令用於在 Kubernetes 中查看資源的整體狀態？",
+    "options": [
+      "kubectl status",
+      "kubectl get",
+      "kubectl describe",
+      "kubectl logs"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl status' 指令可以在 Kubernetes 中查看資源的整體狀態。這個指令顯示資源的狀態摘要，包括運行狀態、事件和相關資訊等。"
+  },
+  {
+    "uuid": "4996b61a-14da-4ed0-9f1f-8d640e8b86d8",
+    "content": "以下哪個 Kubernetes 物件用於將請求流量限制在特定速率？",
+    "options": ["Service", "Deployment", "Ingress", "LimitRange"],
+    "answer": 4,
+    "details": "在 Kubernetes 中，使用 LimitRange 物件可以將請求流量限制在特定速率。LimitRange 可以限制容器和 Pod 中的 CPU 和記憶體使用，並確保資源的合理分配。"
+  },
+  {
+    "uuid": "3f0ab843-0739-450e-9d69-63104c1f70b0",
+    "content": "以下哪個指令用於刪除 Kubernetes 中的所有資源？",
+    "options": [
+      "kubectl delete",
+      "kubectl remove",
+      "kubectl purge",
+      "kubectl erase"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl delete' 指令可以刪除 Kubernetes 中的所有資源。你可以使用合適的選項和參數，以及適當的資源類型，來刪除整個叢集中的資源。"
+  },
+  {
+    "uuid": "c656d369-1b5f-4ebe-b846-f81b25c57d15",
+    "content": "以下哪個 Kubernetes 物件用於自動擴展應用程式的實例數量？",
+    "options": [
+      "HorizontalPodAutoscaler",
+      "VerticalPodAutoscaler",
+      "PodDisruptionBudget",
+      "PodSecurityPolicy"
+    ],
+    "answer": 1,
+    "details": "在 Kubernetes 中，使用 HorizontalPodAutoscaler 物件可以自動擴展應用程式的實例數量。HorizontalPodAutoscaler 根據 CPU 使用率等指標，自動增加或減少應用程式的 Pod 數量，以應對流量變化。"
+  },
+  {
+    "uuid": "679d8c77-9035-4c24-9e3c-6b5b973d10a1",
+    "content": "以下哪個 Kubernetes 物件用於管理敏感資訊，例如密碼和金鑰？",
+    "options": [
+      "ConfigMap",
+      "Secret",
+      "ServiceAccount",
+      "PersistentVolumeClaim"
+    ],
+    "answer": 2,
+    "details": "在 Kubernetes 中，使用 Secret 物件可以安全地管理敏感資訊，例如密碼和金鑰。Secret 可以以加密的方式存儲和傳遞這些敏感資訊，以保護應用程式的安全性。"
+  },
+  {
+    "uuid": "5375f6a5-4e39-4d4d-9646-4419ed90babb",
+    "content": "以下哪個指令用於進入 Kubernetes Pod 中的容器？",
+    "options": [
+      "kubectl exec",
+      "kubectl attach",
+      "kubectl log",
+      "kubectl shell"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl exec' 指令可以進入 Kubernetes Pod 中的容器。這個指令允許在運行中的容器中執行命令，並與容器進行互動。"
+  },
+  {
+    "uuid": "29cb91d6-7d91-4e8f-949e-422b76798e9c",
+    "content": "以下哪個 Kubernetes 物件用於將流量轉發到不同的後端 Pod？",
+    "options": ["Ingress", "Service", "Deployment", "ReplicaSet"],
+    "answer": 2,
+    "details": "在 Kubernetes 中，使用 Service 物件可以將流量轉發到不同的後端 Pod。Service 提供了一個穩定的 IP 地址和 DNS 名稱，以便其他應用程式或用戶可以訪問該應用程式。"
+  },
+  {
+    "uuid": "b747c8ad-09d5-4f17-98fc-218d8ea7c741",
+    "content": "以下哪個指令用於在 Kubernetes 中將多個配置檔案合併成一個？",
+    "options": [
+      "kubectl combine",
+      "kubectl merge",
+      "kubectl concat",
+      "kubectl apply"
+    ],
+    "answer": 4,
+    "details": "使用 'kubectl apply' 指令可以在 Kubernetes 中將多個配置檔案合併成一個。你可以在命令中指定多個檔案，並將它們一起應用到 Kubernetes 叢集中。"
+  },
+  {
+    "uuid": "c3a2c5d9-9a9e-4763-988a-8a5d5d70e7c0",
+    "content": "以下哪個 Kubernetes 物件用於限制 Pod 的 CPU 和記憶體使用？",
+    "options": [
+      "PodSecurityPolicy",
+      "ResourceQuota",
+      "LimitRange",
+      "NetworkPolicy"
+    ],
+    "answer": 3,
+    "details": "在 Kubernetes 中，使用 LimitRange 物件可以限制 Pod 的 CPU 和記憶體使用。LimitRange 可以設定容器和 Pod 的最小和最大資源要求，以及默認的資源配額。"
+  },
+  {
+    "uuid": "e1d29c1a-8750-4d7e-83ff-31408e7925f2",
+    "content": "以下哪個指令用於將應用程式部署到 Kubernetes 叢集中？",
+    "options": [
+      "kubectl create",
+      "kubectl apply",
+      "kubectl run",
+      "kubectl deploy"
+    ],
+    "answer": 2,
+    "details": "使用 'kubectl apply' 指令可以將應用程式部署到 Kubernetes 叢集中。你可以使用 YAML 或 JSON 配置檔案來定義應用程式的配置和資源需求，並將它們應用到叢集中。"
+  },
+  {
+    "uuid": "c11f9c12-7b83-4d97-a4a4-04cb8b491204",
+    "content": "在 Kubernetes 中，以下哪個概念用於指定容器運行所需的資源要求和限制？",
+    "options": [
+      "ConfigMap",
+      "PersistentVolumeClaim",
+      "ResourceQuota",
+      "Secret"
+    ],
+    "answer": 3,
+    "details": "在 Kubernetes 中，使用 ResourceQuota 概念可以指定容器運行所需的資源要求和限制。ResourceQuota 可以限制容器和命名空間使用的 CPU、記憶體和儲存等資源的數量。"
+  },
+  {
+    "uuid": "981eac18-f67a-4c87-a42b-8f3a702daa4d",
+    "content": "以下哪個指令用於將 Kubernetes 叢集的配置保存到檔案中？",
+    "options": [
+      "kubectl export",
+      "kubectl save",
+      "kubectl dump",
+      "kubectl backup"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl export' 指令可以將 Kubernetes 叢集的配置保存到檔案中。這個指令將叢集的配置導出為 YAML 或 JSON 格式的檔案，以便備份或共享配置。"
+  },
+  {
+    "uuid": "29fb89b3-76b5-4e1f-b758-d2dc17cb22fc",
+    "content": "以下哪個 Kubernetes 物件用於將請求流量限制在特定範圍內的 IP 地址？",
+    "options": ["Ingress", "Service", "NetworkPolicy", "LimitRange"],
+    "answer": 3,
+    "details": "在 Kubernetes 中，使用 NetworkPolicy 物件可以將請求流量限制在特定範圍內的 IP 地址。NetworkPolicy 可以設定入站和出站流量的規則，以實現對網絡流量的精確控制。"
+  },
+  {
+    "uuid": "f97c5f77-8f79-4a27-88f1-b753fdd9b7d7",
+    "content": "以下哪個指令用於在 Kubernetes 中刪除特定的 Pod？",
+    "options": [
+      "kubectl remove",
+      "kubectl delete",
+      "kubectl purge",
+      "kubectl erase"
+    ],
+    "answer": 2,
+    "details": "使用 'kubectl delete' 指令可以在 Kubernetes 中刪除特定的 Pod。你可以指定 Pod 的名稱或標籤來確定要刪除的特定 Pod。"
+  },
+  {
+    "uuid": "2a620972-7980-408c-8820-9133ce09d8d3",
+    "content": "以下哪個 Kubernetes 物件用於將流量限制在特定命名空間內的 Pod？",
+    "options": ["NetworkPolicy", "Service", "Ingress", "ResourceQuota"],
+    "answer": 1,
+    "details": "在 Kubernetes 中，使用 NetworkPolicy 物件可以將流量限制在特定命名空間內的 Pod。NetworkPolicy 可以設定入站和出站流量的規則，以實現對 Pod 網絡流量的精確控制。"
+  },
+  {
+    "uuid": "6700d52e-8ddc-42e7-9363-9ffec68ce5a1",
+    "content": "以下哪個指令用於在 Kubernetes 中觀察資源的即時日誌輸出？",
+    "options": [
+      "kubectl logs",
+      "kubectl describe",
+      "kubectl tail",
+      "kubectl watch"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl logs' 指令可以在 Kubernetes 中觀察資源的即時日誌輸出。該指令可用於檢視特定 Pod 中容器的日誌輸出，以進行故障排除和日誌分析。"
+  },
+  {
+    "uuid": "d670fbbe-4749-4e81-85be-50fb4f1d0e70",
+    "content": "以下哪個 Kubernetes 物件用於定義運行應用程式所需的存儲需求？",
+    "options": [
+      "Pod",
+      "PersistentVolume",
+      "ConfigMap",
+      "PersistentVolumeClaim"
+    ],
+    "answer": 4,
+    "details": "在 Kubernetes 中，使用 PersistentVolumeClaim 物件可以定義運行應用程式所需的存儲需求。PersistentVolumeClaim 可以與 PersistentVolume 物件建立關聯，以確保應用程式有足夠的存儲空間。"
+  },
+  {
+    "uuid": "6f1da6f9-700c-4d9d-b4fe-6c4e28b5f7a3",
+    "content": "以下哪個指令用於將 Kubernetes 中的資源複製到另一個叢集？",
+    "options": [
+      "kubectl copy",
+      "kubectl clone",
+      "kubectl export",
+      "kubectl transfer"
+    ],
+    "answer": 3,
+    "details": "使用 'kubectl export' 指令可以將 Kubernetes 中的資源複製到另一個叢集。這個指令將資源的配置導出為 YAML 或 JSON 格式的檔案，以便在其他叢集中使用。"
+  },
+  {
+    "uuid": "a2b166a7-48a6-4464-8481-eb3f0ad10f11",
+    "content": "以下哪個 Kubernetes 物件用於確保同一時期內至少運行一個 Pod？",
+    "options": ["Job", "DaemonSet", "StatefulSet", "ReplicaSet"],
+    "answer": 1,
+    "details": "在 Kubernetes 中，使用 Job 物件可以確保同一時期內至少運行一個 Pod。Job 可以確保 Pod 成功完成任務，並且可以設定重試機制和丟棄策略等。"
+  },
+  {
+    "uuid": "e5a3d99f-f109-4e1c-8a4f-3eb1fcbe520b",
+    "content": "以下哪個指令用於將應用程式容器的環境變數設定為指定的值？",
+    "options": ["kubectl set", "kubectl apply", "kubectl env", "kubectl edit"],
+    "answer": 4,
+    "details": "使用 'kubectl edit' 指令可以將應用程式容器的環境變數設定為指定的值。該指令將打開編輯器，並允許你修改 Pod 或容器的配置資料，包括環境變數。"
+  },
+  {
+    "uuid": "f752d65d-1717-4e79-8b1b-4a139b8e5422",
+    "content": "以下哪個 Kubernetes 物件用於將 Pod 執行在特定節點上？",
+    "options": ["Service", "Deployment", "Node", "PersistentVolume"],
+    "answer": 3,
+    "details": "在 Kubernetes 中，使用 Node 物件可以將 Pod 執行在特定節點上。Node 表示 Kubernetes 叢集中的一個節點，可以將 Pod 調度到該節點上運行。"
+  },
+  {
+    "uuid": "3f9b34cc-38ae-4425-8979-74ea5ab57bdd",
+    "content": "以下哪個指令用於將 Kubernetes 中的配置檔案轉換為可讀格式？",
+    "options": [
+      "kubectl convert",
+      "kubectl format",
+      "kubectl prettify",
+      "kubectl beautify"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl convert' 指令可以將 Kubernetes 中的配置檔案轉換為可讀格式。該指令可以將配置檔案轉換為 YAML 或 JSON 格式，以便進行檢視或編輯。"
+  },
+  {
+    "uuid": "c1d7fd04-6e73-4a5a-938e-5603e78a9e69",
+    "content": "以下哪個 Kubernetes 物件用於確保同一時期內運行指定數量的 Pod？",
+    "options": ["Job", "DaemonSet", "StatefulSet", "ReplicaSet"],
+    "answer": 4,
+    "details": "在 Kubernetes 中，使用 ReplicaSet 物件可以確保同一時期內運行指定數量的 Pod。ReplicaSet 根據配置指定的 Pod 數量來維護叢集中 Pod 的副本數目。"
+  },
+  {
+    "uuid": "43a6b94f-c560-4d08-8eb3-dcdfafaf2d7e",
+    "content": "以下哪個指令用於在 Kubernetes 中查看資源的事件紀錄？",
+    "options": [
+      "kubectl events",
+      "kubectl logs",
+      "kubectl describe",
+      "kubectl status"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl events' 指令可以在 Kubernetes 中查看資源的事件紀錄。該指令顯示與資源相關的事件，例如創建、更新和刪除等操作的紀錄。"
+  },
+  {
+    "uuid": "786fc08f-9865-48ff-9e9b-2e5b8b5e90d7",
+    "content": "以下哪個 Kubernetes 物件用於將 Pod 的網路流量路由到同一命名空間中的其他 Pod？",
+    "options": ["Ingress", "Service", "NetworkPolicy", "Pod"],
+    "answer": 3,
+    "details": "在 Kubernetes 中，使用 NetworkPolicy 物件可以將 Pod 的網路流量路由到同一命名空間中的其他 Pod。NetworkPolicy 可以設定入站和出站流量的規則，以實現對 Pod 網絡流量的精確控制。"
+  },
+  {
+    "uuid": "0b6eb7b3-398b-41ef-a4a7-d0de8b1ea5dc",
+    "content": "以下哪個指令用於將應用程式容器從 Kubernetes 叢集中刪除？",
+    "options": [
+      "kubectl delete",
+      "kubectl remove",
+      "kubectl purge",
+      "kubectl erase"
+    ],
+    "answer": 1,
+    "details": "使用 'kubectl delete' 指令可以將應用程式容器從 Kubernetes 叢集中刪除。你可以指定 Pod 的名稱或標籤來確定要刪除的特定 Pod。"
+  },
+  {
+    "uuid": "d7d4c582-af72-4394-8aa7-30e3f4ffed00",
+    "content": "以下哪個 Kubernetes 物件用於確保同一時期內運行指定數量的 Pod，並根據需求進行自動伸縮？",
+    "options": ["Job", "DaemonSet", "HorizontalPodAutoscaler", "ReplicaSet"],
+    "answer": 3,
+    "details": "在 Kubernetes 中，使用 HorizontalPodAutoscaler 物件可以確保同一時期內運行指定數量的 Pod，並根據需求進行自動伸縮。HorizontalPodAutoscaler 根據 CPU 使用率等指標自動調整 Pod 的數量，以應對流量變化。"
+  },
+  {
+    "uuid": "8c15f202-86bc-4e35-9523-641782e3db46",
+    "content": "以下哪個指令用於在 Kubernetes 中列出叢集中的節點？",
+    "options": [
+      "kubectl list",
+      "kubectl get",
+      "kubectl describe",
+      "kubectl nodes"
+    ],
+    "answer": 2,
+    "details": "使用 'kubectl get' 指令可以在 Kubernetes 中列出叢集中的節點。你可以使用 'kubectl get nodes' 命令來檢視叢集中節點的列表和相關資訊。"
+  },
+  {
+    "uuid": "0af4934f-a59e-4499-8707-9e5a018b6032",
+    "content": "以下哪個 Kubernetes 物件用於在多個節點上運行相同的容器，並確保每個節點只運行一個副本？",
+    "options": ["Pod", "StatefulSet", "DaemonSet", "Job"],
+    "answer": 3,
+    "details": "在 Kubernetes 中，使用 DaemonSet 物件可以在多個節點上運行相同的容器，並確保每個節點只運行一個副本。DaemonSet 確保每個節點上都運行一個 Pod 的副本，以實現在整個叢集中運行相同容器的目的。"
+  },
+  {
+    "uuid": "6550ef03-7f34-4d3a-b750-7f5ee62d7b19",
+    "content": "以下哪個指令用於在 Kubernetes 中列出叢集中的所有服務？",
+    "options": [
+      "kubectl list services",
+      "kubectl get services",
+      "kubectl describe services",
+      "kubectl services"
+    ],
+    "answer": 2,
+    "details": "使用 'kubectl get services' 指令可以在 Kubernetes 中列出叢集中的所有服務。該指令顯示服務的名稱、類型、叢集 IP 和相關資訊等。"
+  },
+  {
+    "uuid": "baa7fd30-854d-4b9e-b10a-41d7fbff3f0b",
+    "content": "以下哪個 Kubernetes 物件用於定義容器的執行規範和環境設置？",
+    "options": ["Pod", "Deployment", "ConfigMap", "PersistentVolume"],
+    "answer": 1,
+    "details": "在 Kubernetes 中，使用 Pod 物件可以定義容器的執行規範和環境設置。Pod 是 Kubernetes 中最小的可部署單元，可以包含一個或多個容器，並共享相同的網路和儲存資源。"
+  },
+  {
+    "uuid": "91f11f08-2027-4401-bc03-48b13550f9fd",
+    "content": "以下哪個指令用於在 Kubernetes 中列出叢集中的所有 Pod？",
+    "options": [
+      "kubectl list pods",
+      "kubectl get pods",
+      "kubectl describe pods",
+      "kubectl pods"
+    ],
+    "answer": 2,
+    "details": "使用 'kubectl get pods' 指令可以在 Kubernetes 中列出叢集中的所有 Pod。該指令顯示 Pod 的名稱、狀態、IP 地址和相關資訊等。"
+  },
+  {
+    "uuid": "937f4519-0379-41d9-8d94-1a32df5b80e1",
+    "content": "以下哪個 Kubernetes 物件用於將外部流量路由到叢集內的服務？",
+    "options": ["Ingress", "Service", "Deployment", "ReplicaSet"],
+    "answer": 1,
+    "details": "在 Kubernetes 中，使用 Ingress 物件可以將外部流量路由到叢集內的服務。Ingress 定義了對外部流量的入口規則，並將流量路由到相應的服務和 Pod 上。"
+  }
+]
